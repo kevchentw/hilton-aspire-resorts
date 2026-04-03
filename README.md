@@ -40,6 +40,20 @@ HOTEL_LIMIT=2 npm run sync:prices
 
 That still writes the full hotel list, but only fetches fresh Xotelo prices for the first `N` hotels.
 
+If you only want to refresh the price data for one hotel, target it by id:
+
+```bash
+HOTEL_ID=conrad-orlando npm run sync:prices
+```
+
+You can also target by hotel name:
+
+```bash
+HOTEL_NAME="Conrad Orlando" npm run sync:prices
+```
+
+If a name matches multiple hotels, the sync stops and asks you to use `HOTEL_ID` so only the intended hotel gets updated.
+
 By default the sync caches 4 upcoming weekend windows for each processed hotel. You can override that with `PRICE_WINDOW_COUNT`, `PRICE_STAY_NIGHTS`, or an explicit `PRICE_WINDOWS=YYYY-MM-DD:YYYY-MM-DD,...`.
 
 To force a full refresh even when cached prices already exist:

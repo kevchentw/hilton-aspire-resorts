@@ -13,11 +13,42 @@ const state = {
   region: "all",
   maxPrice: "all",
   view: "map",
+  meta: {},
+  syncSelectionToUrl: false,
 };
 
 let map;
 let markersLayer;
 let dom = {};
+
+function normalizeHashPath(hash = window.location.hash) {
+  return hash.replace(/^#/, "").replace(/\/+$/, "");
+}
+
+function readHotelIdFromUrl() {
+  const hashPath = normalizeHashPath();
+  const match = hashPath.match(/^\/hotel\/([^/]+)$/);
+  return match ? decodeURIComponent(match[1]) : null;
+}
+
+function buildHotelHash(hotelId) {
+  return hotelId ? `#/hotel/${encodeURIComponent(hotelId)}` : "#/";
+}
+
+function updateHotelUrl(hotelId, { replace = false } = {}) {
+  const nextHash = buildHotelHash(hotelId);
+  if (window.location.hash === nextHash) {
+    return;
+  }
+
+  const nextUrl = `${window.location.pathname}${window.location.search}${nextHash}`;
+  if (replace) {
+    window.history.replaceState({}, "", nextUrl);
+    return;
+  }
+
+  window.history.pushState({}, "", nextUrl);
+}
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -655,9 +686,38 @@ function updateViewMode() {
   }, 100);
 }
 
+function syncSelectionFromUrl({ focusMap = false } = {}) {
+  const hotelId = readHotelIdFromUrl();
+  if (!hotelId) {
+    state.syncSelectionToUrl = false;
+    return false;
+  }
+
+  const hotelExists = state.hotels.some((hotel) => hotel.id === hotelId);
+  if (!hotelExists) {
+    return false;
+  }
+
+  state.selectedHotelId = hotelId;
+  state.syncSelectionToUrl = true;
+
+  if (state.hotels.length) {
+    render(state.meta);
+    if (focusMap && state.view === "map") {
+      focusHotelOnMap(hotelId);
+    }
+  }
+
+  return true;
+}
+
 function render(meta) {
+  state.meta = meta;
   applyFilters();
   ensureSelectedHotel();
+  if (state.syncSelectionToUrl) {
+    updateHotelUrl(state.selectedHotelId, { replace: true });
+  }
   updateMeta(meta);
   renderList();
   renderMap();
@@ -847,6 +907,8 @@ function buildShell() {
 
 function selectHotel(hotelId, { focusMap = false } = {}) {
   state.selectedHotelId = hotelId;
+  state.syncSelectionToUrl = true;
+  updateHotelUrl(hotelId);
   highlightSelectedCard();
   renderDetail();
 
@@ -888,6 +950,13 @@ function attachEvents(meta) {
       updateViewMode();
     });
   });
+
+  const syncFromLocation = () => {
+    syncSelectionFromUrl({ focusMap: true });
+  };
+
+  window.addEventListener("hashchange", syncFromLocation);
+  window.addEventListener("popstate", syncFromLocation);
 }
 
 async function loadJson(url, { optional = false } = {}) {
@@ -949,6 +1018,8 @@ async function bootstrap() {
   try {
     const payload = await loadData();
     state.hotels = payload.hotels || [];
+    state.meta = payload.meta || {};
+    syncSelectionFromUrl();
     populateBrandFilter(state.hotels);
     populateCountryFilter(state.hotels);
     populateRegionFilter(state.hotels);
