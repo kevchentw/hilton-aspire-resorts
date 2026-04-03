@@ -1,0 +1,4131 @@
+{
+  "meta": {
+    "generatedAt": "2026-04-03T03:17:40.159Z",
+    "sourceUrl": "https://www.hilton.com/en/p/hilton-honors/resort-credit-eligible-hotels/",
+    "hotelCount": 314,
+    "sampleStay": {
+      "checkIn": "2026-04-10",
+      "checkOut": "2026-04-12"
+    },
+    "rapidApiBootstrapEnabled": false
+  },
+  "hotels": [
+    {
+      "id": "arizona-biltmore-lxr-hotels-and-resorts",
+      "name": "Arizona Biltmore, LXR Hotels & Resorts",
+      "brand": "LXR Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/phxbmol-arizona-biltmore/",
+      "geocode": {
+        "source": "nominatim",
+        "displayName": "Arizona Biltmore, LXR Hotels & Resorts, 2400, East Missouri Avenue, Taliverde, Camelback East, Phoenix, Maricopa County, Arizona, 85016, United States",
+        "lastSyncedAt": "2026-04-03T02:59:41.426Z"
+      },
+      "xotelo": {},
+      "locationLabel": "Arizona Biltmore, LXR Hotels & Resorts, 2400, East Missouri Avenue, Taliverde, Camelback East, Phoenix, Maricopa County, Arizona, 85016, United States",
+      "geo": {
+        "lat": 33.5236231,
+        "lng": -112.0236891
+      }
+    },
+    {
+      "id": "aulus-lindos-rhodes-resort-curio-collection-by-hilton",
+      "name": "Aulus Lindos Rhodes Resort, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/rholiqq-lindian-village-beach-resort-rhodes",
+      "geocode": {
+        "source": "nominatim",
+        "displayName": "Aulūs Lindos Rhodes Resort, Curio Collection by Hilton, Lindian Village, Λάρδος, Δήμος Ρόδου, Περιφερειακή Ενότητα Ρόδου, Περιφέρεια Νοτίου Αιγαίου, Αποκεντρωμένη Διοίκηση Αιγαίου, 851 09, Ελλάς",
+        "query": "Aulus Lindos Rhodes Resort",
+        "lastSyncedAt": "2026-04-03T03:00:42.106Z"
+      },
+      "xotelo": {},
+      "locationLabel": "Λάρδος, Δήμος Ρόδου, Περιφέρεια Νοτίου Αιγαίου, Ελλάς",
+      "geo": {
+        "lat": 36.0651817,
+        "lng": 27.9912255
+      }
+    },
+    {
+      "id": "bahia-mar-fort-lauderdale-beach-a-doubletree-by-hilton",
+      "name": "Bahia Mar Fort Lauderdale Beach - a DoubleTree by Hilton",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/fllbmdt-bahia-mar-fort-lauderdale-beach/",
+      "geocode": {
+        "source": "nominatim",
+        "displayName": "Bahia Mar Fort Lauderdale Beach - a DoubleTree by Hilton Hotel, 801, Seabreeze Boulevard, Fort Lauderdale, Broward County, Florida, 33316, United States",
+        "query": "Bahia Mar Fort Lauderdale Beach - a DoubleTree by Hilton hotel",
+        "lastSyncedAt": "2026-04-03T03:00:43.318Z"
+      },
+      "xotelo": {},
+      "locationLabel": "Fort Lauderdale, Florida, United States",
+      "geo": {
+        "lat": 26.1135458,
+        "lng": -80.1061129
+      }
+    },
+    {
+      "id": "baia-di-chia-resort-sardinia-curio-collection-by-hilton",
+      "name": "Baia di Chia Resort Sardinia, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/olbbrqq-baia-di-chia-resort-sardinia",
+      "geocode": {
+        "source": "nominatim",
+        "displayName": "Baia di Chia Resort Sardinia, Curio Collection by Hilton, 1, Viale Chia, Setti Ballas, Domus De Maria, Casteddu/Cagliari, Sardigna/Sardegna, 09010, Italia",
+        "query": "Baia di Chia Resort Sardinia",
+        "lastSyncedAt": "2026-04-03T03:00:44.993Z"
+      },
+      "xotelo": {},
+      "locationLabel": "Domus De Maria, Sardigna/Sardegna, Italia",
+      "geo": {
+        "lat": 38.8956005,
+        "lng": 8.8701629
+      }
+    },
+    {
+      "id": "baker-s-cay-resort-key-largo-curio-collection-by-hilton",
+      "name": "Baker's Cay Resort Key Largo, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/kylcuqq-bakers-cay-resort-key-largo",
+      "geocode": null,
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "beach-house-fort-lauderdale-a-hilton-resort",
+      "name": "Beach House Fort Lauderdale, a Hilton Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/fllfshh-beach-house-fort-lauderdale/",
+      "geocode": {
+        "source": "nominatim",
+        "displayName": "Beach House Fort Lauderdale, a Hilton Resort, 505, North Fort Lauderdale Beach Boulevard, Birch Ocean Front, Fort Lauderdale, Broward County, Florida, 33304, United States",
+        "query": "Beach House Fort Lauderdale",
+        "lastSyncedAt": "2026-04-03T03:01:33.717Z"
+      },
+      "xotelo": {},
+      "locationLabel": "Fort Lauderdale, Florida, United States",
+      "geo": {
+        "lat": 26.1294093,
+        "lng": -80.1041258
+      }
+    },
+    {
+      "id": "beach-village-at-the-del-lxr-hotels-and-resorts",
+      "name": "Beach Village at The Del, LXR Hotels & Resorts",
+      "brand": "LXR Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sancnol-beach-village-at-the-del/",
+      "geocode": {
+        "source": "nominatim",
+        "displayName": "Village Beach Club, South Seachase Drive, The Village at Nags Head, Nags Head, Dare County, North Carolina, 27959, United States",
+        "query": "Beach Village at The Del",
+        "lastSyncedAt": "2026-04-03T03:01:35.655Z"
+      },
+      "xotelo": {},
+      "locationLabel": "Nags Head, North Carolina, United States",
+      "geo": {
+        "lat": 35.9297198,
+        "lng": -75.6081387
+      }
+    },
+    {
+      "id": "beach-village-at-the-del-lxr-resort",
+      "name": "Beach Village at The Del, LXR Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sancnol-beach-village-at-the-del/",
+      "geocode": {
+        "source": "nominatim",
+        "displayName": "Village Beach Club, South Seachase Drive, The Village at Nags Head, Nags Head, Dare County, North Carolina, 27959, United States",
+        "query": "beach village at the del",
+        "lastSyncedAt": "2026-04-03T03:01:37.412Z"
+      },
+      "xotelo": {},
+      "locationLabel": "Nags Head, North Carolina, United States",
+      "geo": {
+        "lat": 35.9297198,
+        "lng": -75.6081387
+      }
+    },
+    {
+      "id": "boeira-garden-hotel-porto-gaia-curio-collection-by-hilton",
+      "name": "Boeira Garden Hotel Porto Gaia, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/opobgqq-boeira-garden-hotel-porto-gaia",
+      "geocode": {
+        "source": "nominatim",
+        "displayName": "Boeira Garden Hotel Porto Gaia, Curio Collection by Hilton, 114, Rua Teixeira Lopes, Mafamude, Vila Nova de Gaia, Porto, 4400-320, Portugal",
+        "query": "Boeira Garden Hotel Porto Gaia",
+        "lastSyncedAt": "2026-04-03T03:01:40.182Z"
+      },
+      "xotelo": {},
+      "locationLabel": "Vila Nova de Gaia, Portugal",
+      "geo": {
+        "lat": 41.1280222,
+        "lng": -8.612682
+      }
+    },
+    {
+      "id": "botanika-osa-peninsula-curio-collection-by-hilton",
+      "name": "Botanika Osa Peninsula, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/pjmcrqq-botanika-osa-peninsula",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Botanika+Osa+Peninsula%2C+Curio+Collection+by+Hilton+hotel&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:01:42.635Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "boulders-resort-and-spa-scottsdale-curio-collection-by-hilton",
+      "name": "Boulders Resort & Spa Scottsdale, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/phxrsqq-boulders-resort-and-spa-scottsdale",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Boulders+Resort+%26+Spa+Scottsdale%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:01:44.287Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "cape-rey-carlsbad-beach-a-hilton-resort-and-spa",
+      "name": "Cape Rey Carlsbad Beach, a Hilton Resort and Spa",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sanrshf-cape-rey-carlsbad-beach/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Cape+Rey+Carlsbad+Beach%2C+a+Hilton+Resort+and+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:01:45.907Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "caribe-hilton",
+      "name": "Caribe Hilton",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sjnhihh-caribe-hilton/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Caribe+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:01:47.997Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "casa-mani-resort-napa-valley-curio-collection-by-hilton",
+      "name": "Casa Mani Resort Napa Valley, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/napvpqq-casa-mani-resort-napa-valley",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Casa+Mani+Resort+Napa+Valley%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:01:50.513Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "casa-marina-key-west-curio-collection-by-hilton",
+      "name": "Casa Marina Key West, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/eywcmqq-casa-marina-key-west",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Casa+Marina+Key+West%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:01:52.500Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "cloudland-at-mclemore-resort-lookout-mountain-curio",
+      "name": "Cloudland at McLemore Resort Lookout Mountain, Curio",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/atlokqq-cloudland-at-mclemore-resort-lookout-mountain",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Cloudland+at+McLemore+Resort+Lookout+Mountain%2C+Curio&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:01:54.716Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "conrad-abu-dhabi-etihad-towers",
+      "name": "Conrad Abu Dhabi Etihad Towers",
+      "brand": "Conrad Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/auhetci-conrad-abu-dhabi-etihad-towers/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Conrad+Abu+Dhabi+Etihad+Towers&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:01:56.664Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "conrad-algarve",
+      "name": "Conrad Algarve",
+      "brand": "Conrad Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/faoapci-conrad-algarve/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Conrad+Algarve&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:01:58.649Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "conrad-bali",
+      "name": "Conrad Bali",
+      "brand": "Conrad Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/bpncici-conrad-bali/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Conrad+Bali&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:02:00.370Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "conrad-bora-bora-nui",
+      "name": "Conrad Bora Bora Nui",
+      "brand": "Conrad Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/pptbnci-conrad-bora-bora-nui/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Conrad+Bora+Bora+Nui&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:02:02.187Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "conrad-chia-laguna-sardinia",
+      "name": "Conrad Chia Laguna Sardinia",
+      "brand": "Conrad Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/olbclci-conrad-chia-laguna-sardinia/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Conrad+Chia+Laguna+Sardinia&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:02:03.825Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "conrad-fort-lauderdale-beach",
+      "name": "Conrad Fort Lauderdale Beach",
+      "brand": "Conrad Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/fllcici-conrad-fort-lauderdale-beach/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Conrad+Fort+Lauderdale+Beach&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:02:06.312Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "conrad-hangzhou-tonglu",
+      "name": "Conrad Hangzhou Tonglu",
+      "brand": "Conrad Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/hghyfci-conrad-hangzhou-tonglu/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Conrad+Hangzhou+Tonglu&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:02:08.330Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "conrad-jiuzhaigou",
+      "name": "Conrad Jiuzhaigou",
+      "brand": "Conrad Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/jzhcici-conrad-jiuzhaigou/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Conrad+Jiuzhaigou&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:02:09.946Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "conrad-koh-samui",
+      "name": "Conrad Koh Samui",
+      "brand": "Conrad Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/usmksci-conrad-koh-samui/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Conrad+Koh+Samui&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:02:11.638Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "conrad-las-vegas-at-resorts-world",
+      "name": "Conrad Las Vegas at Resorts World",
+      "brand": "Conrad Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/rslvhvh-resorts-world-las-vegas/rooms/conrad-las-vegas/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Conrad+Las+Vegas+at+Resorts+World&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:02:14.004Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "conrad-maldives-rangali-island",
+      "name": "Conrad Maldives Rangali Island",
+      "brand": "Conrad Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/mlehici-conrad-maldives-rangali-island/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Conrad+Maldives+Rangali+Island&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:02:16.384Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "conrad-orlando",
+      "name": "Conrad Orlando",
+      "brand": "Conrad Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/orlcici-conrad-orlando/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Conrad+Orlando&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:02:18.203Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "conrad-punta-de-mita",
+      "name": "Conrad Punta de Mita",
+      "brand": "Conrad Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/pvrpmci-conrad-punta-de-mita/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Conrad+Punta+de+Mita&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:02:20.413Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "conrad-rabat-arzana",
+      "name": "Conrad Rabat Arzana",
+      "brand": "Conrad Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/rbacici-conrad-rabat-arzana/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Conrad+Rabat+Arzana&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:02:22.190Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "conrad-tulum-riviera-maya",
+      "name": "Conrad Tulum Riviera Maya",
+      "brand": "Conrad Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/cuncici-conrad-tulum-riviera-maya/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Conrad+Tulum+Riviera+Maya&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:06:26.077Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "crockfords-las-vegas-lxr-hotels-and-resorts",
+      "name": "Crockfords Las Vegas, LXR Hotels & Resorts",
+      "brand": "LXR Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/rslvhvh-resorts-world-las-vegas/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Crockfords+Las+Vegas%2C+LXR+Hotels+%26+Resorts&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:06:28.239Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "diplomat-beach-resort-hollywood-curio-collection-by-hilton",
+      "name": "Diplomat Beach Resort Hollywood, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/flldhqq-the-diplomat-beach-resort-hollywood",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Diplomat+Beach+Resort+Hollywood%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:06:30.663Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "domes-aulus-elounda-resort-curio-by-hilton",
+      "name": "Domes Aulus Elounda Resort, Curio by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/herbsqq-domes-aulus-elounda-resort",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Domes+Aulus+Elounda+Resort%2C+Curio+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:06:32.500Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-beach-resort-by-hilton-tampa-bay-north-redington-beach",
+      "name": "DoubleTree Beach Resort by Hilton Tampa Bay - North Redington Beach",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/nornhdt-doubletree-beach-resort-tampa-bay-north-redington-beach/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+Beach+Resort+by+Hilton+Tampa+Bay+-+North+Redington+Beach&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:06:34.459Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-alana-waikiki-beach",
+      "name": "DoubleTree by Hilton Alana - Waikiki Beach",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/hnlkadt-doubletree-alana-waikiki-beach/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+Alana+-+Waikiki+Beach&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:06:36.883Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-antalya-kemer-all-inclusive-resort",
+      "name": "DoubleTree by Hilton Antalya-Kemer All-Inclusive Resort",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/aytakdi-doubletree-antalya-kemer-all-inclusive-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+Antalya-Kemer+All-Inclusive+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:06:39.082Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-bodrum-isil-club-all-inclusive-resort",
+      "name": "DoubleTree by Hilton Bodrum Isil Club All-Inclusive Resort",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/bjvtrdi-doubletree-bodrum-isil-club-all-inclusive-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+Bodrum+Isil+Club+All-Inclusive+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:06:41.216Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-damai-laut-resort",
+      "name": "DoubleTree by Hilton Damai Laut Resort",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/iphdldi-doubletree-damai-laut-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+Damai+Laut+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:06:43.499Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-dubai-jumeirah-beach",
+      "name": "DoubleTree by Hilton Dubai - Jumeirah Beach",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/dxbthdi-doubletree-dubai-jumeirah-beach/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+Dubai+-+Jumeirah+Beach&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:06:45.521Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-goa-arpora-baga",
+      "name": "DoubleTree by Hilton Goa - Arpora - Baga",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/goiabdi-doubletree-goa-arpora-baga/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+Goa+-+Arpora+-+Baga&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:06:47.697Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-goa-panaji",
+      "name": "DoubleTree by Hilton Goa Panaji",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/goigddi-doubletree-goa-panaji/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+Goa+Panaji&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:06:49.629Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-golf-resort-palm-springs",
+      "name": "DoubleTree by Hilton Golf Resort Palm Springs",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/pspdpdt-doubletree-golf-resort-palm-springs/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+Golf+Resort+Palm+Springs&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:06:51.215Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-islantilla-beach-golf-resort",
+      "name": "DoubleTree by Hilton Islantilla Beach Golf Resort",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/hevirdi-doubletree-islantilla-beach-golf-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+Islantilla+Beach+Golf+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:06:52.973Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-la-torre-golf-and-spa-resort",
+      "name": "DoubleTree by Hilton La Torre Golf & Spa Resort",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/mjvltdi-doubletree-la-torre-golf-and-spa-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+La+Torre+Golf+%26+Spa+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:06:54.544Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-lagoa-azores",
+      "name": "DoubleTree by Hilton Lagoa Azores",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/pdlladi-doubletree-lagoa-azores/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+Lagoa+Azores&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:06:56.280Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-malta",
+      "name": "DoubleTree by Hilton Malta",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/mlaspdi-doubletree-malta/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+Malta&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:06:58.389Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-mazatlan",
+      "name": "Doubletree by Hilton Mazatlan",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/mztdtdt-doubletree-mazatlan/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Doubletree+by+Hilton+Mazatlan&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:00.880Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-myrtle-beach",
+      "name": "DoubleTree by Hilton Myrtle Beach",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/myrdtdt-doubletree-resort-myrtle-beach-oceanfront/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+Myrtle+Beach&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:02.625Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-noumea-ilot-maitre-resort",
+      "name": "DoubleTree by Hilton Noumea Ilot Maitre Resort",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/noudidi-doubletree-noumea-ilot-maitre-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+Noumea+Ilot+Maitre+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:05.099Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-ocean-point-resort-and-spa-north-miami",
+      "name": "DoubleTree by Hilton Ocean Point Resort & Spa – North Miami",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/miaopdt-doubletree-resort-and-spa-ocean-point-north-miami-beach/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+Ocean+Point+Resort+%26+Spa+%E2%80%93+North+Miami&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:06.786Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-okinawa-chatan-resort",
+      "name": "DoubleTree by Hilton Okinawa Chatan Resort",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/okadidi-doubletree-okinawa-chatan-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+Okinawa+Chatan+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:09.229Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-orlando-at-seaworld",
+      "name": "DoubleTree by Hilton Orlando at SeaWorld",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/mcosrdt-doubletree-orlando-at-seaworld/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+Orlando+at+SeaWorld&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:10.958Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-park-city-the-yarrow",
+      "name": "DoubleTree by Hilton Park City - The Yarrow",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/slcywdt-doubletree-park-city-the-yarrow/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+Park+City+-+The+Yarrow&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:12.784Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-phuket-banthai-resort",
+      "name": "DoubleTree by Hilton Phuket Banthai Resort",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/hktpadi-doubletree-phuket-banthai-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+Phuket+Banthai+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:14.984Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-quebec-resort",
+      "name": "DoubleTree by Hilton Quebec Resort",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/yqbqcdt-doubletree-quebec-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+Quebec+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:17.001Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-resort-and-spa-marjan-island",
+      "name": "DoubleTree by Hilton Resort & Spa Marjan Island",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/rktmidi-doubletree-resort-and-spa-marjan-island/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+Resort+%26+Spa+Marjan+Island&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:19.348Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-san-juan",
+      "name": "DoubleTree by Hilton San Juan",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sjudtdt-doubletree-san-juan/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+San+Juan&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:21.169Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-seychelles-allamanda-resort-and-spa",
+      "name": "DoubleTree by Hilton Seychelles - Allamanda Resort & Spa",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sezdtdi-doubletree-seychelles-allamanda-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+Seychelles+-+Allamanda+Resort+%26+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:22.807Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-shanwei",
+      "name": "DoubleTree by Hilton Shanwei",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/swadidi-doubletree-shanwei/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+Shanwei&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:25.392Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-sharm-el-sheikh-sharks-bay-resort",
+      "name": "DoubleTree by Hilton Sharm El Sheikh - Sharks Bay Resort",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sshsbdi-doubletree-sharm-el-sheikh-sharks-bay-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+Sharm+El+Sheikh+-+Sharks+Bay+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:27.623Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-by-hilton-weerawila-rajawarna-resort",
+      "name": "DoubleTree by Hilton Weerawila Rajawarna Resort",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/wrzrjdi-doubletree-weerawila-rajawarna-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+by+Hilton+Weerawila+Rajawarna+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:29.775Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-fallsview-resort-and-spa-by-hilton-niagara-falls",
+      "name": "DoubleTree Fallsview Resort & Spa by Hilton - Niagara Falls",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/iagdtdt-doubletree-fallsview-resort-and-spa-niagara-falls/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+Fallsview+Resort+%26+Spa+by+Hilton+-+Niagara+Falls&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:31.949Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-resort-by-hilton-fiji-sonaisali-island",
+      "name": "DoubleTree Resort by Hilton Fiji - Sonaisali Island",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/nansidi-doubletree-resort-fiji-sonaisali-island/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+Resort+by+Hilton+Fiji+-+Sonaisali+Island&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:34.055Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-resort-by-hilton-grand-key-key-west",
+      "name": "DoubleTree Resort by Hilton Grand Key - Key West",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/eywdtdt-doubletree-resort-grand-key-key-west/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+Resort+by+Hilton+Grand+Key+-+Key+West&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:36.222Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-resort-by-hilton-lancaster",
+      "name": "DoubleTree Resort by Hilton Lancaster",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/lnswvdt-doubletree-resort-lancaster/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+Resort+by+Hilton+Lancaster&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:38.756Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-resort-by-hilton-paradise-valley-scottsdale",
+      "name": "DoubleTree Resort by Hilton Paradise Valley - Scottsdale",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/phxsjdt-doubletree-resort-paradise-valley-scottsdale/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+Resort+by+Hilton+Paradise+Valley+-+Scottsdale&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:40.726Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-resort-by-hilton-penang",
+      "name": "DoubleTree Resort by Hilton Penang",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/penmbdi-doubletree-resort-penang/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+Resort+by+Hilton+Penang&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:42.980Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-resort-hollywood-beach",
+      "name": "DoubleTree Resort Hollywood Beach",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/hwofldt-doubletree-resort-hollywood-beach/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+Resort+Hollywood+Beach&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:44.607Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "doubletree-suites-by-hilton-orlando-disney-springs-area",
+      "name": "DoubleTree Suites by Hilton Orlando - Disney Springs™ Area",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/mcofhdt-doubletree-suites-orlando/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=DoubleTree+Suites+by+Hilton+Orlando+-+Disney+Springs%E2%84%A2+Area&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:47.177Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "el-conquistador-tucson-a-hilton-resort",
+      "name": "El Conquistador Tucson, A Hilton Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/tushthh-el-conquistador-tucson/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=El+Conquistador+Tucson%2C+A+Hilton+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:49.105Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "embassy-suites-by-hilton-aruba-resort",
+      "name": "Embassy Suites by Hilton Aruba Resort",
+      "brand": "Embassy Suites by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/auajmes-embassy-suites-aruba-resort",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Embassy+Suites+by+Hilton+Aruba+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:51.249Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "embassy-suites-by-hilton-charlotte-concord-golf-resort-and-spa",
+      "name": "Embassy Suites by Hilton Charlotte-Concord-Golf Resort & Spa",
+      "brand": "Embassy Suites by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/cltcces-embassy-suites-charlotte-concord-golf-resort-and-spa",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Embassy+Suites+by+Hilton+Charlotte-Concord-Golf+Resort+%26+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:53.233Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "embassy-suites-by-hilton-deerfield-beach-resort-and-spa",
+      "name": "Embassy Suites by Hilton Deerfield Beach Resort & Spa",
+      "brand": "Embassy Suites by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/deefles-embassy-suites-deerfield-beach-resort-and-spa",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Embassy+Suites+by+Hilton+Deerfield+Beach+Resort+%26+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:55.687Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "embassy-suites-by-hilton-dorado-del-mar-beach-resort",
+      "name": "Embassy Suites by Hilton Dorado del Mar Beach Resort",
+      "brand": "Embassy Suites by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/dorpres-embassy-suites-dorado-del-mar-beach-resort",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Embassy+Suites+by+Hilton+Dorado+del+Mar+Beach+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:57.604Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "embassy-suites-by-hilton-greenville-golf-resort-and-conf-ctr",
+      "name": "Embassy Suites by Hilton Greenville Golf Resort & Conf Ctr",
+      "brand": "Embassy Suites by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/gspeses-embassy-suites-greenville-golf-resort-and-conference-center",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Embassy+Suites+by+Hilton+Greenville+Golf+Resort+%26+Conf+Ctr&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:07:59.325Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "embassy-suites-by-hilton-gulf-shores-beach-resort",
+      "name": "Embassy Suites by Hilton Gulf Shores Beach Resort",
+      "brand": "Embassy Suites by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/gufbees-embassy-suites-gulf-shores-beach-resort",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Embassy+Suites+by+Hilton+Gulf+Shores+Beach+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:01.721Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "embassy-suites-by-hilton-myrtle-beach-oceanfront-resort",
+      "name": "Embassy Suites by Hilton Myrtle Beach Oceanfront Resort",
+      "brand": "Embassy Suites by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/myreses-embassy-suites-myrtle-beach-oceanfront-resort",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Embassy+Suites+by+Hilton+Myrtle+Beach+Oceanfront+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:03.608Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "embassy-suites-by-hilton-orlando-lake-buena-vista-resort",
+      "name": "Embassy Suites by Hilton Orlando Lake Buena Vista Resort",
+      "brand": "Embassy Suites by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/mcowdes-embassy-suites-orlando-lake-buena-vista-resort",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Embassy+Suites+by+Hilton+Orlando+Lake+Buena+Vista+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:05.989Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "embassy-suites-by-hilton-orlando-sunset-walk",
+      "name": "Embassy Suites by Hilton Orlando Sunset Walk",
+      "brand": "Embassy Suites by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/mcostes-embassy-suites-orlando-sunset-walk",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Embassy+Suites+by+Hilton+Orlando+Sunset+Walk&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:08.408Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "embassy-suites-by-hilton-panama-city-beach-resort",
+      "name": "Embassy Suites by Hilton Panama City Beach Resort",
+      "brand": "Embassy Suites by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/ecpppes-embassy-suites-panama-city-beach-resort",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Embassy+Suites+by+Hilton+Panama+City+Beach+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:10.321Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "embassy-suites-by-hilton-scottsdale-resort",
+      "name": "Embassy Suites by Hilton Scottsdale Resort",
+      "brand": "Embassy Suites by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/scteses-embassy-suites-scottsdale-resort",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Embassy+Suites+by+Hilton+Scottsdale+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:12.239Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "embassy-suites-by-hilton-virginia-beach-oceanfront-resort",
+      "name": "Embassy Suites by Hilton Virginia Beach Oceanfront Resort",
+      "brand": "Embassy Suites by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/orfanes-embassy-suites-virginia-beach-oceanfront-resort",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Embassy+Suites+by+Hilton+Virginia+Beach+Oceanfront+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:13.991Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "embassy-suites-by-hilton-waikiki-beach-walk",
+      "name": "Embassy Suites by Hilton Waikiki Beach Walk",
+      "brand": "Embassy Suites by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/hnleses-embassy-suites-waikiki-beach-walk",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Embassy+Suites+by+Hilton+Waikiki+Beach+Walk&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:16.346Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "embassy-suites-st-augustine-beach-oceanfront-resort",
+      "name": "Embassy Suites St Augustine Beach Oceanfront Resort",
+      "brand": "Embassy Suites by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/ustboes-embassy-suites-st-augustine-beach-oceanfront-resort",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Embassy+Suites+St+Augustine+Beach+Oceanfront+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:18.757Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "faro-blanco-resort-and-yacht-club-marathon-curio-by-hilton",
+      "name": "Faro Blanco Resort & Yacht Club Marathon, Curio by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/mthfbqq-faro-blanco-resort-and-yacht-club-marathon",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Faro+Blanco+Resort+%26+Yacht+Club+Marathon%2C+Curio+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:21.234Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "fuwairit-kite-beach-tapestry-collection-by-hilton",
+      "name": "Fuwairit Kite Beach, Tapestry Collection by Hilton",
+      "brand": "Tapestry Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/dohkbup-fuwairit-kite-beach",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Fuwairit+Kite+Beach%2C+Tapestry+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:23.634Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "gale-south-beach-curio-collection-by-hilton",
+      "name": "Gale South Beach, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/miagsqq-gale-south-beach",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Gale+South+Beach%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:25.417Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "grand-hotel-des-sablettes-plage-curio-collection-by-hilton",
+      "name": "Grand Hotel des Sablettes Plage, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/tlnspqq-grand-hotel-des-sablettes-plage",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Grand+Hotel+des+Sablettes+Plage%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:26.981Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "grand-naniloa-hotel-hilo-a-doubletree-by-hilton",
+      "name": "Grand Naniloa Hotel Hilo - a DoubleTree by Hilton",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/itohndt-grand-naniloa-hotel-hilo/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Grand+Naniloa+Hotel+Hilo+-+a+DoubleTree+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:29.369Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "grand-wailea-a-waldorf-astoria-resort",
+      "name": "Grand Wailea, A Waldorf Astoria Resort",
+      "brand": "Waldorf Astoria Hotels & Resorts",
+      "hiltonUrl": "https://www.grandwailea.com/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Grand+Wailea%2C+A+Waldorf+Astoria+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:31.683Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hampton-by-hilton-grand-cayman-seven-mile-beach",
+      "name": "Hampton by Hilton Grand Cayman Seven Mile Beach",
+      "brand": "Hampton by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/gcmgchx-hampton-grand-cayman-seven-mile-beach/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hampton+by+Hilton+Grand+Cayman+Seven+Mile+Beach&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:33.677Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hampton-by-hilton-marjan-island",
+      "name": "Hampton by Hilton Marjan Island",
+      "brand": "Hampton by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/rktmahx-hampton-marjan-island/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hampton+by+Hilton+Marjan+Island&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:35.269Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "harbor-club-st-lucia-curio-collection-by-hilton",
+      "name": "Harbor Club St. Lucia, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sluhcqq-harbor-club-st-lucia",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Harbor+Club+St.+Lucia%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:37.743Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "highline-vail-a-doubletree-by-hilton",
+      "name": "Highline Vail - a DoubleTree by Hilton",
+      "brand": "DoubleTree by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/egevcdt-highline-vail/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Highline+Vail+-+a+DoubleTree+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:39.571Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "higueron-hotel-malaga-curio-collection-by-hilton",
+      "name": "Higueron Hotel Malaga, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/agprhqq-higueron-hotel-malaga/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Higueron+Hotel+Malaga%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:41.455Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-abu-dhabi-yas-island",
+      "name": "Hilton Abu Dhabi Yas Island",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/auhyihi-hilton-abu-dhabi-yas-island/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Abu+Dhabi+Yas+Island&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:43.858Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-alexandria-corniche",
+      "name": "Hilton Alexandria Corniche",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/alyachi-hilton-alexandria-corniche/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Alexandria+Corniche&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:45.855Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-alexandria-king-s-ranch",
+      "name": "Hilton Alexandria King's Ranch",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/alykrhi-hilton-alexandria-kings-ranch/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Alexandria+King%27s+Ranch&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:48.413Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-anatole",
+      "name": "Hilton Anatole",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/dfwanhh-hilton-anatole/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Anatole&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:50.760Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-aruba-caribbean-resort-and-casino",
+      "name": "Hilton Aruba Caribbean Resort & Casino",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/auahhhh-hilton-aruba-caribbean-resort-and-casino/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Aruba+Caribbean+Resort+%26+Casino&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:52.745Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-bali-resort",
+      "name": "Hilton Bali Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/dpsbahi-hilton-bali-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Bali+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:54.974Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-barbados-resort",
+      "name": "Hilton Barbados Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/bgihihh-hilton-barbados-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Barbados+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:57.127Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-beachfront-resort-and-spa-hilton-head-island",
+      "name": "Hilton Beachfront Resort and Spa Hilton Head Island",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/hhhrshh-hilton-beachfront-resort-and-spa-hilton-head-island/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Beachfront+Resort+and+Spa+Hilton+Head+Island&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:08:59.371Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-bentley-miami-south-beach",
+      "name": "Hilton Bentley Miami/South Beach",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/miabmhf-hilton-bentley-miami-south-beach/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Bentley+Miami%2FSouth+Beach&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:01.931Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-cabana-miami-beach-resort",
+      "name": "Hilton Cabana Miami Beach Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/miambhf-hilton-cabana-miami-beach-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Cabana+Miami+Beach+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:03.922Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-cabo-verde-sal-resort",
+      "name": "Hilton Cabo Verde Sal Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sidcvhi-hilton-cabo-verde-sal-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Cabo+Verde+Sal+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:05.620Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-cancun-mar-caribe-all-inclusive-resort",
+      "name": "Hilton Cancun Mar Caribe All-Inclusive Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/cunmchh-hilton-cancun-mar-caribe-all-inclusive-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Cancun+Mar+Caribe+All-Inclusive+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:07.564Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-cancun-an-all-inclusive-resort",
+      "name": "Hilton Cancun, an All-Inclusive Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/cunqrhh-hilton-cancun/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Cancun%2C+an+All-Inclusive+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:09.422Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-cartagena-hotel",
+      "name": "Hilton Cartagena Hotel",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/ctghihh-hilton-cartagena-hotel/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Cartagena+Hotel&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:11.354Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-chicago-oak-brook-hills-resort-and-conference-center",
+      "name": "Hilton Chicago/Oak Brook Hills Resort & Conference Center",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/chibhhh-hilton-chicago-oak-brook-hills-resort-and-conference-center/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Chicago%2FOak+Brook+Hills+Resort+%26+Conference+Center&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:13.913Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-clark-sun-valley-resort",
+      "name": "Hilton Clark Sun Valley Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/crkpphi-hilton-clark-sun-valley-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Clark+Sun+Valley+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:15.986Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-clearwater-beach-resort-and-spa",
+      "name": "Hilton Clearwater Beach Resort & Spa",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/piecbhf-hilton-clearwater-beach-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Clearwater+Beach+Resort+%26+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:18.315Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-club-the-beach-resort-sesoko",
+      "name": "Hilton Club The Beach Resort Sesoko",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/okasogv-hilton-club-the-beach-resort-sesoko",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Club+The+Beach+Resort+Sesoko&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:19.953Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-dalaman-sarigerme-resort-and-spa",
+      "name": "Hilton Dalaman Sarigerme Resort & Spa",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/dlmhrhi-hilton-dalaman-sarigerme-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Dalaman+Sarigerme+Resort+%26+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:21.697Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-dali-resort-and-spa",
+      "name": "Hilton Dali Resort & Spa",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/dlugthi-hilton-dali-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Dali+Resort+%26+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:23.336Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-dalian-golden-pebble-beach-resort",
+      "name": "Hilton Dalian Golden Pebble Beach Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/dlugthi-hilton-dali-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Dalian+Golden+Pebble+Beach+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:25.074Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-dallas-rockwall-lakefront",
+      "name": "Hilton Dallas/Rockwall Lakefront",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/dalrwhf-hilton-dallas-rockwall-lakefront/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Dallas%2FRockwall+Lakefront&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:27.297Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-daytona-beach-oceanfront-resort",
+      "name": "Hilton Daytona Beach Oceanfront Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/dabdhhf-hilton-daytona-beach-oceanfront-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Daytona+Beach+Oceanfront+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:29.241Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-dead-sea-resort-and-spa",
+      "name": "Hilton Dead Sea Resort & Spa",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/ammdshi-hilton-dead-sea-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Dead+Sea+Resort+%26+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:31.833Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-doha",
+      "name": "Hilton Doha",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/dohhdhi-hilton-doha/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Doha&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:34.187Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-doha-the-pearl",
+      "name": "Hilton Doha The Pearl",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/dohprhi-hilton-doha-the-pearl/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Doha+The+Pearl&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:35.827Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-dubai-jumeirah",
+      "name": "Hilton Dubai Jumeirah",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/dxbjbhi-hilton-dubai-jumeirah/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Dubai+Jumeirah&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:38.283Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-dubai-palm-jumeirah",
+      "name": "Hilton Dubai Palm Jumeirah",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/dxbpjhi-hilton-dubai-palm-jumeirah/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Dubai+Palm+Jumeirah&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:40.639Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-dubai-the-walk",
+      "name": "Hilton Dubai The Walk",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/dxbbrhi-hilton-dubai-the-walk/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Dubai+The+Walk&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:42.795Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-fiji-beach-resort-and-spa",
+      "name": "Hilton Fiji Beach Resort and Spa",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/nanhihi-hilton-fiji-beach-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Fiji+Beach+Resort+and+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:45.272Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-fort-lauderdale-marina",
+      "name": "Hilton Fort Lauderdale Marina",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/fllgrhh-hilton-fort-lauderdale-marina/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Fort+Lauderdale+Marina&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:47.003Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-frankfurt-gravenbruch",
+      "name": "Hilton Frankfurt Gravenbruch",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/frahghi-hilton-frankfurt-gravenbruch/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Frankfurt+Gravenbruch&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:49.276Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-galveston-island-resort",
+      "name": "Hilton Galveston Island Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/glsgihf-hilton-galveston-island-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Galveston+Island+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:50.958Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-goa-resort",
+      "name": "Hilton Goa Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/goishhi-hilton-goa-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Goa+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:52.708Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-anderson-ocean-myrtle-beach",
+      "name": "Hilton Grand Vacations Club Anderson Ocean Myrtle Beach",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/myraogv-hilton-grand-vacations-club-anderson-ocean-myrtle-beach/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+Anderson+Ocean+Myrtle+Beach&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:55.181Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-at-hilton-hawaiian-village",
+      "name": "Hilton Grand Vacations Club at Hilton Hawaiian Village",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/hnlhwgv-hilton-grand-vacations-club-at-hilton-hawaiian-village/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+at+Hilton+Hawaiian+Village&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:56.823Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-blue-mountain-canada",
+      "name": "Hilton Grand Vacations Club Blue Mountain Canada",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/yyzblgv-hilton-grand-vacations-club-blue-mountain-canada",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+Blue+Mountain+Canada&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:09:58.457Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-elara-center-strip-las-vegas",
+      "name": "Hilton Grand Vacations Club Elara Center Strip Las Vegas",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/lascsgv-hilton-grand-vacations-club-elara-center-strip-las-vegas/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+Elara+Center+Strip+Las+Vegas&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:00.710Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-flamingo-las-vegas",
+      "name": "Hilton Grand Vacations Club Flamingo Las Vegas",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/lasflgv-hilton-grand-vacations-club-flamingo-las-vegas/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+Flamingo+Las+Vegas&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:02.246Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-grand-waikikian-honolulu",
+      "name": "Hilton Grand Vacations Club Grand Waikikian Honolulu",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/hnlgwgv-hilton-grand-vacations-club-grand-waikikian-honolulu/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+Grand+Waikikian+Honolulu&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:04.705Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-hokulani-waikiki-honolulu",
+      "name": "Hilton Grand Vacations Club Hokulani Waikiki Honolulu",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/hnlwbgv-hilton-grand-vacations-club-hokulani-waikiki-honolulu/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+Hokulani+Waikiki+Honolulu&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:06.554Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-in-sandestin-golf-and-beach-resort",
+      "name": "Hilton Grand Vacations Club in Sandestin Golf & Beach Resort",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/vpssagv-hilton-grand-vacations-club-in-sandestin-golf-and-beach-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+in+Sandestin+Golf+%26+Beach+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:08.595Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-kings-land-waikoloa",
+      "name": "Hilton Grand Vacations Club Kings’ Land Waikoloa",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/koaklgv-hilton-grand-vacations-club-kings-land-waikoloa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+Kings%E2%80%99+Land+Waikoloa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:11.166Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-kohala-suites-waikoloa",
+      "name": "Hilton Grand Vacations Club Kohala Suites Waikoloa",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/koawbgv-hilton-grand-vacations-club-kohala-suites-waikoloa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+Kohala+Suites+Waikoloa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:12.897Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-la-pacifica-los-cabos",
+      "name": "Hilton Grand Vacations Club La Pacifica Los Cabos",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sjdgvgv-hilton-grand-vacations-club-la-pacifica-los-cabos/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+La+Pacifica+Los+Cabos&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:14.803Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-las-palmeras-orlando",
+      "name": "Hilton Grand Vacations Club Las Palmeras Orlando",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/mcoubgv-hilton-grand-vacations-club-las-palmeras-orlando/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+Las+Palmeras+Orlando&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:17.093Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-marbrisa-carlsbad",
+      "name": "Hilton Grand Vacations Club MarBrisa Carlsbad",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sanmbgv-hilton-grand-vacations-club-marbrisa-carlsbad/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+MarBrisa+Carlsbad&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:18.912Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-maui-bay-villas",
+      "name": "Hilton Grand Vacations Club Maui Bay Villas",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/oggmbgv-hilton-grand-vacations-club-maui-bay-villas",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+Maui+Bay+Villas&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:21.292Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-ocean-22-myrtle-beach",
+      "name": "Hilton Grand Vacations Club Ocean 22 Myrtle Beach",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/myrttgv-hilton-grand-vacations-club-ocean-22-myrtle-beach/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+Ocean+22+Myrtle+Beach&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:23.430Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-ocean-enclave-myrtle-beach",
+      "name": "Hilton Grand Vacations Club Ocean Enclave Myrtle Beach",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/myroegv-hilton-grand-vacations-club-ocean-enclave-myrtle-beach/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+Ocean+Enclave+Myrtle+Beach&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:25.903Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-ocean-oak-resort-hilton-head",
+      "name": "Hilton Grand Vacations Club Ocean Oak Resort Hilton Head",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/hhhgvgv-hilton-grand-vacations-club-ocean-oak-resort-hilton-head/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+Ocean+Oak+Resort+Hilton+Head&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:28.054Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-ocean-tower-waikoloa-village",
+      "name": "Hilton Grand Vacations Club Ocean Tower Waikoloa Village",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/koaotgv-hilton-grand-vacations-club-ocean-tower-waikoloa-village/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+Ocean+Tower+Waikoloa+Village&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:30.248Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-on-the-las-vegas-strip",
+      "name": "Hilton Grand Vacations Club on the Las Vegas Strip",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/lasvsgv-hilton-grand-vacations-club-on-the-las-vegas-strip/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+on+the+Las+Vegas+Strip&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:32.361Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-paradise-las-vegas",
+      "name": "Hilton Grand Vacations Club Paradise Las Vegas",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/laslvgv-hilton-grand-vacations-club-paradise-las-vegas/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+Paradise+Las+Vegas&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:34.193Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-parc-soleil-orlando",
+      "name": "Hilton Grand Vacations Club Parc Soleil Orlando",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/mcomdgv-hilton-grand-vacations-club-parc-soleil-orlando/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+Parc+Soleil+Orlando&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:36.263Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-seaworld-orlando",
+      "name": "Hilton Grand Vacations Club SeaWorld® Orlando",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/orlswgv-hilton-grand-vacations-club-seaworld-orlando/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+SeaWorld%C2%AE+Orlando&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:37.804Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-sunrise-lodge-park-city",
+      "name": "Hilton Grand Vacations Club Sunrise Lodge Park City",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/slcsegv-hilton-grand-vacations-club-sunrise-lodge-park-city/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+Sunrise+Lodge+Park+City&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:39.420Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-the-crane-barbados",
+      "name": "Hilton Grand Vacations Club The Crane Barbados",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/bgicrgv-hilton-grand-vacations-club-the-crane-barbados/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+The+Crane+Barbados&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:41.261Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-the-grand-islander-waikiki-honolulu",
+      "name": "Hilton Grand Vacations Club The Grand Islander Waikiki Honolulu",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/hnldrgv-hilton-grand-vacations-club-the-grand-islander-waikiki-honolulu",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+The+Grand+Islander+Waikiki+Honolulu&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:43.705Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-tuscany-village-orlando",
+      "name": "Hilton Grand Vacations Club Tuscany Village Orlando",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/orlingv-hilton-grand-vacations-club-tuscany-village-orlando",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+Tuscany+Village+Orlando&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:45.972Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-valdoro-mountain-lodge-breckenridge",
+      "name": "Hilton Grand Vacations Club Valdoro Mountain Lodge Breckenridge",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/qkbvagv-hilton-grand-vacations-club-valdoro-mountain-lodge-breckenridge",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+Valdoro+Mountain+Lodge+Breckenridge&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:48.437Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-grand-vacations-club-whistler",
+      "name": "Hilton Grand Vacations Club Whistler",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/ywswhgv-hilton-grand-vacations-club-whistler",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Grand+Vacations+Club+Whistler&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:50.554Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-guam-resort-and-spa",
+      "name": "Hilton Guam Resort & Spa",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/gumhitw-hilton-guam-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Guam+Resort+%26+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:52.910Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-gyeongju",
+      "name": "Hilton Gyeongju",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/kyohitw-hilton-gyeongju/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Gyeongju&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:55.287Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-hangzhou-qiandao-lake-resort",
+      "name": "Hilton Hangzhou Qiandao Lake Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/hghlrhi-hilton-hangzhou-qiandao-lake-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Hangzhou+Qiandao+Lake+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:57.414Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-hawaiian-village-waikiki-beach-resort",
+      "name": "Hilton Hawaiian Village Waikiki Beach Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/hnlhvhh-hilton-hawaiian-village-waikiki-beach-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Hawaiian+Village+Waikiki+Beach+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:10:59.694Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-hotel-tahiti",
+      "name": "Hilton Hotel Tahiti",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/ppthihh-hilton-hotel-tahiti/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Hotel+Tahiti&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:02.049Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-hua-hin-resort-and-spa",
+      "name": "Hilton Hua Hin Resort & Spa",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/hhqhihi-hilton-hua-hin-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Hua+Hin+Resort+%26+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:04.363Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-huizhou-longmen-resort",
+      "name": "Hilton Huizhou Longmen Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/huzlhhi-hilton-huizhou-longmen-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Huizhou+Longmen+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:06.254Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-hurghada-plaza",
+      "name": "Hilton Hurghada Plaza",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/hrghitw-hilton-hurghada-plaza/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Hurghada+Plaza&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:08.603Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-la-jolla-torrey-pines",
+      "name": "Hilton La Jolla Torrey Pines",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/santphh-hilton-la-jolla-torrey-pines/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+La+Jolla+Torrey+Pines&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:10.958Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-lake-las-vegas-resort-and-spa",
+      "name": "Hilton Lake Las Vegas Resort & Spa",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/laslkhf-hilton-lake-las-vegas-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Lake+Las+Vegas+Resort+%26+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:12.555Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-los-cabos-beach-and-golf-resort",
+      "name": "Hilton Los Cabos Beach & Golf Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sjdlchh-hilton-los-cabos-beach-and-golf-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Los+Cabos+Beach+%26+Golf+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:14.936Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-luxor-resort-and-spa",
+      "name": "Hilton Luxor Resort & Spa",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/luxhitw-hilton-luxor-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Luxor+Resort+%26+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:16.871Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-maldives-amingiri-resort-and-spa",
+      "name": "Hilton Maldives Amingiri Resort & Spa",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/mleaihi-hilton-maldives-amingiri-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Maldives+Amingiri+Resort+%26+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:19.012Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-mallorca-galatzo",
+      "name": "Hilton Mallorca Galatzo",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/pmicchi-hilton-mallorca-galatzo/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Mallorca+Galatzo&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:20.936Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-malta",
+      "name": "Hilton Malta",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/mlahitw-hilton-malta/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Malta&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:23.266Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-marco-island-beach-resort",
+      "name": "Hilton Marco Island Beach Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/mrkmhhf-hilton-marco-island-beach-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Marco+Island+Beach+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:25.293Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-marsa-alam-nubian-resort",
+      "name": "Hilton Marsa Alam Nubian Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/rmfhihi-hilton-marsa-alam-nubian-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Marsa+Alam+Nubian+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:27.341Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-mauritius-resort-and-spa",
+      "name": "Hilton Mauritius Resort & Spa",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/mruhihi-hilton-mauritius-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Mauritius+Resort+%26+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:29.081Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-moorea-lagoon-resort-and-spa",
+      "name": "Hilton Moorea Lagoon Resort and Spa",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/pptmlhh-hilton-moorea-lagoon-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Moorea+Lagoon+Resort+and+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:31.338Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-myrtle-beach-resort",
+      "name": "Hilton Myrtle Beach Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/myrbhhh-hilton-myrtle-beach-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Myrtle+Beach+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:33.895Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-nanjing-niushoushan",
+      "name": "Hilton Nanjing Niushoushan",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/nkgnshi-hilton-nanjing-niushoushan/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Nanjing+Niushoushan&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:36.011Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-ningbo-dongqian-lake",
+      "name": "Hilton Ningbo Dongqian Lake",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/ngbqahi-hilton-ningbo-dongqian-lake/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Ningbo+Dongqian+Lake&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:38.286Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-niseko-village",
+      "name": "Hilton Niseko Village",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/ctsnvhi-hilton-niseko-village/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Niseko+Village&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:40.545Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-ocean-city-oceanfront-suites",
+      "name": "Hilton Ocean City Oceanfront Suites",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sbyofhf-hilton-ocean-city-oceanfront-suites/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Ocean+City+Oceanfront+Suites&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:43.010Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-odawara-resort-and-spa",
+      "name": "Hilton Odawara Resort & Spa",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/tyoodhi-hilton-odawara-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Odawara+Resort+%26+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:44.752Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-okinawa-chatan-resort",
+      "name": "Hilton Okinawa Chatan Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/okaochi-hilton-okinawa-chatan-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Okinawa+Chatan+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:46.902Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-okinawa-miyako-island-resort",
+      "name": "Hilton Okinawa Miyako Island Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/okamihi-hilton-okinawa-miyako-island-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Okinawa+Miyako+Island+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:48.809Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-okinawa-sesoko-resort",
+      "name": "Hilton Okinawa Sesoko Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/okasehi-hilton-okinawa-sesoko-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Okinawa+Sesoko+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:50.428Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-orlando",
+      "name": "Hilton Orlando",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/orlochh-hilton-orlando/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Orlando&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:52.878Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-orlando-buena-vista-palace-disney-springs-area",
+      "name": "Hilton Orlando Buena Vista Palace Disney Springs Area",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/mcobuhh-hilton-orlando-buena-vista-palace/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Orlando+Buena+Vista+Palace+Disney+Springs+Area&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:54.785Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-orlando-lake-buena-vista-disney-springs-area",
+      "name": "Hilton Orlando Lake Buena Vista - Disney Springs Area",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/orldwhh-hilton-orlando-lake-buena-vista/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Orlando+Lake+Buena+Vista+-+Disney+Springs+Area&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:57.171Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-palm-springs",
+      "name": "Hilton Palm Springs",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/psppshf-hilton-palm-springs/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Palm+Springs&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:11:59.245Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-pattaya",
+      "name": "Hilton Pattaya",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/bkkhphi-hilton-pattaya/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Pattaya&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:01.440Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-pensacola-beach",
+      "name": "Hilton Pensacola Beach",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/pnspehf-hilton-pensacola-beach/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Pensacola+Beach&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:03.797Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-phoenix-resort-at-the-peak",
+      "name": "Hilton Phoenix Resort at the Peak",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/phxsppr-hilton-phoenix-resort-at-the-peak/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Phoenix+Resort+at+the+Peak&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:05.549Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-phoenix-tapatio-cliffs-resort",
+      "name": "Hilton Phoenix Tapatio Cliffs Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/phxtcpr-hilton-phoenix-tapatio-cliffs-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Phoenix+Tapatio+Cliffs+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:07.835Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-ponce-golf-and-casino-resort",
+      "name": "Hilton Ponce Golf & Casino Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/pnchihh-hilton-ponce-golf-and-casino-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Ponce+Golf+%26+Casino+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:09.735Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-pyramids-golf",
+      "name": "Hilton Pyramids Golf",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/caipghi-hilton-pyramids-golf/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Pyramids+Golf&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:11.717Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-queenstown-resort-and-spa",
+      "name": "Hilton Queenstown Resort & Spa",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/zqnhqhi-hilton-queenstown-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Queenstown+Resort+%26+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:14.138Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-rijeka-costabella-beach-resort-and-spa",
+      "name": "Hilton Rijeka Costabella Beach Resort & Spa",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/rjkochi-hilton-rijeka-costabella-beach-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Rijeka+Costabella+Beach+Resort+%26+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:15.879Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-salalah-resort",
+      "name": "Hilton Salalah Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sllhihi-hilton-salalah-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Salalah+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:18.338Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-salwa-beach-resort-and-villas",
+      "name": "Hilton Salwa Beach Resort & Villas",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/dohsbhi-hilton-salwa-beach-resort-villas/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Salwa+Beach+Resort+%26+Villas&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:20.077Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-san-diego-del-mar",
+      "name": "Hilton San Diego/Del Mar",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sandmhf-hilton-san-diego-del-mar/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+San+Diego%2FDel+Mar&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:22.012Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-sandestin-beach-golf-resort-and-spa",
+      "name": "Hilton Sandestin Beach Golf Resort & Spa",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/deshihf-hilton-sandestin-beach-golf-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Sandestin+Beach+Golf+Resort+%26+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:24.174Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-sanqingshan-resort",
+      "name": "Hilton Sanqingshan Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sqdhihi-hilton-sanqingshan-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Sanqingshan+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:25.916Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-santa-barbara-beachfront-resort",
+      "name": "Hilton Santa Barbara Beachfront Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sbafphh-hilton-santa-barbara-beachfront-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Santa+Barbara+Beachfront+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:27.854Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-santa-fe-buffalo-thunder",
+      "name": "Hilton Santa Fe Buffalo Thunder",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sfecghh-hilton-santa-fe-buffalo-thunder/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Santa+Fe+Buffalo+Thunder&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:30.114Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-santa-marta",
+      "name": "Hilton Santa Marta",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/smrcnhh-hilton-santa-marta/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Santa+Marta&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:31.854Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-sanya-yalong-bay-resort-and-spa",
+      "name": "Hilton Sanya Yalong Bay Resort & Spa",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/syxhihi-hilton-sanya-yalong-bay-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Sanya+Yalong+Bay+Resort+%26+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:34.292Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-scottsdale-resort-and-villas",
+      "name": "Hilton Scottsdale Resort & Villas",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sctshhf-hilton-scottsdale-resort-and-villas/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Scottsdale+Resort+%26+Villas&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:36.816Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-sedona-resort-at-bell-rock",
+      "name": "Hilton Sedona Resort at Bell Rock",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sdxsehh-hilton-sedona-resort-at-bell-rock/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Sedona+Resort+at+Bell+Rock&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:39.123Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-seychelles-northolme-resort-and-spa",
+      "name": "Hilton Seychelles Northolme Resort & Spa",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sezhihi-hilton-seychelles-northolme-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Seychelles+Northolme+Resort+%26+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:41.379Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-sorrento-palace",
+      "name": "Hilton Sorrento Palace",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/rrohihi-hilton-sorrento-palace/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Sorrento+Palace&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:43.424Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-swinoujscie-resort-and-spa",
+      "name": "Hilton Swinoujscie Resort & Spa",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/szzhihi-hilton-swinoujscie-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Swinoujscie+Resort+%26+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:45.437Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-tangier-al-houara-resort-and-spa",
+      "name": "Hilton Tangier Al Houara Resort & Spa",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/tngahhi-hilton-tangier-al-houara-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Tangier+Al+Houara+Resort+%26+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:47.944Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-tokyo-bay",
+      "name": "Hilton Tokyo Bay",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/tyotbtw-hilton-tokyo-bay/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Tokyo+Bay&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:50.183Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-tulum-riviera-maya-all-inclusive-resort",
+      "name": "Hilton Tulum Riviera Maya All-Inclusive Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/cunhihh-hilton-tulum-riviera-maya-all-inclusive-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Tulum+Riviera+Maya+All-Inclusive+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:51.853Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-aqua-sol-orlando-west",
+      "name": "Hilton Vacation Club Aqua Sol Orlando West",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/mcotkgv-hilton-vacation-club-aqua-sol-orlando",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+Aqua+Sol+Orlando+West&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:53.880Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-cabo-azul-los-cabos",
+      "name": "Hilton Vacation Club Cabo Azul Los Cabos",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sjdcagv-hilton-vacation-club-cabo-azul-los-cabos",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+Cabo+Azul+Los+Cabos&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:56.274Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-cancun-resort-las-vegas",
+      "name": "Hilton Vacation Club Cancun Resort Las Vegas",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/lascngv-hilton-vacation-club-cancun-resort-las-vegas",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+Cancun+Resort+Las+Vegas&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:58.255Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-cypress-pointe-orlando",
+      "name": "Hilton Vacation Club Cypress Pointe Orlando",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/mcotrgv-hilton-vacation-club-cypress-pointe-orlando",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+Cypress+Pointe+Orlando&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:12:59.822Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-daytona-beach-regency",
+      "name": "Hilton Vacation Club Daytona Beach Regency",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/dabdbgv-hilton-vacation-club-daytona-beach-regency",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+Daytona+Beach+Regency&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:01.862Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-flamingo-beach-st-maarten",
+      "name": "Hilton Vacation Club Flamingo Beach St. Maarten",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sxmflgv-hilton-vacation-club-flamingo-beach-st-maarten",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+Flamingo+Beach+St.+Maarten&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:04.156Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-grand-beach-orlando",
+      "name": "Hilton Vacation Club Grand Beach Orlando",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/mcobegv-hilton-vacation-club-grand-beach-orlando",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+Grand+Beach+Orlando&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:05.764Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-greensprings-williamsburg",
+      "name": "Hilton Vacation Club Greensprings Williamsburg",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/phflugv-hilton-vacation-club-greensprings-williamsburg",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+Greensprings+Williamsburg&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:07.591Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-ka-anapali-beach-maui",
+      "name": "Hilton Vacation Club Ka'anapali Beach Maui",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/jhmkagv-hilton-vacation-club-kaanapali-beach-maui",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+Ka%27anapali+Beach+Maui&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:10.055Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-lake-tahoe-resort-south",
+      "name": "Hilton Vacation Club Lake Tahoe Resort South",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/tvlvagv-hilton-vacation-club-lake-tahoe-resort",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+Lake+Tahoe+Resort+South&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:12.583Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-los-abrigados-resort-and-spa-sedona",
+      "name": "Hilton Vacation Club Los Abrigados Resort & Spa Sedona",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sdxplgv-hilton-vacation-club-los-abrigados-sedona",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+Los+Abrigados+Resort+%26+Spa+Sedona&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:14.761Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-mystic-dunes-orlando",
+      "name": "Hilton Vacation Club Mystic Dunes Orlando",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/ismmygv-hilton-vacation-club-mystic-dunes-orlando",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+Mystic+Dunes+Orlando&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:17.266Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-ocean-beach-club-virginia-beach",
+      "name": "Hilton Vacation Club Ocean Beach Club Virginia Beach",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/orfavgv-hilton-vacation-ocean-beach-club",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+Ocean+Beach+Club+Virginia+Beach&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:19.879Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-oceanaire-virginia-beach",
+      "name": "Hilton Vacation Club Oceanaire Virginia Beach",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/orfaigv-hilton-vacation-club-oceanaire-virginia-beach",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+Oceanaire+Virginia+Beach&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:22.270Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-palm-canyon-palm-springs",
+      "name": "Hilton Vacation Club Palm Canyon Palm Springs",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/pspspgv-hilton-vacation-club-palm-canyon-palm-springs",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+Palm+Canyon+Palm+Springs&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:24.693Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-polynesian-isles-kissimmee",
+      "name": "Hilton Vacation Club Polynesian Isles Kissimmee",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/mcopygv-hilton-vacation-club-polynesian-isles-kissimmee",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+Polynesian+Isles+Kissimmee&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:27.048Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-rancho-manana-phoenix-cave-creek",
+      "name": "Hilton Vacation Club Rancho Manana Phoenix/Cave Creek",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/phxragv-hilton-vacation-club-rancho-manana",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+Rancho+Manana+Phoenix%2FCave+Creek&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:28.709Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-ridge-on-sedona",
+      "name": "Hilton Vacation Club Ridge on Sedona",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/flgrigv-hilton-vacation-club-ridge-on-sedona",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+Ridge+on+Sedona&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:30.753Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-riviera-beach-and-shores",
+      "name": "Hilton Vacation Club Riviera Beach & Shores",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/snarbgv-hilton-vacation-club-riviera-beach-and-shores",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+Riviera+Beach+%26+Shores&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:32.571Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-royal-palm-st-maarten",
+      "name": "Hilton Vacation Club Royal Palm St. Maarten",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sxmrogv-hilton-vacation-club-royal-palm-st-maarten",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+Royal+Palm+St.+Maarten&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:35.008Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-scottsdale-links-resort",
+      "name": "Hilton Vacation Club Scottsdale Links Resort",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/phxregv-hilton-vacation-club-scottsdale-links-resort",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+Scottsdale+Links+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:37.380Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-scottsdale-villa-mirage",
+      "name": "Hilton Vacation Club Scottsdale Villa Mirage",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/phxmrgv-hilton-vacation-club-scottsdale-villa-mirage",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+Scottsdale+Villa+Mirage&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:39.770Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-sedona-summit",
+      "name": "Hilton Vacation Club Sedona Summit",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/flgsegv-hilton-vacation-club-sedona-summit",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+Sedona+Summit&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:42.307Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-the-cove-on-ormond-beach",
+      "name": "Hilton Vacation Club The Cove on Ormond Beach",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/dabcogv-hilton-vacation-club-the-cove-on-ormond-beach",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+The+Cove+on+Ormond+Beach&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:44.869Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-the-historic-powhatan-williamsburg",
+      "name": "Hilton Vacation Club The Historic Powhatan Williamsburg",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/phfpogv-hilton-vacation-club-the-historic-powhatan-williamsburg",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+The+Historic+Powhatan+Williamsburg&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:46.919Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vacation-club-the-modern-honolulu",
+      "name": "Hilton Vacation Club The Modern Honolulu",
+      "brand": "Hilton Grand Vacations Club",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/hnlmogv-hilton-vacation-club-the-modern-honolulu",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vacation+Club+The+Modern+Honolulu&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:48.655Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vallarta-riviera-all-inclusive-resort",
+      "name": "Hilton Vallarta Riviera All-Inclusive Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/pvrpahh-hilton-vallarta-riviera-all-inclusive-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vallarta+Riviera+All-Inclusive+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:51.013Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-vilamoura-as-cascatas-golf-resort-and-spa",
+      "name": "Hilton Vilamoura As Cascatas Golf Resort & Spa",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/faohihi-hilton-vilamoura-as-cascatas-golf-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Vilamoura+As+Cascatas+Golf+Resort+%26+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:52.853Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-virginia-beach-oceanfront",
+      "name": "Hilton Virginia Beach Oceanfront",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/orfvhhf-hilton-virginia-beach-oceanfront/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Virginia+Beach+Oceanfront&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:54.905Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-waikiki-beach",
+      "name": "Hilton Waikiki Beach",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/hnlwahf-hilton-waikiki-beach-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Waikiki+Beach&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:57.053Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-waikoloa-village",
+      "name": "Hilton Waikoloa Village",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/koahwhh-hilton-waikoloa-village/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Waikoloa+Village&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:13:58.793Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-whistler-resort-and-spa",
+      "name": "Hilton Whistler Resort & Spa",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/ywsvrhf-hilton-whistler-resort-and-spa/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Whistler+Resort+%26+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:00.922Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-yala-resort",
+      "name": "Hilton Yala Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/kdwyahi-hilton-yala-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Yala+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:02.889Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hilton-yuxi-fuxian-lake",
+      "name": "Hilton Yuxi Fuxian Lake",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/nkgyfhi-hilton-yuxi-fuxian-lake/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hilton+Yuxi+Fuxian+Lake&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:04.836Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "homewood-suites-by-hilton-mont-tremblant-resort",
+      "name": "Homewood Suites by Hilton Mont-Tremblant Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/yqbmthw-homewood-suites-mont-tremblant-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Homewood+Suites+by+Hilton+Mont-Tremblant+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:07.291Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hotel-alpenrock-breckenridge-curio-collection-by-hilton",
+      "name": "Hotel Alpenrock Breckenridge, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/qkbbrqq-alpenrock-breckenridge",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hotel+Alpenrock+Breckenridge%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:08.931Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hotel-del-coronado-curio-collection-by-hilton",
+      "name": "Hotel del Coronado, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sanqqqq-hotel-del-coronado",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hotel+del+Coronado%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:11.020Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "hotel-maren-fort-lauderdale-beach-curio-collection-by-hilton",
+      "name": "Hotel Maren Fort Lauderdale Beach, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/fllucqq-hotel-maren-fort-lauderdale-beach",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Hotel+Maren+Fort+Lauderdale+Beach%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:13.026Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "il-picciolo-etna-golf-resort-and-spa-curio-collection-by-hilton",
+      "name": "Il Picciolo Etna Golf Resort & Spa, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/ctasiqq-il-piccolo-etna-golf-resort-and-spa",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Il+Picciolo+Etna+Golf+Resort+%26+Spa%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:15.074Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "indura-beach-and-golf-resort-curio-collection-by-hilton",
+      "name": "Indura Beach & Golf Resort Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/teaibqq-indura-beach-and-golf-resort",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Indura+Beach+%26+Golf+Resort+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:17.387Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "isla-brown-chania-resort-curio-collection-by-hilton",
+      "name": "Isla Brown Chania Resort, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/heribqq-isla-brown-resort-chania",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Isla+Brown+Chania+Resort%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:19.773Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "isla-brown-corinthia-resort-and-spa-curio-collection-by-hilton",
+      "name": "Isla Brown Corinthia Resort & Spa, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/athibqq-isla-brown-corinthia-resort-and-spa",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Isla+Brown+Corinthia+Resort+%26+Spa%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:21.836Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "ka-la-i-waikiki-beach-lxr-hotels-and-resorts",
+      "name": "Ka La'i Waikiki Beach, LXR Hotels & Resorts",
+      "brand": "LXR Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/hnlwiol-ka-lai-waikiki-beach/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Ka+La%27i+Waikiki+Beach%2C+LXR+Hotels+%26+Resorts&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:23.772Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "katara-hills-doha-lxr-hotels-and-resorts",
+      "name": "Katara Hills Doha, LXR Hotels & Resorts",
+      "brand": "LXR Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/dohqkol-katara-hills-doha/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Katara+Hills+Doha%2C+LXR+Hotels+%26+Resorts&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:25.519Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "keight-hotel-opatija-curio-collection-by-hilton",
+      "name": "Keight Hotel Opatija, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/zagopqq-keight-hotel-opatija",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Keight+Hotel+Opatija%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:27.773Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "koi-resort-saint-kitts-curio-collection-by-hilton",
+      "name": "Koi Resort Saint Kitts, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/skbkrqq-koi-resort-saint-kitts",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Koi+Resort+Saint+Kitts%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:29.924Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "la-festa-phu-quoc-curio-collection-by-hilton",
+      "name": "La Festa Phu Quoc, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/pqcpqqq-la-festa-phu-quoc",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=La+Festa+Phu+Quoc%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:31.870Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "la-quinta-resort-and-club-curio-collection-by-hilton",
+      "name": "La Quinta Resort & Club, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/psplqqq-la-quinta-resort-and-club",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=La+Quinta+Resort+%26+Club%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:33.706Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "las-vegas-hilton-at-resorts-world",
+      "name": "Las Vegas Hilton at Resorts World",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/rslvhvh-resorts-world-las-vegas/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Las+Vegas+Hilton+at+Resorts+World&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:36.021Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "le-hameau-des-pesquiers-ecolodge-curio-collection-by-hilton",
+      "name": "Le Hameau des Pesquiers Ecolodge, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/tlnleqq-le-hameau-des-pesquiers-ecolodge",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Le+Hameau+des+Pesquiers+Ecolodge%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:38.219Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "mangias-santa-teresa-sardinia-curio-collection-by-hilton",
+      "name": "Mangias Santa Teresa Sardinia, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/olbccqq-mangias-santa-teresa-sardinia",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Mangias+Santa+Teresa+Sardinia%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:40.444Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "mango-house-seychelles-lxr-hotels-and-resorts",
+      "name": "Mango House Seychelles, LXR Hotels & Resorts",
+      "brand": "LXR Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sezitol-mango-house-seychelles/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Mango+House+Seychelles%2C+LXR+Hotels+%26+Resorts&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:42.738Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "mangrove-beach-corendon-curacao-all-inclusive-resort-curio",
+      "name": "Mangrove Beach Corendon Curacao All-Inclusive Resort, Curio",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/curryqq-mangrove-beach-corendon-curacao-all-inclusive-resort",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Mangrove+Beach+Corendon+Curacao+All-Inclusive+Resort%2C+Curio&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:44.707Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "maysan-doha-lxr-hotels-and-resorts",
+      "name": "Maysan Doha, LXR Hotels & Resorts",
+      "brand": "LXR Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/dohpaol-maysan-doha/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Maysan+Doha%2C+LXR+Hotels+%26+Resorts&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:46.921Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "roku-kyoto-lxr-hotels-and-resorts",
+      "name": "ROKU KYOTO, LXR Hotels & Resorts",
+      "brand": "LXR Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/itmolol-roku-kyoto/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=ROKU+KYOTO%2C+LXR+Hotels+%26+Resorts&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:49.465Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "rome-cavalieri-a-waldorf-astoria-hotel",
+      "name": "Rome Cavalieri, A Waldorf Astoria Hotel",
+      "brand": "Waldorf Astoria Hotels & Resorts",
+      "hiltonUrl": "https://romecavalieri.com/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Rome+Cavalieri%2C+A+Waldorf+Astoria+Hotel&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:51.874Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "saii-lagoon-maldives-curio-collection-by-hilton",
+      "name": "SAii Lagoon Maldives, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/mlegsqq-saii-lagoon-maldives",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=SAii+Lagoon+Maldives%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:53.786Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "sea-breeze-santorini-beach-resort-curio-collection",
+      "name": "Sea Breeze Santorini Beach Resort, Curio Collection",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/jtrsbqq-sea-breeze-santorini-beach-resort",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Sea+Breeze+Santorini+Beach+Resort%2C+Curio+Collection&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:55.581Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "semeli-coast-mykonos-curio-collection-by-hilton",
+      "name": "Semeli Coast Mykonos, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/jmkmbqq-semeli-coast-mykonos",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Semeli+Coast+Mykonos%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:57.205Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "shore-house-at-the-del-lxr-hotels-and-resorts",
+      "name": "Shore House at The Del, LXR Hotels & Resorts",
+      "brand": "LXR Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sanrhol-shore-house-at-the-del/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Shore+House+at+The+Del%2C+LXR+Hotels+%26+Resorts&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:14:59.285Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "shore-house-at-the-del-lxr-resort",
+      "name": "Shore House at The Del, LXR Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sanrhol-shore-house-at-the-del",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Shore+House+at+The+Del%2C+LXR+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:01.468Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "signia-by-hilton-la-cantera-resort-and-spa",
+      "name": "Signia by Hilton La Cantera Resort & Spa",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/satcnsa-signia-la-cantera-resort-and-spa",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Signia+by+Hilton+La+Cantera+Resort+%26+Spa&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:03.101Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "signia-by-hilton-orlando-bonnet-creek",
+      "name": "Signia by Hilton Orlando Bonnet Creek",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/orlhhsa-signia-by-hilton-orlando-bonnet-creek",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Signia+by+Hilton+Orlando+Bonnet+Creek&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:05.581Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "skaneateles-fields-resort-and-spa-curio-collection-by-hilton",
+      "name": "Skaneateles Fields Resort & Spa, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/syrslqq-skaneateles-fields-resort-and-spa",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Skaneateles+Fields+Resort+%26+Spa%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:08.025Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "sulia-house-porto-rotondo-curio-collection-by-hilton",
+      "name": "Sulia House Porto Rotondo, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/olbprqq-sulia-house-porto-rotondo",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Sulia+House+Porto+Rotondo%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:10.327Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "surfers-paradise-hilton",
+      "name": "Surfers Paradise Hilton",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/oolhihi-hilton-surfers-paradise-hotel-and-residences/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Surfers+Paradise+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:12.419Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "susona-bodrum-lxr-hotels-and-resorts",
+      "name": "Susona Bodrum, LXR Hotels & Resorts",
+      "brand": "LXR Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/bjvlxol-susona-bodrum/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Susona+Bodrum%2C+LXR+Hotels+%26+Resorts&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:14.057Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "the-club-cala-san-miguel-hotel-ibiza-curio-collection-by-hilton",
+      "name": "The Club Cala San Miguel Hotel Ibiza, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/ibzseqq-cala-san-miguel-ibiza-resort",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=The+Club+Cala+San+Miguel+Hotel+Ibiza%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:16.126Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "the-condado-plaza-hotel",
+      "name": "The Condado Plaza Hotel",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sjucohh-the-condado-plaza-hotel/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=The+Condado+Plaza+Hotel&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:18.470Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "the-hiatus-clearwater-beach-curio-collection-by-hilton",
+      "name": "The Hiatus Clearwater Beach, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/tparkqq-the-hiatus-clearwater-beach",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=The+Hiatus+Clearwater+Beach%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:20.897Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "the-inverness-denver-a-hilton-golf-and-spa-resort",
+      "name": "The Inverness Denver, a Hilton Golf & Spa Resort",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/denirhh-the-inverness-denver-a-hilton-golf-and-spa-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=The+Inverness+Denver%2C+a+Hilton+Golf+%26+Spa+Resort&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:23.069Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "the-lodge-at-gulf-state-park-a-hilton-hotel",
+      "name": "The Lodge at Gulf State Park, a Hilton Hotel",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/pnslghh-the-lodge-at-gulf-state-park/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=The+Lodge+at+Gulf+State+Park%2C+a+Hilton+Hotel&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:25.438Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "the-reach-key-west-curio-collection-by-hilton",
+      "name": "The Reach Key West, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/eywqqqq-the-reach-key-west",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=The+Reach+Key+West%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:27.713Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "the-rif-at-mangrove-beach-all-inclusive-curio-by-hilton",
+      "name": "The Rif at Mangrove Beach All-Inclusive, Curio by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/curmgqq-the-rif-at-mangrove-beach-corendon-curacao-all-inclusive",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=The+Rif+at+Mangrove+Beach+All-Inclusive%2C+Curio+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:29.930Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "the-royal-senses-resort-crete-curio-collection-by-hilton",
+      "name": "The Royal Senses Resort Crete, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/herrsqq-the-royal-senses-resort-and-spa-crete",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=The+Royal+Senses+Resort+Crete%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:31.798Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "the-scottsdale-resort-and-spa-curio-collection-by-hilton",
+      "name": "The Scottsdale Resort and Spa, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/phxssqq-the-scottsdale-resort-and-spa",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=The+Scottsdale+Resort+and+Spa%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:34.128Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "the-singer-oceanfront-resort-curio-collection-by-hilton",
+      "name": "The Singer Oceanfront Resort, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/pbisiqq-the-singer-oceanfront-resort",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=The+Singer+Oceanfront+Resort%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:36.024Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "the-waterfront-beach-resort-a-hilton-hotel",
+      "name": "The Waterfront Beach Resort, a Hilton Hotel",
+      "brand": "Hilton Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/hubwhhf-the-waterfront-beach-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=The+Waterfront+Beach+Resort%2C+a+Hilton+Hotel&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:38.224Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "the-wb-abu-dhabi-curio-collection-by-hilton",
+      "name": "The WB Abu Dhabi, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/auhwbqq-the-wb-abu-dhabi-hotel",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=The+WB+Abu+Dhabi%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:39.782Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "the-woodlands-resort-curio-collection-by-hilton",
+      "name": "The Woodlands® Resort, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/iahwrqq-the-woodlands-resort",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=The+Woodlands%C2%AE+Resort%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:41.912Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "umana-bali-lxr-hotels-and-resorts",
+      "name": "Umana Bali, LXR Hotels & Resorts",
+      "brand": "LXR Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/dpsolol-umana-bali-resort/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Umana+Bali%2C+LXR+Hotels+%26+Resorts&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:44.289Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "virgin-hotels-las-vegas-curio-collection-by-hilton",
+      "name": "Virgin Hotels Las Vegas, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/lasvgqq-virgin-hotels-las-vegas",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Virgin+Hotels+Las+Vegas%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:46.781Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "waldorf-astoria-costa-rica-punta-cacique",
+      "name": "Waldorf Astoria Costa Rica Punta Cacique",
+      "brand": "Waldorf Astoria Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/lirguwa-waldorf-astoria-costa-rica-punta-cacique",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Waldorf+Astoria+Costa+Rica+Punta+Cacique&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:49.386Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "waldorf-astoria-dubai-palm-jumeirah",
+      "name": "Waldorf Astoria Dubai Palm Jumeirah",
+      "brand": "Waldorf Astoria Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/dxbpdwa-waldorf-astoria-dubai-palm-jumeirah",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Waldorf+Astoria+Dubai+Palm+Jumeirah&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:51.231Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "waldorf-astoria-las-vegas",
+      "name": "Waldorf Astoria Las Vegas",
+      "brand": "Waldorf Astoria Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/laswdwa-waldorf-astoria-las-vegas",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Waldorf+Astoria+Las+Vegas&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:52.872Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "waldorf-astoria-los-cabos-pedregal",
+      "name": "Waldorf Astoria Los Cabos Pedregal",
+      "brand": "Waldorf Astoria Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sjdwawa-waldorf-astoria-los-cabos-pedregal",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Waldorf+Astoria+Los+Cabos+Pedregal&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:55.020Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "waldorf-astoria-lusail-doha",
+      "name": "Waldorf Astoria Lusail, Doha",
+      "brand": "Waldorf Astoria Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/dohqtwa-waldorf-astoria-doha-lusail",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Waldorf+Astoria+Lusail%2C+Doha&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:57.375Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "waldorf-astoria-maldives-ithaafushi",
+      "name": "Waldorf Astoria Maldives Ithaafushi",
+      "brand": "Waldorf Astoria Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/mleonwa-waldorf-astoria-maldives-ithaafushi",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Waldorf+Astoria+Maldives+Ithaafushi&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:15:59.424Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "waldorf-astoria-monarch-beach",
+      "name": "Waldorf Astoria Monarch Beach",
+      "brand": "Waldorf Astoria Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/snamowa-waldorf-astoria-monarch-beach",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Waldorf+Astoria+Monarch+Beach&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:16:01.369Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "waldorf-astoria-orlando",
+      "name": "Waldorf Astoria Orlando",
+      "brand": "Waldorf Astoria Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/orlbcwa-waldorf-astoria-orlando",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Waldorf+Astoria+Orlando&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:16:03.110Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "waldorf-astoria-park-city",
+      "name": "Waldorf Astoria Park City",
+      "brand": "Waldorf Astoria Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/slcdmwa-waldorf-astoria-park-city",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Waldorf+Astoria+Park+City&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:16:04.952Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "waldorf-astoria-ras-al-khaimah",
+      "name": "Waldorf Astoria Ras Al Khaimah",
+      "brand": "Waldorf Astoria Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/rktwawa-waldorf-astoria-ras-al-khaimah",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Waldorf+Astoria+Ras+Al+Khaimah&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:16:07.103Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "waldorf-astoria-riveria-maya",
+      "name": "Waldorf Astoria Riveria Maya",
+      "brand": "Waldorf Astoria Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/cunwawa-waldorf-astoria-riviera-maya",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Waldorf+Astoria+Riveria+Maya&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:16:08.843Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "waldorf-astoria-seychelles-platte-island",
+      "name": "Waldorf Astoria Seychelles Platte Island",
+      "brand": "Waldorf Astoria Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sezpiwa-waldorf-astoria-seychelles-platte-island",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Waldorf+Astoria+Seychelles+Platte+Island&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:16:10.687Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "waldorf-astoria-versailles-trianon-palace",
+      "name": "Waldorf Astoria Versailles - Trianon Palace",
+      "brand": "Waldorf Astoria Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/cdgtpwa-waldorf-astoria-versailles-trianon-palace",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Waldorf+Astoria+Versailles+-+Trianon+Palace&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:16:12.836Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "waterstone-resort-and-marina-boca-raton-curio",
+      "name": "Waterstone Resort & Marina Boca Raton, Curio",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/bctbuqq-waterstone-resort-and-marina-boca-raton",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Waterstone+Resort+%26+Marina+Boca+Raton%2C+Curio&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:16:15.285Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "zachari-dunes-on-mandalay-beach-curio-collection-by-hilton",
+      "name": "Zachari Dunes on Mandalay Beach, Curio Collection by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/sbazdqq-zachari-dunes-on-mandalay-beach",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Zachari+Dunes+on+Mandalay+Beach%2C+Curio+Collection+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:16:17.138Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "zemi-beach-house-lxr-hotels-and-resorts",
+      "name": "Zemi Beach House, LXR Hotels & Resorts",
+      "brand": "LXR Hotels & Resorts",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/axazbol-zemi-beach-house/",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Zemi+Beach+House%2C+LXR+Hotels+%26+Resorts&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:16:18.767Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    },
+    {
+      "id": "zemi-miches-punta-cana-all-inclusive-resort-curio-by-hilton",
+      "name": "Zemi Miches Punta Cana All-Inclusive Resort, Curio by Hilton",
+      "brand": "Curio Collection by Hilton",
+      "hiltonUrl": "https://www.hilton.com/en/hotels/pujmiqq-zemi-miches-all-inclusive-resort",
+      "geocode": {
+        "source": "nominatim",
+        "error": "Request failed (429) for https://nominatim.openstreetmap.org/search?q=Zemi+Miches+Punta+Cana+All-Inclusive+Resort%2C+Curio+by+Hilton&format=jsonv2&limit=1&addressdetails=1",
+        "lastSyncedAt": "2026-04-03T03:16:20.747Z"
+      },
+      "xotelo": {},
+      "locationLabel": null
+    }
+  ]
+}
