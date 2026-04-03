@@ -474,6 +474,25 @@ function markerHtml(hotel) {
   `;
 }
 
+function getCoordinateGroupKey(coordinates) {
+  return `${coordinates.lat.toFixed(6)},${coordinates.lng.toFixed(6)}`;
+}
+
+function getMarkerPosition(coordinates, index, total) {
+  if (total <= 1) {
+    return coordinates;
+  }
+
+  const angle = (Math.PI * 2 * index) / total;
+  const radius = total === 2 ? 0.00028 : Math.min(0.0005, 0.00018 + total * 0.000035);
+  const lngScale = Math.cos((coordinates.lat * Math.PI) / 180) || 1;
+
+  return {
+    lat: coordinates.lat + Math.sin(angle) * radius,
+    lng: coordinates.lng + (Math.cos(angle) * radius) / lngScale,
+  };
+}
+
 function renderMap() {
   if (!map || !markersLayer) {
     return;
@@ -481,6 +500,7 @@ function renderMap() {
 
   markersLayer.clearLayers();
   const bounds = [];
+  const hotelsByCoordinates = new Map();
 
   state.filteredHotels.forEach((hotel) => {
     const coordinates = getCoordinates(hotel);
@@ -489,30 +509,42 @@ function renderMap() {
       return;
     }
 
-    const marker = window.L.marker([coordinates.lat, coordinates.lng], {
-      icon: window.L.divIcon({
-        className: "map-pin-wrapper",
-        html: markerHtml(hotel),
-        iconSize: [54, 36],
-        iconAnchor: [27, 18],
-      }),
+    const key = getCoordinateGroupKey(coordinates);
+    const hotelsAtCoordinates = hotelsByCoordinates.get(key) || [];
+    hotelsAtCoordinates.push({ hotel, coordinates });
+    hotelsByCoordinates.set(key, hotelsAtCoordinates);
+  });
+
+  hotelsByCoordinates.forEach((hotelsAtCoordinates) => {
+    const total = hotelsAtCoordinates.length;
+
+    hotelsAtCoordinates.forEach(({ hotel, coordinates }, index) => {
+      const markerPosition = getMarkerPosition(coordinates, index, total);
+      const marker = window.L.marker([markerPosition.lat, markerPosition.lng], {
+        icon: window.L.divIcon({
+          className: "map-pin-wrapper",
+          html: markerHtml(hotel),
+          iconSize: [54, 36],
+          iconAnchor: [27, 18],
+        }),
+      });
+
+      marker.bindPopup(`
+        <div class="popup-card">
+          <strong>${escapeHtml(hotel.name)}</strong>
+          <span>${escapeHtml(getLocationLabel(hotel))}</span>
+          <span>${escapeHtml(buildPriceLabel(hotel))}</span>
+        </div>
+      `);
+
+      marker.on("click", () => {
+        selectHotel(hotel.id);
+      });
+
+      markersLayer.addLayer(marker);
+      hotel.__marker = marker;
+      bounds.push([markerPosition.lat, markerPosition.lng]);
     });
-
-    marker.bindPopup(`
-      <div class="popup-card">
-        <strong>${escapeHtml(hotel.name)}</strong>
-        <span>${escapeHtml(getLocationLabel(hotel))}</span>
-        <span>${escapeHtml(buildPriceLabel(hotel))}</span>
-      </div>
-    `);
-
-    marker.on("click", () => {
-      selectHotel(hotel.id);
-    });
-
-    markersLayer.addLayer(marker);
-    hotel.__marker = marker;
-    bounds.push([coordinates.lat, coordinates.lng]);
   });
 
   if (!bounds.length) {
@@ -531,17 +563,17 @@ function highlightSelectedCard() {
 
 function focusHotelOnMap(hotelId, { animate = true, openPopup = true } = {}) {
   const hotel = state.filteredHotels.find((item) => item.id === hotelId);
-  const coordinates = hotel ? getCoordinates(hotel) : null;
-  if (!coordinates || !hotel?.__marker) {
+  if (!hotel?.__marker) {
     return;
   }
 
+  const markerPosition = hotel.__marker.getLatLng();
   const targetZoom = Math.max(map.getZoom(), 9);
 
   if (animate) {
-    map.flyTo([coordinates.lat, coordinates.lng], targetZoom, { duration: 0.8 });
+    map.flyTo(markerPosition, targetZoom, { duration: 0.8 });
   } else {
-    map.setView([coordinates.lat, coordinates.lng], targetZoom);
+    map.setView(markerPosition, targetZoom);
   }
 
   if (openPopup) {
