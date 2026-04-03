@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generatedAt": "2026-04-03T19:58:50.815Z",
+    "generatedAt": "2026-04-03T19:59:16.075Z",
     "sourceFile": "public/data/hilton_resort_credit_v3.csv",
     "hotelCount": 312,
     "processedHotelCount": 312,
-    "completedHotelCount": 257,
+    "completedHotelCount": 260,
     "sampleStay": {
       "checkIn": "2026-04-10",
       "checkOut": "2026-04-12"
@@ -19954,24 +19954,142 @@
     "hilton-sanya-yalong-bay-resort-and-spa": {
       "hotelKey": "g297427-d582794",
       "locationKey": "g297427",
-      "statusNote": "TripAdvisor URL parsed",
-      "priceSnapshots": [],
-      "sampleStay": null,
-      "lastUpdatedAt": null,
-      "indicativeRange": null,
-      "lastSyncedAt": null,
-      "lastSuccessfulRateAt": null
+      "statusNote": "Public Xotelo rates synced",
+      "priceSnapshots": [
+        {
+          "checkIn": "2026-04-10",
+          "checkOut": "2026-04-12",
+          "currency": "USD",
+          "lowestNightlyRate": 232,
+          "taxes": 13,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T19:58:51.854Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-17",
+          "checkOut": "2026-04-19",
+          "currency": "USD",
+          "lowestNightlyRate": 225,
+          "taxes": 13,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T19:58:54.804Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-24",
+          "checkOut": "2026-04-26",
+          "currency": "USD",
+          "lowestNightlyRate": 232,
+          "taxes": 13,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T19:58:57.783Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-05-01",
+          "checkOut": "2026-05-03",
+          "currency": "USD",
+          "lowestNightlyRate": 308,
+          "taxes": 46,
+          "vendorCode": "Agoda",
+          "vendorName": "Agoda.com",
+          "checkedAt": "2026-04-03T19:59:00.751Z",
+          "status": "ok"
+        }
+      ],
+      "sampleStay": {
+        "checkIn": "2026-04-17",
+        "checkOut": "2026-04-19",
+        "currency": "USD",
+        "lowestNightlyRate": 225,
+        "taxes": 13,
+        "vendorCode": "CtripTA",
+        "vendorName": "Trip.com",
+        "checkedAt": "2026-04-03T19:58:54.804Z",
+        "status": "ok"
+      },
+      "lastUpdatedAt": "2026-04-03T19:58:54.804Z",
+      "indicativeRange": {
+        "minimum": 143,
+        "maximum": 290,
+        "currency": "USD"
+      },
+      "lastSyncedAt": "2026-04-03T19:59:03.570Z",
+      "lastSuccessfulRateAt": "2026-04-03T19:58:54.804Z"
     },
     "hilton-scottsdale-resort-and-villas": {
       "hotelKey": "g31350-d74170",
       "locationKey": "g31350",
-      "statusNote": "TripAdvisor URL parsed",
-      "priceSnapshots": [],
-      "sampleStay": null,
-      "lastUpdatedAt": null,
-      "indicativeRange": null,
-      "lastSyncedAt": null,
-      "lastSuccessfulRateAt": null
+      "statusNote": "Public Xotelo rates synced",
+      "priceSnapshots": [
+        {
+          "checkIn": "2026-04-10",
+          "checkOut": "2026-04-12",
+          "currency": "USD",
+          "lowestNightlyRate": 247,
+          "taxes": 68,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T19:59:04.336Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-17",
+          "checkOut": "2026-04-19",
+          "currency": "USD",
+          "lowestNightlyRate": 282,
+          "taxes": 73,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T19:59:07.409Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-24",
+          "checkOut": "2026-04-26",
+          "currency": "USD",
+          "lowestNightlyRate": 287,
+          "taxes": 74,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T19:59:10.319Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-05-01",
+          "checkOut": "2026-05-03",
+          "currency": "USD",
+          "lowestNightlyRate": 220,
+          "taxes": 65,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T19:59:13.348Z",
+          "status": "ok"
+        }
+      ],
+      "sampleStay": {
+        "checkIn": "2026-05-01",
+        "checkOut": "2026-05-03",
+        "currency": "USD",
+        "lowestNightlyRate": 220,
+        "taxes": 65,
+        "vendorCode": "CtripTA",
+        "vendorName": "Trip.com",
+        "checkedAt": "2026-04-03T19:59:13.348Z",
+        "status": "ok"
+      },
+      "lastUpdatedAt": "2026-04-03T19:59:13.348Z",
+      "indicativeRange": {
+        "minimum": 192,
+        "maximum": 532,
+        "currency": "USD"
+      },
+      "lastSyncedAt": "2026-04-03T19:59:16.075Z",
+      "lastSuccessfulRateAt": "2026-04-03T19:59:13.348Z"
     },
     "hilton-sedona-resort-at-bell-rock": {
       "hotelKey": "g4813352-d75461",
