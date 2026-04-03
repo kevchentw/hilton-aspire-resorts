@@ -11,7 +11,7 @@ const state = {
   brand: "all",
   country: "all",
   region: "all",
-  onlyCreditFriendly: false,
+  maxPrice: "all",
   view: "map",
 };
 
@@ -133,6 +133,30 @@ function getBestSnapshot(hotel) {
   );
 }
 
+function getPriceBounds(hotel) {
+  const pricedSnapshots = getPricedSnapshots(hotel);
+  if (pricedSnapshots.length) {
+    return {
+      minimum: pricedSnapshots[0].lowestNightlyRate,
+      maximum: pricedSnapshots.at(-1).lowestNightlyRate,
+      currency: pricedSnapshots[0].currency,
+      sampleCount: pricedSnapshots.length,
+    };
+  }
+
+  const range = hotel.xotelo?.indicativeRange;
+  if (range?.minimum && range?.maximum) {
+    return {
+      minimum: range.minimum,
+      maximum: range.maximum,
+      currency: range.currency,
+      sampleCount: 0,
+    };
+  }
+
+  return null;
+}
+
 function getLastUpdated(hotel) {
   return (
     hotel.xotelo?.lastUpdatedAt ||
@@ -147,17 +171,14 @@ function getLastUpdated(hotel) {
 }
 
 function buildPriceLabel(hotel) {
-  const sample = getBestSnapshot(hotel);
-  if (sample?.lowestNightlyRate) {
-    return `${formatCurrency(sample.lowestNightlyRate, sample.currency)} / night`;
-  }
-
-  const range = hotel.xotelo?.indicativeRange;
-  if (range?.minimum && range?.maximum) {
-    return `${formatCurrency(range.minimum, range.currency)}-${formatCurrency(
-      range.maximum,
-      range.currency,
-    )}`;
+  const bounds = getPriceBounds(hotel);
+  if (bounds?.minimum && bounds?.maximum) {
+    return bounds.minimum === bounds.maximum
+      ? `${formatCurrency(bounds.minimum, bounds.currency)} / night`
+      : `${formatCurrency(bounds.minimum, bounds.currency)}-${formatCurrency(
+          bounds.maximum,
+          bounds.currency,
+        )} / night`;
   }
 
   return "Price pending";
@@ -165,21 +186,19 @@ function buildPriceLabel(hotel) {
 
 function buildPriceSubLabel(hotel) {
   const sample = getBestSnapshot(hotel);
-  const pricedSnapshots = getPriceSnapshots(hotel).filter(
-    (snapshot) => typeof snapshot.lowestNightlyRate === "number",
-  );
+  const pricedSnapshots = getPricedSnapshots(hotel);
+  const bounds = getPriceBounds(hotel);
   if (sample?.lowestNightlyRate) {
     return pricedSnapshots.length > 1
-      ? `Lowest across ${pricedSnapshots.length} cached stays`
-      : `Sample stay ${formatDateLabel(sample.checkIn)} to ${formatDateLabel(sample.checkOut)}`;
+      ? `Lowest sampled rate across ${pricedSnapshots.length} stays`
+      : `Reference stay ${formatDateLabel(sample.checkIn)} to ${formatDateLabel(sample.checkOut)}`;
   }
 
-  const range = hotel.xotelo?.indicativeRange;
-  if (range?.minimum && range?.maximum) {
-    return "Indicative range";
+  if (bounds?.minimum && bounds?.maximum) {
+    return "Reference price range";
   }
 
-  return "No cached rate yet";
+  return "Reference price unavailable";
 }
 
 function getEffectivePrice(hotel) {
@@ -188,6 +207,36 @@ function getEffectivePrice(hotel) {
     hotel.xotelo?.indicativeRange?.minimum ||
     null
   );
+}
+
+function getPriceCeiling(hotel) {
+  const bounds = getPriceBounds(hotel);
+  return bounds?.maximum ?? null;
+}
+
+function getPriceBand(hotel) {
+  const lowestPrice = getEffectivePrice(hotel);
+  if (lowestPrice === null) {
+    return "unknown";
+  }
+
+  if (lowestPrice <= 200) {
+    return "200";
+  }
+
+  if (lowestPrice <= 300) {
+    return "300";
+  }
+
+  if (lowestPrice <= 400) {
+    return "400";
+  }
+
+  if (lowestPrice <= 500) {
+    return "500";
+  }
+
+  return "over";
 }
 
 function getPricedSnapshots(hotel) {
@@ -258,8 +307,8 @@ function applyFilters() {
       const haystack = normalizeText(
         `${hotel.name} ${hotel.brand} ${location.city || ""} ${location.region || ""} ${location.country || ""}`,
       );
-      const effectivePrice = getEffectivePrice(hotel);
-      const isCreditFriendly = effectivePrice !== null && effectivePrice <= 200;
+      const priceCeiling = getPriceCeiling(hotel);
+      const maxPrice = state.maxPrice === "all" ? null : Number(state.maxPrice);
 
       if (search && !haystack.includes(search)) {
         return false;
@@ -277,7 +326,7 @@ function applyFilters() {
         return false;
       }
 
-      if (state.onlyCreditFriendly && !isCreditFriendly) {
+      if (maxPrice !== null && (priceCeiling === null || priceCeiling > maxPrice)) {
         return false;
       }
 
@@ -322,8 +371,6 @@ function createHotelRow(hotel) {
   row.tabIndex = 0;
 
   const location = getLocationData(hotel);
-  const price = getEffectivePrice(hotel);
-  const creditFriendly = price !== null && price <= 200;
 
   row.innerHTML = `
     <td class="hotel-cell hotel-cell--name">
@@ -335,11 +382,6 @@ function createHotelRow(hotel) {
     <td class="hotel-cell hotel-cell--price">
       <strong>${escapeHtml(buildPriceLabel(hotel))}</strong>
       <span>${escapeHtml(buildPriceSubLabel(hotel))}</span>
-    </td>
-    <td class="hotel-cell hotel-cell--credit">
-      <span class="table-pill ${creditFriendly ? "table-pill--green" : ""}">
-        ${creditFriendly ? "Use credit" : "Above $200"}
-      </span>
     </td>
   `;
 
@@ -363,7 +405,7 @@ function renderList() {
     dom.list.innerHTML = `
       <div class="empty-state">
         <h3>No hotels match those filters</h3>
-        <p>Try clearing the brand filter or the under-$200 toggle.</p>
+        <p>Try clearing the brand filter or widening the price range.</p>
       </div>
     `;
     return;
@@ -378,7 +420,6 @@ function renderList() {
         <th>City</th>
         <th>Country</th>
         <th>Price</th>
-        <th>Credit fit</th>
       </tr>
     </thead>
   `;
@@ -394,8 +435,9 @@ function renderList() {
 
 function markerHtml(hotel) {
   const price = getEffectivePrice(hotel);
+  const priceBand = getPriceBand(hotel);
   return `
-    <div class="map-pin ${price !== null && price <= 200 ? "map-pin--green" : ""}">
+    <div class="map-pin map-pin--${priceBand}">
       <span>${price !== null ? escapeHtml(formatCurrency(price)) : "?"}</span>
     </div>
   `;
@@ -497,8 +539,8 @@ function renderDetail() {
     ? `
       <section class="detail-price-breakdown">
         <div class="detail-price-breakdown__header">
-          <h3>Cached stay prices</h3>
-          <span>${pricedSnapshots.length} priced ${pricedSnapshots.length === 1 ? "date" : "dates"}</span>
+          <h3>Reference stay prices</h3>
+          <span>${pricedSnapshots.length} sampled ${pricedSnapshots.length === 1 ? "date" : "dates"}</span>
         </div>
         <div class="detail-rate-list">
         ${pricedSnapshots
@@ -508,7 +550,7 @@ function renderDetail() {
             <div>
               <strong>${escapeHtml(formatStayWindow(snapshot))}</strong>
               <span>${escapeHtml(
-                bestSnapshot === snapshot ? "Best cached nightly rate" : "Alternate cached stay",
+                bestSnapshot === snapshot ? "Lowest sampled nightly rate" : "Other",
               )}</span>
             </div>
             <strong>${escapeHtml(formatCurrency(snapshot.lowestNightlyRate, snapshot.currency))}</strong>
@@ -523,7 +565,7 @@ function renderDetail() {
   const unavailableMarkup = unpricedSnapshots.length
     ? `
       <div class="detail-price-note">
-        No cached rate for ${unpricedSnapshots
+        No sampled reference price for ${unpricedSnapshots
           .map((snapshot) => formatStayWindow(snapshot))
           .join(" • ")}
       </div>
@@ -532,9 +574,10 @@ function renderDetail() {
   const priceSummaryMarkup = bestSnapshot
     ? `
       <div class="detail-price-summary">
-        <span class="detail-price-summary__eyebrow">Lowest cached nightly rate</span>
+        <span class="detail-price-summary__eyebrow">Lowest sampled nightly rate</span>
         <strong>${escapeHtml(formatCurrency(bestSnapshot.lowestNightlyRate, bestSnapshot.currency))}</strong>
         <p>${escapeHtml(formatStayWindow(bestSnapshot))}</p>
+        <p>${escapeHtml(buildPriceSubLabel(hotel))}</p>
       </div>
     `
     : `
@@ -574,7 +617,7 @@ function renderDetail() {
       ${unavailableMarkup}
       <div class="detail-actions">
         <a class="primary-button" href="${hotel.hiltonUrl}" target="_blank" rel="noreferrer">
-          Book with Hilton
+          Hilton
         </a>
         ${
           hotel.tripAdvisorUrl
@@ -586,7 +629,7 @@ function renderDetail() {
             : ""
         }
         <a class="ghost-button" href="${buildGoogleMapsUrl(hotel)}" target="_blank" rel="noreferrer">
-          Open map
+          Google Map
         </a>
       </div>
     </div>
@@ -671,7 +714,7 @@ function populateRegionFilter(hotels) {
     state.region = "all";
   }
 
-  dom.region.innerHTML = '<option value="all">All regions / 地區</option>';
+  dom.region.innerHTML = '<option value="all">All regions</option>';
 
   regions.forEach((region) => {
     const option = document.createElement("option");
@@ -711,6 +754,14 @@ function buildShell() {
         <div class="page-meta">
           <strong id="results-count">0 of 0 hotels</strong>
           <span id="generated-at">Loading...</span>
+          <a
+            class="page-meta-link"
+            href="https://github.com/kevchentw/hilton-aspire-resorts/issues"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Report issue
+          </a>
         </div>
       </header>
 
@@ -735,14 +786,20 @@ function buildShell() {
         </div>
         <div class="toolbar-group">
           <label>
-            Region / 地區
+            Region
             <select id="region-filter"></select>
           </label>
         </div>
         <div class="toolbar-group toolbar-group--toggle">
-          <label class="checkbox-row">
-            <input id="credit-friendly-only" type="checkbox" />
-            Under $200 only
+          <label>
+            Price range
+            <select id="price-range-filter">
+              <option value="all">Any price</option>
+              <option value="200">Max $200</option>
+              <option value="300">Max $300</option>
+              <option value="400">Max $400</option>
+              <option value="500">Max $500</option>
+            </select>
           </label>
         </div>
       </section>
@@ -778,7 +835,7 @@ function buildShell() {
     brand: document.querySelector("#brand-filter"),
     country: document.querySelector("#country-filter"),
     region: document.querySelector("#region-filter"),
-    creditOnly: document.querySelector("#credit-friendly-only"),
+    priceRange: document.querySelector("#price-range-filter"),
     list: document.querySelector("#hotel-list"),
     map: document.querySelector("#map"),
     detail: document.querySelector("#detail-panel-body"),
@@ -820,8 +877,8 @@ function attachEvents(meta) {
     render(meta);
   });
 
-  dom.creditOnly.addEventListener("change", (event) => {
-    state.onlyCreditFriendly = event.target.checked;
+  dom.priceRange.addEventListener("change", (event) => {
+    state.maxPrice = event.target.value;
     render(meta);
   });
 

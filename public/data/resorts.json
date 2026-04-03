@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-03T06:30:34.318Z",
+    "generatedAt": "2026-04-03T14:37:44.660Z",
     "sourceFile": "public/data/hilton_resort_credit_v3.xlsx",
     "hotelCount": 312
   },
@@ -2523,7 +2523,7 @@
         "lng": 29.9187
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/alykrhi-hilton-alexandria-kings-ranch/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g295398-d7319768-Reviews-Hilton_Alexandria_King_s_Ranch-Alexandria_Alexandria_Governorate.html"
     },
     {
       "id": "hilton-anatole",
@@ -2537,7 +2537,7 @@
         "lng": -96.8286
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/dfwanhh-hilton-anatole/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g55711-d98731-Reviews-Hilton_Anatole-Dallas_Texas.html"
     },
     {
       "id": "hilton-aruba-caribbean-resort-and-casino",
@@ -2677,7 +2677,7 @@
         "lng": -75.4832
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/ctghihh-hilton-cartagena-hotel/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g297476-d300666-Reviews-Hilton_Cartagena_Hotel-Cartagena_Cartagena_District_Bolivar_Department.html"
     },
     {
       "id": "hilton-chicago-oak-brook-hills-resort-and-conference-center",
@@ -2775,7 +2775,7 @@
         "lng": -96.4597
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/dalrwhf-hilton-dallas-rockwall-lakefront/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g56567-d1028763-Reviews-Hilton_Dallas_Rockwall_Lakefront-Rockwall_Texas.html"
     },
     {
       "id": "hilton-daytona-beach-oceanfront-resort",
@@ -2817,7 +2817,7 @@
         "lng": 51.531
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/dohhdhi-hilton-doha/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g294009-d2216044-Reviews-Hilton_Doha-Doha.html"
     },
     {
       "id": "hilton-doha-the-pearl",
@@ -2831,7 +2831,7 @@
         "lng": 51.5505
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/dohprhi-hilton-doha-the-pearl/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g294009-d19106093-Reviews-Hilton_Doha_The_Pearl-Doha.html"
     },
     {
       "id": "hilton-dubai-jumeirah",
@@ -2873,7 +2873,7 @@
         "lng": 55.1305
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/dxbbrhi-hilton-dubai-the-walk/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g295424-d2526254-Reviews-Hilton_Dubai_The_Walk-Dubai_Emirate_of_Dubai.html"
     },
     {
       "id": "hilton-fiji-beach-resort-and-spa",
@@ -2915,7 +2915,7 @@
         "lng": 8.835
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/frahghi-hilton-frankfurt-gravenbruch/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g198581-d273504-Reviews-Hilton_Frankfurt_Gravenbruch-Neu_Isenburg_Hesse.html"
     },
     {
       "id": "hilton-galveston-island-resort",
@@ -2971,7 +2971,7 @@
         "lng": 129.225
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/kyohitw-hilton-gyeongju/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g297888-d308055-Reviews-Hilton_Gyeongju-Gyeongju_Gyeongsangbuk_do.html"
     },
     {
       "id": "hilton-hangzhou-qiandao-lake-resort",
@@ -3013,7 +3013,7 @@
         "lng": -149.5693
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/ppthihh-hilton-hotel-tahiti/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g1190275-d23416500-Reviews-Hilton_Hotel_Tahiti-Faa_a_Tahiti_Society_Islands.html"
     },
     {
       "id": "hilton-hua-hin-resort-and-spa",
@@ -3055,7 +3055,7 @@
         "lng": 33.8116
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/hrghitw-hilton-hurghada-plaza/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g297549-d308117-Reviews-Hilton_Hurghada_Plaza-Hurghada_Red_Sea_and_Sinai.html"
     },
     {
       "id": "hilton-la-jolla-torrey-pines",
@@ -3069,7 +3069,7 @@
         "lng": -117.234
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/santphh-hilton-la-jolla-torrey-pines/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g32578-d218747-Reviews-Hilton_La_Jolla_Torrey_Pines-La_Jolla_San_Diego_California.html"
     },
     {
       "id": "hilton-lake-las-vegas-resort-and-spa",
@@ -3139,7 +3139,7 @@
         "lng": 2.65
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/pmicchi-hilton-mallorca-galatzo/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g580307-d500716-Reviews-Hilton_Mallorca_Galatzo-Peguera_Calvia_Majorca_Balearic_Islands.html"
     },
     {
       "id": "hilton-malta",
@@ -3153,7 +3153,7 @@
         "lng": 14.4833
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/mlahitw-hilton-malta/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g227101-d227152-Reviews-Hilton_Malta-Saint_Julian_s_Island_of_Malta.html"
     },
     {
       "id": "hilton-marco-island-beach-resort",
@@ -3237,7 +3237,7 @@
         "lng": 118.83
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/nkgnshi-hilton-nanjing-niushoushan/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g294220-d26109625-Reviews-Hilton_Nanjing_Niushoushan-Nanjing_Jiangsu.html"
     },
     {
       "id": "hilton-ningbo-dongqian-lake",
@@ -3251,7 +3251,7 @@
         "lng": 121.5654
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/ngbqahi-hilton-ningbo-dongqian-lake/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g297470-d11725429-Reviews-Hilton_Ningbo_Dongqian_Lake-Ningbo_Zhejiang.html"
     },
     {
       "id": "hilton-niseko-village",
@@ -3279,7 +3279,7 @@
         "lng": -75.0849
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/sbyofhf-hilton-ocean-city-oceanfront-suites/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g41298-d601651-Reviews-Hilton_Ocean_City_Oceanfront_Suites-Ocean_City_Maryland.html"
     },
     {
       "id": "hilton-odawara-resort-and-spa",
@@ -3349,7 +3349,7 @@
         "lng": -81.5812
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/orlochh-hilton-orlando/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g34515-d1382900-Reviews-Hilton_Orlando-Orlando_Florida.html"
     },
     {
       "id": "hilton-orlando-buena-vista-palace-disney-springs-area",
@@ -3363,7 +3363,7 @@
         "lng": -81.516
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/mcobuhh-hilton-orlando-buena-vista-palace/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g23869903-d85979-Reviews-Hilton_Orlando_Buena_Vista_Palace_Disney_Springs_Area-Lake_Buena_Vista_Florida.html"
     },
     {
       "id": "hilton-orlando-lake-buena-vista-disney-springs-area",
@@ -3377,7 +3377,7 @@
         "lng": -81.516
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/orldwhh-hilton-orlando-lake-buena-vista/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g23869903-d217366-Reviews-Hilton_Orlando_Lake_Buena_Vista_Disney_Springs_Area-Lake_Buena_Vista_Florida.html"
     },
     {
       "id": "hilton-palm-springs",
@@ -3391,7 +3391,7 @@
         "lng": -116.5453
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/psppshf-hilton-palm-springs/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g32847-d77242-Reviews-Hilton_Palm_Springs-Palm_Springs_Greater_Palm_Springs_California.html"
     },
     {
       "id": "hilton-pattaya",
@@ -3405,7 +3405,7 @@
         "lng": 100.8825
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/bkkhphi-hilton-pattaya/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g293919-d1876869-Reviews-or40-Hilton_Pattaya-Pattaya_Chonburi_Province.html"
     },
     {
       "id": "hilton-pensacola-beach",
@@ -3475,7 +3475,7 @@
         "lng": 31.1342
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/caipghi-hilton-pyramids-golf/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g8363967-d300671-Reviews-Hilton_Pyramids_Golf-6th_of_October_City_Giza_Governorate.html"
     },
     {
       "id": "hilton-queenstown-resort-and-spa",
@@ -3545,7 +3545,7 @@
         "lng": -117.2653
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/sandmhf-hilton-san-diego-del-mar/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g32286-d501946-Reviews-Hilton_San_Diego_del_Mar-Del_Mar_California.html"
     },
     {
       "id": "hilton-sandestin-beach-golf-resort-and-spa",
@@ -3601,7 +3601,7 @@
         "lng": -106.0719
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/sfecghh-hilton-santa-fe-buffalo-thunder/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g30700567-d1146058-Reviews-Hilton_Santa_Fe_Buffalo_Thunder-Cuyamungue_New_Mexico.html"
     },
     {
       "id": "hilton-santa-marta",
@@ -3615,7 +3615,7 @@
         "lng": -74.199
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/smrcnhh-hilton-santa-marta/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g297484-d25084426-Reviews-Hilton_Santa_Marta-Santa_Marta_Santa_Marta_Municipality_Magdalena_Department.html"
     },
     {
       "id": "hilton-sanya-yalong-bay-resort-and-spa",
@@ -3685,7 +3685,7 @@
         "lng": 14.3747
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/rrohihi-hilton-sorrento-palace/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g187782-d231243-Reviews-Hilton_Sorrento_Palace-Sorrento_Province_of_Naples_Campania.html"
     },
     {
       "id": "hilton-swinoujscie-resort-and-spa",
@@ -3853,7 +3853,7 @@
         "lng": 102.9167
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/nkgyfhi-hilton-yuxi-fuxian-lake/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g1575828-d7927386-Reviews-Hilton_Yuxi_Fuxian_Lake-Chengjiang_County_Yunnan.html"
     },
     {
       "id": "las-vegas-hilton-at-resorts-world",
@@ -3881,7 +3881,7 @@
         "lng": 153.4307
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/oolhihi-hilton-surfers-paradise-hotel-and-residences/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g255072-d1853238-Reviews-Hilton_Surfers_Paradise_Hotel_Residences-Surfers_Paradise_Gold_Coast_Queensland.html"
     },
     {
       "id": "the-condado-plaza-hotel",
@@ -3895,7 +3895,7 @@
         "lng": -66.1057
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/sjucohh-the-condado-plaza-hotel/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g147320-d150443-Reviews-The_Condado_Plaza_Hotel-San_Juan_Puerto_Rico.html"
     },
     {
       "id": "the-inverness-denver-a-hilton-golf-and-spa-resort",
@@ -3923,7 +3923,7 @@
         "lng": -87.7009
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/pnslghh-the-lodge-at-gulf-state-park/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g30582-d14084829-Reviews-The_Lodge_At_Gulf_State_Park_A_Hilton_Hotel-Gulf_Shores_Alabama.html"
     },
     {
       "id": "the-waterfront-beach-resort-a-hilton-hotel",
@@ -3965,7 +3965,7 @@
         "lng": -112.0261
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/phxbmol-arizona-biltmore/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g31310-d115484-Reviews-Arizona_Biltmore_LXR_Hotels_Resorts-Phoenix_Arizona.html"
     },
     {
       "id": "beach-village-at-the-del-lxr-hotels-and-resorts",
@@ -4021,7 +4021,7 @@
         "lng": 51.5505
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/dohqkol-katara-hills-doha/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g294009-d25173967-Reviews-Katara_Hills_Doha_Lxr_Hotels_Resorts-Doha.html"
     },
     {
       "id": "mango-house-seychelles-lxr-hotels-and-resorts",
@@ -4035,7 +4035,7 @@
         "lng": 55.5167
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/sezitol-mango-house-seychelles/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g488116-d23118132-Reviews-Mango_House_Seychelles_LXR_Hotels_Resorts-Baie_Lazare_Mahe_Island.html"
     },
     {
       "id": "maysan-doha-lxr-hotels-and-resorts",
@@ -4049,7 +4049,7 @@
         "lng": 51.531
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/dohpaol-maysan-doha/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g1592998-d25173962-Reviews-or20-Maysan_Doha_LXR_Hotels_Resorts-Al_Rayyan.html"
     },
     {
       "id": "roku-kyoto-lxr-hotels-and-resorts",
@@ -4063,7 +4063,7 @@
         "lng": 135.7681
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/itmolol-roku-kyoto/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g298564-d23331390-Reviews-ROKU_KYOTO_LXR_Hotels_Resorts-Kyoto_Kyoto_Prefecture_Kinki.html"
     },
     {
       "id": "shore-house-at-the-del-lxr-hotels-and-resorts",
@@ -4077,7 +4077,7 @@
         "lng": -117.1795
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/sanrhol-shore-house-at-the-del/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.hilton.com/en/hotels/sanrhol-shore-house-at-the-del/"
     },
     {
       "id": "susona-bodrum-lxr-hotels-and-resorts",
@@ -4091,7 +4091,7 @@
         "lng": 27.4305
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/bjvlxol-susona-bodrum/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g298663-d20483728-Reviews-Susona_Bodrum_LXR_Hotels_Resorts-Torba_Bodrum_District_Mugla_Province_Turkish_Aegean_.html"
     },
     {
       "id": "umana-bali-lxr-hotels-and-resorts",
@@ -4105,7 +4105,7 @@
         "lng": 115.212
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/dpsolol-umana-bali-resort/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g1219108-d887047-Reviews-Umana_Bali_LXR_Hotels_Resorts-Ungasan_Bukit_Peninsula_Bali.html"
     },
     {
       "id": "zemi-beach-house-lxr-hotels-and-resorts",
@@ -4147,7 +4147,7 @@
         "lng": -81.516
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/orlhhsa-signia-by-hilton-orlando-bonnet-creek/",
-      "tripAdvisorUrl": null
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g34515-d1308392-Reviews-Signia_By_Hilton_Orlando_An_Official_Walt_Disney_WorldR_Hotel-Orlando_Florida.html"
     },
     {
       "id": "fuwairit-kite-beach-tapestry-collection-by-hilton",

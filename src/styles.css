@@ -98,6 +98,16 @@ code {
   font-size: 0.92rem;
 }
 
+.page-meta-link {
+  color: var(--teal-dark);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.page-meta-link:hover {
+  text-decoration: underline;
+}
+
 .toolbar {
   padding: 14px;
   display: grid;
@@ -567,8 +577,28 @@ code {
   font-weight: 700;
 }
 
-.map-pin--green {
-  background: var(--leaf);
+.map-pin--200 {
+  background: #2f7d4e;
+}
+
+.map-pin--300 {
+  background: #3e8f9e;
+}
+
+.map-pin--400 {
+  background: #c27a2c;
+}
+
+.map-pin--500 {
+  background: #b45832;
+}
+
+.map-pin--over {
+  background: #8d3d4d;
+}
+
+.map-pin--unknown {
+  background: rgba(18, 34, 38, 0.9);
 }
 
 .view-map #list-panel,
