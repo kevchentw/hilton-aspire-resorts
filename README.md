@@ -4,7 +4,7 @@ Static GitHub Pages site for browsing Hilton resort-credit eligible hotels on a 
 
 ## What it does
 
-- Reads hotel metadata from `public/data/hilton_resort_credit_v3.xlsx`
+- Reads hotel metadata from `public/data/hilton_resort_credit_v3.csv`
 - Writes hotel basics to `public/data/resorts.json`
 - Writes price-related Xotelo data to `public/data/resort-prices.json`
 - Builds a plain static frontend that loads both JSON files and merges them in the browser
@@ -22,7 +22,7 @@ npm run dev
 
 Use the sync command that matches the data you changed:
 
-- `npm run sync:hotels` reads hotel metadata from `public/data/hilton_resort_credit_v3.xlsx` and writes the hotel list to `public/data/resorts.json`
+- `npm run sync:hotels` reads hotel metadata from `public/data/hilton_resort_credit_v3.csv` and writes the hotel list to `public/data/resorts.json`
 - `npm run sync:prices` reads the same workbook, merges it with cached metadata, and writes Xotelo price data to `public/data/resort-prices.json`
 - `npm run sync:data` runs both commands in sequence for a full refresh
 

@@ -2,17 +2,16 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 import { fileURLToPath } from "node:url";
-import XLSX from "xlsx";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const HOTELS_OUTPUT_PATH = path.join(ROOT, "public", "data", "resorts.json");
 const PRICES_OUTPUT_PATH = path.join(ROOT, "public", "data", "resort-prices.json");
-const XLSX_PATH = path.join(
+const CSV_PATH = path.join(
   ROOT,
   "public",
   "data",
-  process.env.SOURCE_XLSX || "hilton_resort_credit_v3.xlsx",
+  process.env.SOURCE_CSV || "hilton_resort_credit_v3.csv",
 );
 
 const XOTELO_PUBLIC_URL = "https://data.xotelo.com/api";
@@ -26,7 +25,6 @@ const FORCE_REFRESH = ["1", "true", "yes"].includes(
   String(process.env.FORCE_REFRESH || "").toLowerCase(),
 );
 
-const SHEET_NAME = "Hilton Resort Credit Hotels";
 const COUNTRY_ALIASES = new Map([
   ["USA", "United States"],
   ["U.S.A.", "United States"],
@@ -98,6 +96,54 @@ function decodeHyperlink(target) {
   return String(target || "").replaceAll("&amp;", "&");
 }
 
+function parseCsv(text) {
+  const rows = [];
+  let row = [];
+  let field = "";
+  let inQuotes = false;
+
+  for (let index = 0; index < text.length; index += 1) {
+    const char = text[index];
+    const next = text[index + 1];
+
+    if (char === '"') {
+      if (inQuotes && next === '"') {
+        field += '"';
+        index += 1;
+      } else {
+        inQuotes = !inQuotes;
+      }
+      continue;
+    }
+
+    if (!inQuotes && char === ",") {
+      row.push(field);
+      field = "";
+      continue;
+    }
+
+    if (!inQuotes && (char === "\n" || char === "\r")) {
+      if (char === "\r" && next === "\n") {
+        index += 1;
+      }
+      row.push(field);
+      rows.push(row);
+      row = [];
+      field = "";
+      continue;
+    }
+
+    field += char;
+  }
+
+  if (field.length > 0 || row.length > 0) {
+    row.push(field);
+    rows.push(row);
+  }
+
+  return rows;
+}
+
 function extractXoteloKeysFromTripAdvisorUrl(tripAdvisorUrl) {
   const match = String(tripAdvisorUrl || "").match(/-g(\d+)-d(\d+)(?:-|\.html|$)/i);
   if (!match) {
@@ -153,58 +199,55 @@ function normalizeExistingXotelo(record = {}) {
   };
 }
 
-function readWorkbookRows() {
-  const workbook = XLSX.readFile(XLSX_PATH, {
-    cellFormula: false,
-    cellHTML: false,
-    cellStyles: false,
-    cellText: false,
-  });
-  const sheet = workbook.Sheets[SHEET_NAME] || workbook.Sheets[workbook.SheetNames[0]];
-  const rows = XLSX.utils.sheet_to_json(sheet, { defval: null, raw: true });
+async function readSourceRows() {
+  const raw = await fs.readFile(CSV_PATH, "utf8");
+  const rows = parseCsv(raw.replace(/^\uFEFF/, ""));
+  const [header = [], ...records] = rows;
 
-  return rows.map((row, index) => {
-    const excelRow = index + 2;
-    const hiltonCell = sheet[`H${excelRow}`];
-    const tripAdvisorCell = sheet[`I${excelRow}`];
-    const name = row["飯店名稱"];
-    const city = row["城市"];
-    const country = normalizeCountry(row["國家"]);
-    const region = row["地區"];
-    const lat = toNumber(row["緯度"]);
-    const lng = toNumber(row["經度"]);
-    const brand = row["品牌"];
-    const hiltonUrl = decodeHyperlink(hiltonCell?.l?.Target);
-    const tripAdvisorUrl = decodeHyperlink(tripAdvisorCell?.l?.Target);
+  return records
+    .filter((row) => row.some((value) => String(value || "").trim()))
+    .map((row) => {
+      const record = Object.fromEntries(header.map((key, index) => [key, row[index] ?? null]));
+      const name = record["飯店名稱"];
+      const city = record["城市"];
+      const country = normalizeCountry(record["國家"]);
+      const region = record["地區"];
+      const lat = toNumber(record["緯度"]);
+      const lng = toNumber(record["經度"]);
+      const brand = record["品牌"];
+      const hiltonUrl = decodeHyperlink(record["Hilton 官網"]);
+      const tripAdvisorUrl = decodeHyperlink(record["TripAdvisor"]);
     const xoteloKeys = extractXoteloKeysFromTripAdvisorUrl(tripAdvisorUrl);
 
-    return {
-      id: slugify(name),
-      name,
-      brand,
-      city: city || null,
-      country,
-      region: region || null,
-      geo:
-        lat !== null && lng !== null
+      return {
+        id: slugify(name),
+        name,
+        brand,
+        city: city || null,
+        country,
+        region: region || null,
+        geo:
+          lat !== null && lng !== null
+            ? {
+                lat,
+                lng,
+              }
+            : null,
+        hiltonUrl: hiltonUrl || null,
+        tripAdvisorUrl: tripAdvisorUrl || null,
+        xotelo: xoteloKeys
           ? {
-              lat,
-              lng,
+              hotelKey: xoteloKeys.hotelKey,
+              locationKey: xoteloKeys.locationKey,
+              statusNote: "TripAdvisor URL parsed",
             }
-          : null,
-      hiltonUrl: hiltonUrl || null,
-      tripAdvisorUrl: tripAdvisorUrl || null,
-      xotelo: xoteloKeys
-        ? {
-            hotelKey: xoteloKeys.hotelKey,
-            locationKey: xoteloKeys.locationKey,
-            statusNote: "TripAdvisor URL parsed",
-          }
-        : {
-            statusNote: tripAdvisorUrl ? "TripAdvisor URL could not be parsed" : "TripAdvisor URL missing",
-          },
-    };
-  });
+          : {
+              statusNote: tripAdvisorUrl
+                ? "TripAdvisor URL could not be parsed"
+                : "TripAdvisor URL missing",
+            },
+      };
+    });
 }
 
 async function readJsonFile(filePath, fallback) {
@@ -589,8 +632,8 @@ async function writePricesPayload(hotels, meta) {
 
 async function loadHotelsWithExistingPrices() {
   const existing = await readExistingData();
-  const hotels = mergeWithExisting(readWorkbookRows(), existing.prices || {});
-  const sourceFile = path.relative(ROOT, XLSX_PATH);
+  const hotels = mergeWithExisting(await readSourceRows(), existing.prices || {});
+  const sourceFile = path.relative(ROOT, CSV_PATH);
 
   return {
     hotels,
@@ -600,10 +643,10 @@ async function loadHotelsWithExistingPrices() {
 }
 
 export async function syncHotels() {
-  console.log(`Reading source workbook: ${path.relative(ROOT, XLSX_PATH)}`);
+  console.log(`Reading source CSV: ${path.relative(ROOT, CSV_PATH)}`);
   const { hotels, sourceFile } = await loadHotelsWithExistingPrices();
 
-  console.log(`Loaded ${hotels.length} hotel row(s) from workbook.`);
+  console.log(`Loaded ${hotels.length} hotel row(s) from CSV.`);
 
   await writeHotelsPayload(hotels, {
     generatedAt: new Date().toISOString(),
@@ -615,10 +658,10 @@ export async function syncHotels() {
 }
 
 export async function syncPrices() {
-  console.log(`Reading source workbook: ${path.relative(ROOT, XLSX_PATH)}`);
+  console.log(`Reading source CSV: ${path.relative(ROOT, CSV_PATH)}`);
   const { hotels, sourceFile } = await loadHotelsWithExistingPrices();
 
-  console.log(`Loaded ${hotels.length} hotel row(s) from workbook.`);
+  console.log(`Loaded ${hotels.length} hotel row(s) from CSV.`);
 
   const xoteloResult = await enrichXotelo(hotels, HOTEL_LIMIT, async (progress) => {
     await writePricesPayload(progress.hotels, {

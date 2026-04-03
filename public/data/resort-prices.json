@@ -1,7 +1,7 @@
 {
   "meta": {
     "generatedAt": "2026-04-03T16:11:51.715Z",
-    "sourceFile": "public/data/hilton_resort_credit_v3.xlsx",
+    "sourceFile": "public/data/hilton_resort_credit_v3.csv",
     "hotelCount": 312,
     "processedHotelCount": 1,
     "completedHotelCount": 1,
