@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-03T14:37:44.660Z",
+    "generatedAt": "2026-04-03T16:11:36.837Z",
     "sourceFile": "public/data/hilton_resort_credit_v3.xlsx",
     "hotelCount": 312
   },
@@ -4077,7 +4077,7 @@
         "lng": -117.1795
       },
       "hiltonUrl": "https://www.hilton.com/en/hotels/sanrhol-shore-house-at-the-del/",
-      "tripAdvisorUrl": "https://www.hilton.com/en/hotels/sanrhol-shore-house-at-the-del/"
+      "tripAdvisorUrl": "https://www.tripadvisor.com/Hotel_Feature-g32250-d24043297-zft6217-Shore_House_at_The_Del_LXR_Hotels_Resorts.html"
     },
     {
       "id": "susona-bodrum-lxr-hotels-and-resorts",

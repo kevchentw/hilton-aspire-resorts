@@ -20,6 +20,8 @@ const HOTEL_LIMIT = Number(process.env.HOTEL_LIMIT || 0);
 const XOTELO_DELAY_MS = Number(process.env.XOTELO_DELAY_MS || 250);
 const PRICE_WINDOW_COUNT = Number(process.env.PRICE_WINDOW_COUNT || 4);
 const PRICE_STAY_NIGHTS = Number(process.env.PRICE_STAY_NIGHTS || 2);
+const TARGET_HOTEL_ID = String(process.env.HOTEL_ID || "").trim();
+const TARGET_HOTEL_NAME = String(process.env.HOTEL_NAME || "").trim();
 const FORCE_REFRESH = ["1", "true", "yes"].includes(
   String(process.env.FORCE_REFRESH || "").toLowerCase(),
 );
@@ -58,6 +60,10 @@ function normalize(value) {
     .replace(/[^\w\s-]/g, "")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function unique(values) {
+  return [...new Set(values)];
 }
 
 function scoreNameMatch(left, right) {
@@ -248,6 +254,41 @@ function mergeWithExisting(baseHotels, existingPrices) {
       },
     };
   });
+}
+
+function selectTargetHotels(hotels) {
+  if (!TARGET_HOTEL_ID && !TARGET_HOTEL_NAME) {
+    return hotels.map((hotel, index) => ({ hotel, index }));
+  }
+
+  let matches = hotels
+    .map((hotel, index) => ({ hotel, index }))
+    .filter(({ hotel }) => !TARGET_HOTEL_ID || hotel.id === TARGET_HOTEL_ID);
+
+  if (TARGET_HOTEL_NAME) {
+    const normalizedTargetName = normalize(TARGET_HOTEL_NAME);
+    const exactNameMatches = matches.filter(({ hotel }) => normalize(hotel.name) === normalizedTargetName);
+    const partialNameMatches = matches.filter(({ hotel }) =>
+      normalize(hotel.name).includes(normalizedTargetName),
+    );
+
+    matches = exactNameMatches.length ? exactNameMatches : partialNameMatches;
+  }
+
+  if (!matches.length) {
+    throw new Error(
+      `No hotel matched HOTEL_ID="${TARGET_HOTEL_ID || "*"}" and HOTEL_NAME="${TARGET_HOTEL_NAME || "*"}".`,
+    );
+  }
+
+  if (!TARGET_HOTEL_ID && matches.length > 1) {
+    const candidateList = unique(matches.map(({ hotel }) => `${hotel.id} (${hotel.name})`));
+    throw new Error(
+      `HOTEL_NAME="${TARGET_HOTEL_NAME}" matched multiple hotels. Use HOTEL_ID instead. Matches: ${candidateList.join(", ")}`,
+    );
+  }
+
+  return matches;
 }
 
 function computeSampleStayWindows() {
@@ -441,23 +482,29 @@ async function fetchXoteloRates(hotel, sampleWindows) {
 
 async function enrichXotelo(hotels, limit = 0, onProgress = async () => {}) {
   const sampleWindows = computeSampleStayWindows();
-  const processedCount = limit > 0 ? Math.min(limit, hotels.length) : hotels.length;
+  const targetHotels = selectTargetHotels(hotels);
+  const hotelsToProcess = limit > 0 ? targetHotels.slice(0, limit) : targetHotels;
+  const processedCount = hotelsToProcess.length;
   const workingHotels = [...hotels];
   let completedCount = 0;
 
-  if (limit > 0) {
+  if ((TARGET_HOTEL_ID || TARGET_HOTEL_NAME) && targetHotels.length) {
     console.log(
-      `Applying HOTEL_LIMIT=${limit}; fetching Xotelo data for ${processedCount} of ${hotels.length} hotel(s).`,
+      `Targeting ${targetHotels.length} hotel(s) for price sync: ${targetHotels
+        .map(({ hotel }) => hotel.id)
+        .join(", ")}`,
     );
   }
 
-  for (const [index, hotel] of hotels.entries()) {
-    if (index >= processedCount) {
-      continue;
-    }
+  if (limit > 0) {
+    console.log(
+      `Applying HOTEL_LIMIT=${limit}; fetching Xotelo data for ${processedCount} of ${targetHotels.length} targeted hotel(s).`,
+    );
+  }
 
+  for (const [sequenceIndex, { hotel, index }] of hotelsToProcess.entries()) {
     let nextHotel = hotel;
-    console.log(`Processing hotel ${index + 1}/${processedCount}: ${hotel.name}`);
+    console.log(`Processing hotel ${sequenceIndex + 1}/${processedCount}: ${hotel.name}`);
 
     if (shouldSkipRateFetch(nextHotel, sampleWindows)) {
       console.log(`Skipping ${hotel.name}: all requested price windows already cached`);

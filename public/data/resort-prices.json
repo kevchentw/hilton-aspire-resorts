@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generatedAt": "2026-04-03T15:15:18.182Z",
+    "generatedAt": "2026-04-03T16:11:51.715Z",
     "sourceFile": "public/data/hilton_resort_credit_v3.xlsx",
     "hotelCount": 312,
-    "processedHotelCount": 312,
-    "completedHotelCount": 312,
+    "processedHotelCount": 1,
+    "completedHotelCount": 1,
     "sampleStay": {
       "checkIn": "2026-04-10",
       "checkOut": "2026-04-12"
@@ -147,7 +147,7 @@
     "conrad-algarve": {
       "hotelKey": "g262054-d2142716",
       "locationKey": "g262054",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "indicativeRange": {
         "minimum": 297,
         "maximum": 1215,
@@ -375,7 +375,7 @@
     "conrad-bora-bora-nui": {
       "hotelKey": "g311415-d304568",
       "locationKey": "g311415",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -489,7 +489,7 @@
     "conrad-chia-laguna-sardinia": {
       "hotelKey": "g608910-d1457967",
       "locationKey": "g608910",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -603,7 +603,7 @@
     "conrad-fort-lauderdale-beach": {
       "hotelKey": "g34227-d1555519",
       "locationKey": "g34227",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -1265,7 +1265,7 @@
     "conrad-orlando": {
       "hotelKey": "g34515-d25353203",
       "locationKey": "g34515",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -1574,7 +1574,7 @@
     "conrad-tulum-riviera-maya": {
       "hotelKey": "g25303625-d23608358",
       "locationKey": "g25303625",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -1677,7 +1677,7 @@
     "baia-di-chia-resort-sardinia-curio-collection": {
       "hotelKey": "g608910-d631016",
       "locationKey": "g608910",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -2571,7 +2571,7 @@
     "domes-aulus-elounda-resort-curio-by-hilton": {
       "hotelKey": "g189416-d265374",
       "locationKey": "g189416",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -2674,7 +2674,7 @@
     "faro-blanco-resort-and-yacht-club-marathon-curio": {
       "hotelKey": "g34347-d6784786",
       "locationKey": "g34347",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -2946,7 +2946,7 @@
     "harbor-club-st-lucia-curio-collection": {
       "hotelKey": "g147344-d12720987",
       "locationKey": "g147344",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -3358,7 +3358,7 @@
     "hotel-maren-fort-lauderdale-beach-curio-collection": {
       "hotelKey": "g34227-d19901710",
       "locationKey": "g34227",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -3564,7 +3564,7 @@
     "indura-beach-and-golf-resort-curio-collection": {
       "hotelKey": "g297578-d5777227",
       "locationKey": "g297578",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -3667,7 +3667,7 @@
     "isla-brown-chania-resort-curio-collection": {
       "hotelKey": "g644211-d25355174",
       "locationKey": "g644211",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -3770,7 +3770,7 @@
     "isla-brown-corinthia-resort-and-spa-curio-collection": {
       "hotelKey": "g4501379-d23341412",
       "locationKey": "g4501379",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -3873,7 +3873,7 @@
     "keight-hotel-opatija-curio-collection": {
       "hotelKey": "g297515-d27430719",
       "locationKey": "g297515",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -4182,7 +4182,7 @@
     "la-quinta-resort-and-club-curio-collection": {
       "hotelKey": "g32584-d77460",
       "locationKey": "g32584",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -4388,7 +4388,7 @@
     "aulus-lindos-rhodes-resort-curio-collection": {
       "hotelKey": "g776010-d572243",
       "locationKey": "g776010",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -4491,7 +4491,7 @@
     "mangias-santa-teresa-sardinia-curio-collection": {
       "hotelKey": "g608922-d1143791",
       "locationKey": "g608922",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -4594,7 +4594,7 @@
     "mangrove-beach-corendon-curacao-all-inclusive-curio": {
       "hotelKey": "g147278-d19849230",
       "locationKey": "g147278",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -4800,7 +4800,7 @@
     "sea-breeze-santorini-beach-resort-curio-collection": {
       "hotelKey": "g26295569-d23955731",
       "locationKey": "g26295569",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -4903,7 +4903,7 @@
     "semeli-coast-mykonos-curio-collection": {
       "hotelKey": "g189430-d27702879",
       "locationKey": "g189430",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -5105,7 +5105,7 @@
     "sulia-house-porto-rotondo-curio-collection": {
       "hotelKey": "g608916-d1799793",
       "locationKey": "g608916",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -5208,7 +5208,7 @@
     "the-club-cala-san-miguel-hotel-ibiza-curio-collection": {
       "hotelKey": "g775984-d291057",
       "locationKey": "g775984",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -5414,7 +5414,7 @@
     "the-reach-key-west-curio-collection": {
       "hotelKey": "g34345-d209392",
       "locationKey": "g34345",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -5517,7 +5517,7 @@
     "the-rif-at-mangrove-beach-all-inclusive-curio": {
       "hotelKey": "g147278-d19849230",
       "locationKey": "g147278",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -5620,7 +5620,7 @@
     "the-royal-senses-resort-crete-curio-collection": {
       "hotelKey": "g1177810-d19865453",
       "locationKey": "g1177810",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -6547,7 +6547,7 @@
     "bahia-mar-fort-lauderdale-beach-a-doubletree-by-hilton": {
       "hotelKey": "g34227-d1555519",
       "locationKey": "g34227",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -7577,7 +7577,7 @@
     "doubletree-by-hilton-islantilla-beach-golf-resort": {
       "hotelKey": "g297578-d5777227",
       "locationKey": "g297578",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -8298,7 +8298,7 @@
     "doubletree-by-hilton-okinawa-chatan-resort": {
       "hotelKey": "g1025634-d6522582",
       "locationKey": "g1025634",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -11664,7 +11664,7 @@
     "embassy-suites-by-hilton-virginia-beach-oceanfront-resort": {
       "hotelKey": "g60982-d87016",
       "locationKey": "g60982",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -12453,7 +12453,7 @@
       "lastSuccessfulRateAt": "2026-04-03T07:09:47.242Z"
     },
     "hilton-grand-vacations-club-blue-mountain-canada": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -12593,7 +12593,7 @@
       "lastSuccessfulRateAt": "2026-04-03T07:10:09.433Z"
     },
     "hilton-grand-vacations-club-flamingo-las-vegas": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -12871,7 +12871,7 @@
     "hilton-grand-vacations-club-in-sandestin-golf-and-beach-resort": {
       "hotelKey": "g297578-d5777227",
       "locationKey": "g297578",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -12972,7 +12972,7 @@
       "lastSuccessfulRateAt": "2026-04-03T14:48:59.011Z"
     },
     "hilton-grand-vacations-club-kings-land-waikoloa": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -13042,7 +13042,7 @@
       "lastSuccessfulRateAt": "2026-04-03T14:49:18.057Z"
     },
     "hilton-grand-vacations-club-kohala-suites-waikoloa": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -13590,7 +13590,7 @@
     "hilton-grand-vacations-club-ocean-oak-resort-hilton-head": {
       "hotelKey": "g32584-d77460",
       "locationKey": "g32584",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -13794,7 +13794,7 @@
       "lastSuccessfulRateAt": "2026-04-03T07:48:04.901Z"
     },
     "hilton-grand-vacations-club-on-the-las-vegas-strip": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -13864,7 +13864,7 @@
       "lastSuccessfulRateAt": "2026-04-03T14:51:38.036Z"
     },
     "hilton-grand-vacations-club-paradise-las-vegas": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -14004,7 +14004,7 @@
       "lastSuccessfulRateAt": "2026-04-03T07:57:59.983Z"
     },
     "hilton-grand-vacations-club-seaworld-orlando": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -14480,7 +14480,7 @@
       "lastSuccessfulRateAt": null
     },
     "hilton-grand-vacations-club-whistler": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -14550,7 +14550,7 @@
       "lastSuccessfulRateAt": "2026-04-03T14:53:00.781Z"
     },
     "hilton-vacation-club-aqua-sol-orlando-west": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -14620,7 +14620,7 @@
       "lastSuccessfulRateAt": "2026-04-03T14:53:15.735Z"
     },
     "hilton-vacation-club-cabo-azul-los-cabos": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -14692,7 +14692,7 @@
     "hilton-vacation-club-cancun-resort-las-vegas": {
       "hotelKey": "g32584-d77460",
       "locationKey": "g32584",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -15168,7 +15168,7 @@
       "lastSuccessfulRateAt": "2026-04-03T08:56:56.948Z"
     },
     "hilton-vacation-club-greensprings-williamsburg": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -15343,7 +15343,7 @@
     "hilton-vacation-club-lake-tahoe-resort-south": {
       "hotelKey": "g32584-d77460",
       "locationKey": "g32584",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -15446,7 +15446,7 @@
     "hilton-vacation-club-los-abrigados-resort-and-spa-sedona": {
       "hotelKey": "g32584-d77460",
       "locationKey": "g32584",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -15619,7 +15619,7 @@
     "hilton-vacation-club-ocean-beach-club-virginia-beach": {
       "hotelKey": "g60982-d87016",
       "locationKey": "g60982",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -15823,7 +15823,7 @@
       "lastSuccessfulRateAt": "2026-04-03T09:13:58.350Z"
     },
     "hilton-vacation-club-palm-canyon-palm-springs": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -15893,7 +15893,7 @@
       "lastSuccessfulRateAt": "2026-04-03T14:55:40.116Z"
     },
     "hilton-vacation-club-polynesian-isles-kissimmee": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -15963,7 +15963,7 @@
       "lastSuccessfulRateAt": "2026-04-03T14:55:53.843Z"
     },
     "hilton-vacation-club-rancho-manana-phoenix-cave-creek": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -16033,7 +16033,7 @@
       "lastSuccessfulRateAt": "2026-04-03T14:56:22.816Z"
     },
     "hilton-vacation-club-ridge-on-sedona": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -16105,7 +16105,7 @@
     "hilton-vacation-club-riviera-beach-and-shores": {
       "hotelKey": "g60982-d87016",
       "locationKey": "g60982",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -16369,7 +16369,7 @@
       "lastSuccessfulRateAt": "2026-04-03T06:15:10.224Z"
     },
     "hilton-vacation-club-scottsdale-villa-mirage": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -16612,7 +16612,7 @@
       "lastSuccessfulRateAt": "2026-04-03T10:05:00.631Z"
     },
     "hilton-vacation-club-the-historic-powhatan-williamsburg": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -16754,7 +16754,7 @@
     "beach-house-fort-lauderdale-a-hilton-resort": {
       "hotelKey": "g34227-d1555519",
       "locationKey": "g34227",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -16958,7 +16958,7 @@
       "lastSuccessfulRateAt": "2026-04-03T10:21:11.367Z"
     },
     "caribe-hilton": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -17201,7 +17201,7 @@
       "lastSuccessfulRateAt": "2026-04-03T10:22:16.022Z"
     },
     "hilton-alexandria-corniche": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -17271,7 +17271,7 @@
       "lastSuccessfulRateAt": "2026-04-03T14:58:36.865Z"
     },
     "hilton-alexandria-king-s-ranch": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -17341,7 +17341,7 @@
       "lastSuccessfulRateAt": "2026-04-03T14:58:44.134Z"
     },
     "hilton-anatole": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -17825,7 +17825,7 @@
     "hilton-bentley-miami-south-beach": {
       "hotelKey": "g34439-d3530470",
       "locationKey": "g34439",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -17928,7 +17928,7 @@
     "hilton-cabana-miami-beach-resort": {
       "hotelKey": "g60982-d87016",
       "locationKey": "g60982",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -18031,7 +18031,7 @@
     "hilton-cabo-verde-sal-resort": {
       "hotelKey": "g60982-d87016",
       "locationKey": "g60982",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -18338,7 +18338,7 @@
       "lastSuccessfulRateAt": "2026-04-03T11:08:09.338Z"
     },
     "hilton-cartagena-hotel": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -18513,7 +18513,7 @@
     "hilton-clark-sun-valley-resort": {
       "hotelKey": "g60982-d87016",
       "locationKey": "g60982",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -19026,7 +19026,7 @@
       "lastSuccessfulRateAt": "2026-04-03T11:12:25.816Z"
     },
     "hilton-dallas-rockwall-lakefront": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -19302,7 +19302,7 @@
       "lastSuccessfulRateAt": "2026-04-03T11:12:32.637Z"
     },
     "hilton-doha": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -19372,7 +19372,7 @@
       "lastSuccessfulRateAt": "2026-04-03T15:02:58.808Z"
     },
     "hilton-doha-the-pearl": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -19444,7 +19444,7 @@
     "hilton-dubai-jumeirah": {
       "hotelKey": "g295424-d5890945",
       "locationKey": "g295424",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -19648,7 +19648,7 @@
       "lastSuccessfulRateAt": "2026-04-03T06:16:04.467Z"
     },
     "hilton-dubai-the-walk": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -19823,7 +19823,7 @@
     "hilton-fort-lauderdale-marina": {
       "hotelKey": "g34227-d1555519",
       "locationKey": "g34227",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -19986,7 +19986,7 @@
     "hilton-galveston-island-resort": {
       "hotelKey": "g644211-d25355174",
       "locationKey": "g644211",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -20293,7 +20293,7 @@
       "lastSuccessfulRateAt": "2026-04-03T11:51:57.863Z"
     },
     "hilton-gyeongju": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -20569,7 +20569,7 @@
       "lastSuccessfulRateAt": "2026-04-03T11:52:01.760Z"
     },
     "hilton-hotel-tahiti": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -20845,7 +20845,7 @@
       "lastSuccessfulRateAt": "2026-04-03T11:52:05.739Z"
     },
     "hilton-hurghada-plaza": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -20915,7 +20915,7 @@
       "lastSuccessfulRateAt": "2026-04-03T15:05:35.483Z"
     },
     "hilton-la-jolla-torrey-pines": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -21090,7 +21090,7 @@
     "hilton-los-cabos-beach-and-golf-resort": {
       "hotelKey": "g297578-d5777227",
       "locationKey": "g297578",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -21397,7 +21397,7 @@
       "lastSuccessfulRateAt": "2026-04-03T12:07:54.113Z"
     },
     "hilton-mallorca-galatzo": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -21467,7 +21467,7 @@
       "lastSuccessfulRateAt": "2026-04-03T15:06:18.717Z"
     },
     "hilton-malta": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -22052,7 +22052,7 @@
       "lastSuccessfulRateAt": "2026-04-03T12:08:05.874Z"
     },
     "hilton-nanjing-niushoushan": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -22122,7 +22122,7 @@
       "lastSuccessfulRateAt": "2026-04-03T15:06:41.607Z"
     },
     "hilton-ningbo-dongqian-lake": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -22295,7 +22295,7 @@
       "lastSuccessfulRateAt": "2026-04-03T12:08:08.122Z"
     },
     "hilton-ocean-city-oceanfront-suites": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -22470,7 +22470,7 @@
     "hilton-okinawa-chatan-resort": {
       "hotelKey": "g1025634-d6522582",
       "locationKey": "g1025634",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -22573,7 +22573,7 @@
     "hilton-okinawa-miyako-island-resort": {
       "hotelKey": "g1025634-d6522582",
       "locationKey": "g1025634",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -22676,7 +22676,7 @@
     "hilton-okinawa-sesoko-resort": {
       "hotelKey": "g1025634-d6522582",
       "locationKey": "g1025634",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -22777,7 +22777,7 @@
       "lastSuccessfulRateAt": "2026-04-03T06:16:49.780Z"
     },
     "hilton-orlando": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -22847,7 +22847,7 @@
       "lastSuccessfulRateAt": "2026-04-03T15:07:55.674Z"
     },
     "hilton-orlando-buena-vista-palace-disney-springs-area": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -22917,7 +22917,7 @@
       "lastSuccessfulRateAt": "2026-04-03T15:08:23.947Z"
     },
     "hilton-orlando-lake-buena-vista-disney-springs-area": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -22987,7 +22987,7 @@
       "lastSuccessfulRateAt": "2026-04-03T15:08:27.437Z"
     },
     "hilton-palm-springs": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -23057,7 +23057,7 @@
       "lastSuccessfulRateAt": "2026-04-03T15:08:58.351Z"
     },
     "hilton-pattaya": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -23535,7 +23535,7 @@
       "lastSuccessfulRateAt": "2026-04-03T06:16:57.358Z"
     },
     "hilton-pyramids-golf": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -24017,7 +24017,7 @@
       "lastSuccessfulRateAt": "2026-04-03T12:27:25.115Z"
     },
     "hilton-san-diego-del-mar": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -24089,7 +24089,7 @@
     "hilton-sandestin-beach-golf-resort-and-spa": {
       "hotelKey": "g297578-d5777227",
       "locationKey": "g297578",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -24396,7 +24396,7 @@
       "lastSuccessfulRateAt": "2026-04-03T12:36:53.770Z"
     },
     "hilton-santa-fe-buffalo-thunder": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -24466,7 +24466,7 @@
       "lastSuccessfulRateAt": "2026-04-03T15:10:00.261Z"
     },
     "hilton-santa-marta": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -24948,7 +24948,7 @@
       "lastSuccessfulRateAt": "2026-04-03T12:37:47.164Z"
     },
     "hilton-sorrento-palace": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -25226,7 +25226,7 @@
     "hilton-tokyo-bay": {
       "hotelKey": "g14134868-d304292",
       "locationKey": "g14134868",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -25329,7 +25329,7 @@
     "hilton-tulum-riviera-maya-all-inclusive-resort": {
       "hotelKey": "g25303625-d23608358",
       "locationKey": "g25303625",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -26151,7 +26151,7 @@
       "lastSuccessfulRateAt": "2026-04-03T12:51:05.263Z"
     },
     "hilton-yuxi-fuxian-lake": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -26324,7 +26324,7 @@
       "lastSuccessfulRateAt": "2026-04-03T06:17:42.818Z"
     },
     "surfers-paradise-hilton": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -26394,7 +26394,7 @@
       "lastSuccessfulRateAt": "2026-04-03T15:11:32.444Z"
     },
     "the-condado-plaza-hotel": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -26567,7 +26567,7 @@
       "lastSuccessfulRateAt": "2026-04-03T06:17:45.074Z"
     },
     "the-lodge-at-gulf-state-park-a-hilton-hotel": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -26843,7 +26843,7 @@
       "lastSuccessfulRateAt": "2026-04-03T12:51:24.226Z"
     },
     "arizona-biltmore-lxr-hotels-and-resorts": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -27222,7 +27222,7 @@
       "lastSuccessfulRateAt": "2026-04-03T12:52:05.883Z"
     },
     "katara-hills-doha-lxr-hotels-and-resorts": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -27288,7 +27288,7 @@
       "lastSuccessfulRateAt": "2026-04-03T15:12:42.950Z"
     },
     "mango-house-seychelles-lxr-hotels-and-resorts": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -27358,7 +27358,7 @@
       "lastSuccessfulRateAt": "2026-04-03T15:12:58.482Z"
     },
     "maysan-doha-lxr-hotels-and-resorts": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -27428,7 +27428,7 @@
       "lastSuccessfulRateAt": "2026-04-03T15:13:16.699Z"
     },
     "roku-kyoto-lxr-hotels-and-resorts": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -27494,13 +27494,77 @@
       "lastSuccessfulRateAt": "2026-04-03T15:13:44.864Z"
     },
     "shore-house-at-the-del-lxr-hotels-and-resorts": {
-      "statusNote": "TripAdvisor URL could not be parsed",
-      "priceSnapshots": [],
-      "sampleStay": null,
-      "lastUpdatedAt": null
+      "statusNote": "Public Xotelo rates synced",
+      "priceSnapshots": [
+        {
+          "checkIn": "2026-04-10",
+          "checkOut": "2026-04-12",
+          "currency": "USD",
+          "lowestNightlyRate": 913,
+          "taxes": 150,
+          "vendorCode": "HiltonImages",
+          "vendorName": "LXR",
+          "checkedAt": "2026-04-03T16:11:39.583Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-17",
+          "checkOut": "2026-04-19",
+          "currency": "USD",
+          "lowestNightlyRate": 728,
+          "taxes": 135,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T16:11:42.637Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-24",
+          "checkOut": "2026-04-26",
+          "currency": "USD",
+          "lowestNightlyRate": 778,
+          "taxes": 141,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T16:11:45.609Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-05-01",
+          "checkOut": "2026-05-03",
+          "currency": "USD",
+          "lowestNightlyRate": 728,
+          "taxes": 135,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T16:11:48.579Z",
+          "status": "ok"
+        }
+      ],
+      "sampleStay": {
+        "checkIn": "2026-04-17",
+        "checkOut": "2026-04-19",
+        "currency": "USD",
+        "lowestNightlyRate": 728,
+        "taxes": 135,
+        "vendorCode": "CtripTA",
+        "vendorName": "Trip.com",
+        "checkedAt": "2026-04-03T16:11:42.637Z",
+        "status": "ok"
+      },
+      "lastUpdatedAt": "2026-04-03T16:11:42.637Z",
+      "hotelKey": "g32250-d24043297",
+      "locationKey": "g32250",
+      "indicativeRange": {
+        "minimum": 786,
+        "maximum": 1335,
+        "currency": "USD"
+      },
+      "lastSyncedAt": "2026-04-03T16:11:51.452Z",
+      "lastSuccessfulRateAt": "2026-04-03T16:11:42.637Z"
     },
     "susona-bodrum-lxr-hotels-and-resorts": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -27570,7 +27634,7 @@
       "lastSuccessfulRateAt": "2026-04-03T15:13:56.726Z"
     },
     "umana-bali-lxr-hotels-and-resorts": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -27846,7 +27910,7 @@
       "lastSuccessfulRateAt": "2026-04-03T12:52:22.590Z"
     },
     "signia-by-hilton-orlando-bonnet-creek": {
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -28021,7 +28085,7 @@
     "grand-wailea-a-waldorf-astoria-resort": {
       "hotelKey": "g609129-d111788",
       "locationKey": "g609129",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -28433,7 +28497,7 @@
     "waldorf-astoria-las-vegas": {
       "hotelKey": "g45963-d1456410",
       "locationKey": "g45963",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
@@ -29257,7 +29321,7 @@
     "waldorf-astoria-riviera-maya": {
       "hotelKey": "g25303625-d23608358",
       "locationKey": "g25303625",
-      "statusNote": "Public Xotelo rates synced",
+      "statusNote": "TripAdvisor URL parsed",
       "priceSnapshots": [
         {
           "checkIn": "2026-04-10",
