@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generatedAt": "2026-04-03T19:57:00.983Z",
+    "generatedAt": "2026-04-03T19:58:50.815Z",
     "sourceFile": "public/data/hilton_resort_credit_v3.csv",
     "hotelCount": 312,
     "processedHotelCount": 312,
-    "completedHotelCount": 248,
+    "completedHotelCount": 257,
     "sampleStay": {
       "checkIn": "2026-04-10",
       "checkOut": "2026-04-12"
@@ -19254,46 +19254,282 @@
     "hilton-queenstown-resort-and-spa": {
       "hotelKey": "g19858883-d2077554",
       "locationKey": "g19858883",
-      "statusNote": "TripAdvisor URL parsed",
-      "priceSnapshots": [],
-      "sampleStay": null,
-      "lastUpdatedAt": null,
-      "indicativeRange": null,
-      "lastSyncedAt": null,
-      "lastSuccessfulRateAt": null
+      "statusNote": "Public Xotelo rates synced",
+      "priceSnapshots": [
+        {
+          "checkIn": "2026-04-10",
+          "checkOut": "2026-04-12",
+          "currency": "USD",
+          "lowestNightlyRate": 283,
+          "taxes": 42,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T19:57:01.766Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-17",
+          "checkOut": "2026-04-19",
+          "currency": "USD",
+          "lowestNightlyRate": 305,
+          "taxes": 45,
+          "vendorCode": "Agoda",
+          "vendorName": "Agoda.com",
+          "checkedAt": "2026-04-03T19:57:04.732Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-24",
+          "checkOut": "2026-04-26",
+          "currency": "USD",
+          "lowestNightlyRate": 262,
+          "taxes": 39,
+          "vendorCode": "Agoda",
+          "vendorName": "Agoda.com",
+          "checkedAt": "2026-04-03T19:57:08.108Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-05-01",
+          "checkOut": "2026-05-03",
+          "currency": "USD",
+          "lowestNightlyRate": null,
+          "taxes": null,
+          "vendorCode": null,
+          "vendorName": null,
+          "checkedAt": "2026-04-03T19:57:11.026Z",
+          "status": "no_rates"
+        }
+      ],
+      "sampleStay": {
+        "checkIn": "2026-04-24",
+        "checkOut": "2026-04-26",
+        "currency": "USD",
+        "lowestNightlyRate": 262,
+        "taxes": 39,
+        "vendorCode": "Agoda",
+        "vendorName": "Agoda.com",
+        "checkedAt": "2026-04-03T19:57:08.108Z",
+        "status": "ok"
+      },
+      "lastUpdatedAt": "2026-04-03T19:57:08.108Z",
+      "indicativeRange": {
+        "minimum": 143,
+        "maximum": 455,
+        "currency": "USD"
+      },
+      "lastSyncedAt": "2026-04-03T19:57:18.353Z",
+      "lastSuccessfulRateAt": "2026-04-03T19:57:08.108Z"
     },
     "hilton-rijeka-costabella-beach-resort-and-spa": {
       "hotelKey": "g297516-d21400552",
       "locationKey": "g297516",
-      "statusNote": "TripAdvisor URL parsed",
-      "priceSnapshots": [],
-      "sampleStay": null,
-      "lastUpdatedAt": null,
-      "indicativeRange": null,
-      "lastSyncedAt": null,
-      "lastSuccessfulRateAt": null
+      "statusNote": "Public Xotelo rates synced",
+      "priceSnapshots": [
+        {
+          "checkIn": "2026-04-10",
+          "checkOut": "2026-04-12",
+          "currency": "USD",
+          "lowestNightlyRate": 355,
+          "taxes": 48,
+          "vendorCode": "HiltonEMEAGlobal",
+          "vendorName": "Hilton",
+          "checkedAt": "2026-04-03T19:57:19.051Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-17",
+          "checkOut": "2026-04-19",
+          "currency": "USD",
+          "lowestNightlyRate": 181,
+          "taxes": 26,
+          "vendorCode": "HiltonEMEAGlobal",
+          "vendorName": "Hilton",
+          "checkedAt": "2026-04-03T19:57:22.064Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-24",
+          "checkOut": "2026-04-26",
+          "currency": "USD",
+          "lowestNightlyRate": 210,
+          "taxes": 29,
+          "vendorCode": "HiltonEMEAGlobal",
+          "vendorName": "Hilton",
+          "checkedAt": "2026-04-03T19:57:24.944Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-05-01",
+          "checkOut": "2026-05-03",
+          "currency": "USD",
+          "lowestNightlyRate": 259,
+          "taxes": 36,
+          "vendorCode": "HiltonEMEAGlobal",
+          "vendorName": "Hilton",
+          "checkedAt": "2026-04-03T19:57:27.872Z",
+          "status": "ok"
+        }
+      ],
+      "sampleStay": {
+        "checkIn": "2026-04-17",
+        "checkOut": "2026-04-19",
+        "currency": "USD",
+        "lowestNightlyRate": 181,
+        "taxes": 26,
+        "vendorCode": "HiltonEMEAGlobal",
+        "vendorName": "Hilton",
+        "checkedAt": "2026-04-03T19:57:22.064Z",
+        "status": "ok"
+      },
+      "lastUpdatedAt": "2026-04-03T19:57:22.064Z",
+      "indicativeRange": {
+        "minimum": 188,
+        "maximum": 478,
+        "currency": "USD"
+      },
+      "lastSyncedAt": "2026-04-03T19:57:30.682Z",
+      "lastSuccessfulRateAt": "2026-04-03T19:57:22.064Z"
     },
     "hilton-salalah-resort": {
       "hotelKey": "g298419-d301982",
       "locationKey": "g298419",
-      "statusNote": "TripAdvisor URL parsed",
-      "priceSnapshots": [],
-      "sampleStay": null,
-      "lastUpdatedAt": null,
-      "indicativeRange": null,
-      "lastSyncedAt": null,
-      "lastSuccessfulRateAt": null
+      "statusNote": "Public Xotelo rates synced",
+      "priceSnapshots": [
+        {
+          "checkIn": "2026-04-10",
+          "checkOut": "2026-04-12",
+          "currency": "USD",
+          "lowestNightlyRate": 116,
+          "taxes": 27,
+          "vendorCode": "Agoda",
+          "vendorName": "Agoda.com",
+          "checkedAt": "2026-04-03T19:57:31.462Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-17",
+          "checkOut": "2026-04-19",
+          "currency": "USD",
+          "lowestNightlyRate": 116,
+          "taxes": 27,
+          "vendorCode": "Agoda",
+          "vendorName": "Agoda.com",
+          "checkedAt": "2026-04-03T19:57:36.883Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-24",
+          "checkOut": "2026-04-26",
+          "currency": "USD",
+          "lowestNightlyRate": 116,
+          "taxes": 27,
+          "vendorCode": "Agoda",
+          "vendorName": "Agoda.com",
+          "checkedAt": "2026-04-03T19:57:39.853Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-05-01",
+          "checkOut": "2026-05-03",
+          "currency": "USD",
+          "lowestNightlyRate": 99,
+          "taxes": 23,
+          "vendorCode": "Agoda",
+          "vendorName": "Agoda.com",
+          "checkedAt": "2026-04-03T19:57:42.746Z",
+          "status": "ok"
+        }
+      ],
+      "sampleStay": {
+        "checkIn": "2026-05-01",
+        "checkOut": "2026-05-03",
+        "currency": "USD",
+        "lowestNightlyRate": 99,
+        "taxes": 23,
+        "vendorCode": "Agoda",
+        "vendorName": "Agoda.com",
+        "checkedAt": "2026-04-03T19:57:42.746Z",
+        "status": "ok"
+      },
+      "lastUpdatedAt": "2026-04-03T19:57:42.746Z",
+      "indicativeRange": {
+        "minimum": 144,
+        "maximum": 221,
+        "currency": "USD"
+      },
+      "lastSyncedAt": "2026-04-03T19:57:45.532Z",
+      "lastSuccessfulRateAt": "2026-04-03T19:57:42.746Z"
     },
     "hilton-salwa-beach-resort-and-villas": {
       "hotelKey": "g21509274-d21792606",
       "locationKey": "g21509274",
-      "statusNote": "TripAdvisor URL parsed",
-      "priceSnapshots": [],
-      "sampleStay": null,
-      "lastUpdatedAt": null,
-      "indicativeRange": null,
-      "lastSyncedAt": null,
-      "lastSuccessfulRateAt": null
+      "statusNote": "Public Xotelo rates synced",
+      "priceSnapshots": [
+        {
+          "checkIn": "2026-04-10",
+          "checkOut": "2026-04-12",
+          "currency": "USD",
+          "lowestNightlyRate": 322,
+          "taxes": 0,
+          "vendorCode": "BookingCom",
+          "vendorName": "Booking.com",
+          "checkedAt": "2026-04-03T19:57:46.229Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-17",
+          "checkOut": "2026-04-19",
+          "currency": "USD",
+          "lowestNightlyRate": 322,
+          "taxes": 0,
+          "vendorCode": "BookingCom",
+          "vendorName": "Booking.com",
+          "checkedAt": "2026-04-03T19:57:49.158Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-24",
+          "checkOut": "2026-04-26",
+          "currency": "USD",
+          "lowestNightlyRate": 322,
+          "taxes": 0,
+          "vendorCode": "BookingCom",
+          "vendorName": "Booking.com",
+          "checkedAt": "2026-04-03T19:57:52.084Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-05-01",
+          "checkOut": "2026-05-03",
+          "currency": "USD",
+          "lowestNightlyRate": 273,
+          "taxes": 0,
+          "vendorCode": "Agoda",
+          "vendorName": "Agoda.com",
+          "checkedAt": "2026-04-03T19:57:57.679Z",
+          "status": "ok"
+        }
+      ],
+      "sampleStay": {
+        "checkIn": "2026-05-01",
+        "checkOut": "2026-05-03",
+        "currency": "USD",
+        "lowestNightlyRate": 273,
+        "taxes": 0,
+        "vendorCode": "Agoda",
+        "vendorName": "Agoda.com",
+        "checkedAt": "2026-04-03T19:57:57.679Z",
+        "status": "ok"
+      },
+      "lastUpdatedAt": "2026-04-03T19:57:57.679Z",
+      "indicativeRange": {
+        "minimum": 254,
+        "maximum": 463,
+        "currency": "USD"
+      },
+      "lastSyncedAt": "2026-04-03T19:58:00.719Z",
+      "lastSuccessfulRateAt": "2026-04-03T19:57:57.679Z"
     },
     "hilton-san-diego-del-mar": {
       "statusNote": "TripAdvisor URL parsed",
@@ -19368,35 +19604,212 @@
     "hilton-sandestin-beach-golf-resort-and-spa": {
       "hotelKey": "g34614-d224312",
       "locationKey": "g34614",
-      "statusNote": "TripAdvisor URL parsed",
-      "priceSnapshots": [],
-      "sampleStay": null,
-      "lastUpdatedAt": null,
-      "indicativeRange": null,
-      "lastSyncedAt": null,
-      "lastSuccessfulRateAt": null
+      "statusNote": "Public Xotelo rates synced",
+      "priceSnapshots": [
+        {
+          "checkIn": "2026-04-10",
+          "checkOut": "2026-04-12",
+          "currency": "USD",
+          "lowestNightlyRate": null,
+          "taxes": null,
+          "vendorCode": null,
+          "vendorName": null,
+          "checkedAt": "2026-04-03T19:58:01.767Z",
+          "status": "no_rates"
+        },
+        {
+          "checkIn": "2026-04-17",
+          "checkOut": "2026-04-19",
+          "currency": "USD",
+          "lowestNightlyRate": 302,
+          "taxes": 81,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T19:58:09.259Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-24",
+          "checkOut": "2026-04-26",
+          "currency": "USD",
+          "lowestNightlyRate": 379,
+          "taxes": 85,
+          "vendorCode": "BookingCom",
+          "vendorName": "Booking.com",
+          "checkedAt": "2026-04-03T19:58:12.426Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-05-01",
+          "checkOut": "2026-05-03",
+          "currency": "USD",
+          "lowestNightlyRate": 550,
+          "taxes": 110,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T19:58:15.387Z",
+          "status": "ok"
+        }
+      ],
+      "sampleStay": {
+        "checkIn": "2026-04-17",
+        "checkOut": "2026-04-19",
+        "currency": "USD",
+        "lowestNightlyRate": 302,
+        "taxes": 81,
+        "vendorCode": "CtripTA",
+        "vendorName": "Trip.com",
+        "checkedAt": "2026-04-03T19:58:09.259Z",
+        "status": "ok"
+      },
+      "lastUpdatedAt": "2026-04-03T19:58:09.259Z",
+      "indicativeRange": {
+        "minimum": 309,
+        "maximum": 737,
+        "currency": "USD"
+      },
+      "lastSyncedAt": "2026-04-03T19:58:18.298Z",
+      "lastSuccessfulRateAt": "2026-04-03T19:58:09.259Z"
     },
     "hilton-sanqingshan-resort": {
       "hotelKey": "g1016927-d2257403",
       "locationKey": "g1016927",
-      "statusNote": "TripAdvisor URL parsed",
-      "priceSnapshots": [],
-      "sampleStay": null,
-      "lastUpdatedAt": null,
-      "indicativeRange": null,
-      "lastSyncedAt": null,
-      "lastSuccessfulRateAt": null
+      "statusNote": "Public Xotelo rates synced",
+      "priceSnapshots": [
+        {
+          "checkIn": "2026-04-10",
+          "checkOut": "2026-04-12",
+          "currency": "USD",
+          "lowestNightlyRate": 71,
+          "taxes": 4,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T19:58:19.003Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-17",
+          "checkOut": "2026-04-19",
+          "currency": "USD",
+          "lowestNightlyRate": 91,
+          "taxes": 13,
+          "vendorCode": "Agoda",
+          "vendorName": "Agoda.com",
+          "checkedAt": "2026-04-03T19:58:21.942Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-24",
+          "checkOut": "2026-04-26",
+          "currency": "USD",
+          "lowestNightlyRate": 73,
+          "taxes": 11,
+          "vendorCode": "Agoda",
+          "vendorName": "Agoda.com",
+          "checkedAt": "2026-04-03T19:58:25.012Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-05-01",
+          "checkOut": "2026-05-03",
+          "currency": "USD",
+          "lowestNightlyRate": 128,
+          "taxes": 7,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T19:58:28.498Z",
+          "status": "ok"
+        }
+      ],
+      "sampleStay": {
+        "checkIn": "2026-04-10",
+        "checkOut": "2026-04-12",
+        "currency": "USD",
+        "lowestNightlyRate": 71,
+        "taxes": 4,
+        "vendorCode": "CtripTA",
+        "vendorName": "Trip.com",
+        "checkedAt": "2026-04-03T19:58:19.003Z",
+        "status": "ok"
+      },
+      "lastUpdatedAt": "2026-04-03T19:58:19.003Z",
+      "indicativeRange": {
+        "minimum": 68,
+        "maximum": 106,
+        "currency": "USD"
+      },
+      "lastSyncedAt": "2026-04-03T19:58:31.301Z",
+      "lastSuccessfulRateAt": "2026-04-03T19:58:19.003Z"
     },
     "hilton-santa-barbara-beachfront-resort": {
       "hotelKey": "g33045-d81899",
       "locationKey": "g33045",
-      "statusNote": "TripAdvisor URL parsed",
-      "priceSnapshots": [],
-      "sampleStay": null,
-      "lastUpdatedAt": null,
-      "indicativeRange": null,
-      "lastSyncedAt": null,
-      "lastSuccessfulRateAt": null
+      "statusNote": "Public Xotelo rates synced",
+      "priceSnapshots": [
+        {
+          "checkIn": "2026-04-10",
+          "checkOut": "2026-04-12",
+          "currency": "USD",
+          "lowestNightlyRate": 596,
+          "taxes": 130,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T19:58:32.077Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-17",
+          "checkOut": "2026-04-19",
+          "currency": "USD",
+          "lowestNightlyRate": null,
+          "taxes": null,
+          "vendorCode": null,
+          "vendorName": null,
+          "checkedAt": "2026-04-03T19:58:35.046Z",
+          "status": "no_rates"
+        },
+        {
+          "checkIn": "2026-04-24",
+          "checkOut": "2026-04-26",
+          "currency": "USD",
+          "lowestNightlyRate": 537,
+          "taxes": 122,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T19:58:42.425Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-05-01",
+          "checkOut": "2026-05-03",
+          "currency": "USD",
+          "lowestNightlyRate": 490,
+          "taxes": 115,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T19:58:45.391Z",
+          "status": "ok"
+        }
+      ],
+      "sampleStay": {
+        "checkIn": "2026-05-01",
+        "checkOut": "2026-05-03",
+        "currency": "USD",
+        "lowestNightlyRate": 490,
+        "taxes": 115,
+        "vendorCode": "CtripTA",
+        "vendorName": "Trip.com",
+        "checkedAt": "2026-04-03T19:58:45.391Z",
+        "status": "ok"
+      },
+      "lastUpdatedAt": "2026-04-03T19:58:45.391Z",
+      "indicativeRange": {
+        "minimum": 352,
+        "maximum": 829,
+        "currency": "USD"
+      },
+      "lastSyncedAt": "2026-04-03T19:58:50.558Z",
+      "lastSuccessfulRateAt": "2026-04-03T19:58:45.391Z"
     },
     "hilton-santa-fe-buffalo-thunder": {
       "statusNote": "TripAdvisor URL parsed",
