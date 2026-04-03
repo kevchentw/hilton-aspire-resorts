@@ -33,13 +33,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Sync resort data
-        env:
-          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
-          RAPIDAPI_HOST: xotelo-hotel-prices.p.rapidapi.com
-          SYNC_USER_AGENT: hilton-aspire-resorts-pages-build
-        run: npm run sync:data
-
       - name: Build static site
         run: npm run build
 
