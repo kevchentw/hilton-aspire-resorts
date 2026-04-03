@@ -31,6 +31,7 @@ The price sync is designed to be resumable:
 - It writes progress to disk after each processed hotel
 - It skips hotels that already have successful price snapshots for all requested date windows
 - It only refetches hotels that are missing price windows, unless you force a refresh
+- It can also target only hotels that do not have any successful cached price yet
 
 If you want to test with a smaller batch while tuning the sync script:
 
@@ -61,6 +62,14 @@ To force a full refresh even when cached prices already exist:
 ```bash
 FORCE_REFRESH=1 npm run sync:prices
 ```
+
+To fetch only hotels that still do not have any successful cached price at all:
+
+```bash
+UNPRICED_ONLY=1 npm run sync:prices
+```
+
+You can combine that with `HOTEL_LIMIT`, `HOTEL_ID`, or `HOTEL_NAME` if you want to narrow the run further.
 
 ## GitHub Pages deployment
 

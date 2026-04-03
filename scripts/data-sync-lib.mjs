@@ -24,6 +24,9 @@ const TARGET_HOTEL_NAME = String(process.env.HOTEL_NAME || "").trim();
 const FORCE_REFRESH = ["1", "true", "yes"].includes(
   String(process.env.FORCE_REFRESH || "").toLowerCase(),
 );
+const UNPRICED_ONLY = ["1", "true", "yes"].includes(
+  String(process.env.UNPRICED_ONLY || "").toLowerCase(),
+);
 
 const COUNTRY_ALIASES = new Map([
   ["USA", "United States"],
@@ -316,36 +319,49 @@ function mergeWithExisting(baseHotels, existingPrices) {
   });
 }
 
+function hasSuccessfulCachedPrice(hotel) {
+  if (typeof hotel.xotelo?.sampleStay?.lowestNightlyRate === "number") {
+    return true;
+  }
+
+  return (hotel.xotelo?.priceSnapshots || []).some(
+    (snapshot) => typeof snapshot?.lowestNightlyRate === "number",
+  );
+}
+
 function selectTargetHotels(hotels) {
-  if (!TARGET_HOTEL_ID && !TARGET_HOTEL_NAME) {
-    return hotels.map((hotel, index) => ({ hotel, index }));
+  const indexedHotels = hotels.map((hotel, index) => ({ hotel, index }));
+  let matches = indexedHotels;
+
+  if (TARGET_HOTEL_ID || TARGET_HOTEL_NAME) {
+    matches = indexedHotels.filter(({ hotel }) => !TARGET_HOTEL_ID || hotel.id === TARGET_HOTEL_ID);
+
+    if (TARGET_HOTEL_NAME) {
+      const normalizedTargetName = normalize(TARGET_HOTEL_NAME);
+      const exactNameMatches = matches.filter(({ hotel }) => normalize(hotel.name) === normalizedTargetName);
+      const partialNameMatches = matches.filter(({ hotel }) =>
+        normalize(hotel.name).includes(normalizedTargetName),
+      );
+
+      matches = exactNameMatches.length ? exactNameMatches : partialNameMatches;
+    }
+
+    if (!matches.length) {
+      throw new Error(
+        `No hotel matched HOTEL_ID="${TARGET_HOTEL_ID || "*"}" and HOTEL_NAME="${TARGET_HOTEL_NAME || "*"}".`,
+      );
+    }
+
+    if (!TARGET_HOTEL_ID && matches.length > 1) {
+      const candidateList = unique(matches.map(({ hotel }) => `${hotel.id} (${hotel.name})`));
+      throw new Error(
+        `HOTEL_NAME="${TARGET_HOTEL_NAME}" matched multiple hotels. Use HOTEL_ID instead. Matches: ${candidateList.join(", ")}`,
+      );
+    }
   }
 
-  let matches = hotels
-    .map((hotel, index) => ({ hotel, index }))
-    .filter(({ hotel }) => !TARGET_HOTEL_ID || hotel.id === TARGET_HOTEL_ID);
-
-  if (TARGET_HOTEL_NAME) {
-    const normalizedTargetName = normalize(TARGET_HOTEL_NAME);
-    const exactNameMatches = matches.filter(({ hotel }) => normalize(hotel.name) === normalizedTargetName);
-    const partialNameMatches = matches.filter(({ hotel }) =>
-      normalize(hotel.name).includes(normalizedTargetName),
-    );
-
-    matches = exactNameMatches.length ? exactNameMatches : partialNameMatches;
-  }
-
-  if (!matches.length) {
-    throw new Error(
-      `No hotel matched HOTEL_ID="${TARGET_HOTEL_ID || "*"}" and HOTEL_NAME="${TARGET_HOTEL_NAME || "*"}".`,
-    );
-  }
-
-  if (!TARGET_HOTEL_ID && matches.length > 1) {
-    const candidateList = unique(matches.map(({ hotel }) => `${hotel.id} (${hotel.name})`));
-    throw new Error(
-      `HOTEL_NAME="${TARGET_HOTEL_NAME}" matched multiple hotels. Use HOTEL_ID instead. Matches: ${candidateList.join(", ")}`,
-    );
+  if (UNPRICED_ONLY) {
+    matches = matches.filter(({ hotel }) => !hasSuccessfulCachedPrice(hotel));
   }
 
   return matches;
@@ -553,6 +569,12 @@ async function enrichXotelo(hotels, limit = 0, onProgress = async () => {}) {
       `Targeting ${targetHotels.length} hotel(s) for price sync: ${targetHotels
         .map(({ hotel }) => hotel.id)
         .join(", ")}`,
+    );
+  }
+
+  if (UNPRICED_ONLY) {
+    console.log(
+      `UNPRICED_ONLY enabled; ${targetHotels.length} hotel(s) without cached successful prices will be processed.`,
     );
   }
 
