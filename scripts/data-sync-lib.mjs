@@ -289,10 +289,27 @@ async function readExistingData() {
 function mergeWithExisting(baseHotels, existingPrices) {
   return baseHotels.map((hotel) => {
     const previous = normalizeExistingXotelo(existingPrices[hotel.id] || {});
+    const hasTripadvisorKeyChanged =
+      previous.hotelKey !== hotel.xotelo?.hotelKey || previous.locationKey !== hotel.xotelo?.locationKey;
+    const nextPrevious = hasTripadvisorKeyChanged
+      ? {
+          ...previous,
+          indicativeRange: null,
+          priceSnapshots: [],
+          sampleStay: null,
+          lastSyncedAt: null,
+          lastSuccessfulRateAt: null,
+          lastUpdatedAt: null,
+          statusNote: previous.hotelKey
+            ? "TripAdvisor URL changed; cleared cached Xotelo prices"
+            : previous.statusNote,
+        }
+      : previous;
+
     return {
       ...hotel,
       xotelo: {
-        ...previous,
+        ...nextPrevious,
         ...hotel.xotelo,
       },
     };

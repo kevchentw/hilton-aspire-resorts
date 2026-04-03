@@ -455,6 +455,10 @@ code {
   margin-top: 18px;
 }
 
+.detail-grid--compact {
+  margin-top: 0;
+}
+
 .detail-row {
   display: grid;
   gap: 6px;
@@ -548,6 +552,54 @@ code {
   color: var(--muted);
   font-size: 0.84rem;
   line-height: 1.55;
+}
+
+.detail-tripadvisor {
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(29, 111, 103, 0.08), rgba(255, 255, 255, 0.96));
+  border: 1px solid rgba(29, 111, 103, 0.14);
+}
+
+.detail-tripadvisor__header {
+  display: flex;
+  align-items: baseline;
+}
+
+.detail-tripadvisor__header h3 {
+  margin: 0;
+  font-size: 0.98rem;
+}
+
+.detail-tripadvisor__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.detail-stat-pill {
+  display: inline-flex;
+  gap: 10px;
+  align-items: baseline;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: white;
+  border: 1px solid rgba(29, 111, 103, 0.12);
+}
+
+.detail-stat-pill strong {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.detail-stat-pill span {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
 }
 
 .popup-card {

@@ -2,6 +2,7 @@ import "./styles.css";
 
 const HOTELS_URL = "./data/resorts.json";
 const PRICES_URL = "./data/resort-prices.json";
+const TRIPADVISOR_ENRICHMENT_URL = "./data/tripadvisor-search-enrichment.json";
 
 const state = {
   hotels: [],
@@ -99,6 +100,19 @@ function uniqueValues(values) {
 function toFiniteNumber(value) {
   const number = Number(value);
   return Number.isFinite(number) ? number : null;
+}
+
+function formatReviewCount(value) {
+  const reviewCount = toFiniteNumber(value);
+  if (reviewCount === null) {
+    return null;
+  }
+
+  return new Intl.NumberFormat("en-US").format(reviewCount);
+}
+
+function getTripAdvisorData(hotel) {
+  return hotel.tripAdvisorEnrichment || null;
 }
 
 function getCoordinates(hotel) {
@@ -596,8 +610,64 @@ function renderDetail() {
 
   const location = getLocationData(hotel);
   const pricedSnapshots = getPricedSnapshots(hotel);
-  const unpricedSnapshots = getUnpricedSnapshots(hotel);
   const bestSnapshot = pricedSnapshots[0] || null;
+  const tripAdvisor = getTripAdvisorData(hotel);
+  const tripAdvisorRating = toFiniteNumber(tripAdvisor?.rating);
+  const tripAdvisorReviewCount = formatReviewCount(tripAdvisor?.reviewCount);
+  const tripAdvisorAddress = tripAdvisor?.address || tripAdvisor?.locationText || null;
+  const locationLines = uniqueValues([
+    uniqueValues([location.city, location.region, location.country]).join(", ") || null,
+    tripAdvisorAddress,
+  ]);
+  const tripAdvisorMarkup = tripAdvisor
+    ? `
+      <section class="detail-tripadvisor">
+        <div class="detail-tripadvisor__header">
+          <h3>TripAdvisor</h3>
+        </div>
+        ${
+          tripAdvisorRating !== null || tripAdvisorReviewCount
+            ? `
+          <div class="detail-tripadvisor__stats">
+            ${
+              tripAdvisorRating !== null
+                ? `
+              <div class="detail-stat-pill">
+                <strong>${escapeHtml(tripAdvisorRating.toFixed(1))}</strong>
+                <span>rating</span>
+              </div>
+            `
+                : ""
+            }
+            ${
+              tripAdvisorReviewCount
+                ? `
+              <div class="detail-stat-pill">
+                <strong>${escapeHtml(tripAdvisorReviewCount)}</strong>
+                <span>reviews</span>
+              </div>
+            `
+                : ""
+            }
+          </div>
+        `
+            : ""
+        }
+        <div class="detail-grid detail-grid--compact">
+          ${
+            tripAdvisor?.phone
+              ? `
+            <div class="detail-row">
+              <span>Phone</span>
+              <strong>${escapeHtml(tripAdvisor.phone)}</strong>
+            </div>
+          `
+              : ""
+          }
+        </div>
+      </section>
+    `
+    : "";
   const snapshotMarkup = pricedSnapshots.length
     ? `
       <section class="detail-price-breakdown">
@@ -623,15 +693,6 @@ function renderDetail() {
           .join("")}
         </div>
       </section>
-    `
-    : "";
-  const unavailableMarkup = unpricedSnapshots.length
-    ? `
-      <div class="detail-price-note">
-        No sampled reference price for ${unpricedSnapshots
-          .map((snapshot) => formatStayWindow(snapshot))
-          .join(" • ")}
-      </div>
     `
     : "";
   const priceSummaryMarkup = bestSnapshot
@@ -664,20 +725,18 @@ function renderDetail() {
       ${priceSummaryMarkup}
       <div class="detail-grid">
         ${
-          location.city || location.region || location.country
+          locationLines.length
             ? `
           <div class="detail-row">
             <span>Location</span>
-            <strong>${escapeHtml(
-              uniqueValues([location.city, location.region, location.country]).join(", "),
-            )}</strong>
+            <strong>${locationLines.map((line) => escapeHtml(line)).join("<br />")}</strong>
           </div>
         `
             : ""
         }
       </div>
+      ${tripAdvisorMarkup}
       ${snapshotMarkup}
-      ${unavailableMarkup}
       <div class="detail-actions">
         <a class="primary-button" href="${hotel.hiltonUrl}" target="_blank" rel="noreferrer">
           Hilton
@@ -1024,13 +1083,36 @@ function mergePayloads(hotelsPayload, pricesPayload) {
   };
 }
 
+function mergeTripAdvisorEnrichment(payload, enrichmentPayload) {
+  const tripAdvisorHotels = enrichmentPayload?.hotels || {};
+  const hotels = payload.hotels.map((hotel) => ({
+    ...hotel,
+    tripAdvisorEnrichment:
+      tripAdvisorHotels[hotel.name] ||
+      Object.values(tripAdvisorHotels).find((entry) => entry.hotelId === hotel.id) ||
+      null,
+  }));
+
+  return {
+    meta: {
+      ...payload.meta,
+      tripAdvisor: enrichmentPayload?.meta || null,
+    },
+    hotels,
+  };
+}
+
 async function loadData() {
-  const [hotelsPayload, pricesPayload] = await Promise.all([
+  const [hotelsPayload, pricesPayload, tripAdvisorPayload] = await Promise.all([
     loadJson(HOTELS_URL),
     loadJson(PRICES_URL, { optional: true }),
+    loadJson(TRIPADVISOR_ENRICHMENT_URL, { optional: true }),
   ]);
 
-  return mergePayloads(hotelsPayload, pricesPayload);
+  return mergeTripAdvisorEnrichment(
+    mergePayloads(hotelsPayload, pricesPayload),
+    tripAdvisorPayload,
+  );
 }
 
 function showError(message) {
