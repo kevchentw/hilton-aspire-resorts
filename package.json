@@ -7,10 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "sync:hotels": "node scripts/sync-hotels.mjs",
+    "sync:prices": "node scripts/sync-prices.mjs",
     "sync:data": "node scripts/sync-data.mjs"
   },
   "devDependencies": {
     "cheerio": "^1.1.0",
-    "vite": "^7.1.5"
+    "vite": "^7.1.5",
+    "xlsx": "^0.18.5"
   }
 }

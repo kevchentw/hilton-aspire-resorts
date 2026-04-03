@@ -4,44 +4,55 @@ Static GitHub Pages site for browsing Hilton resort-credit eligible hotels on a 
 
 ## What it does
 
-- Pulls the live Hilton resort-credit eligible hotel list from Hilton.
-- Bootstraps hotel matches from Xotelo through RapidAPI when a key is available.
-- Uses fallback geocoding only for resorts that still need coordinates after Xotelo enrichment.
-- Uses Xotelo public endpoints to attach cached sample nightly rates and indicative ranges when a hotel key is known.
-- Builds a plain static frontend that GitHub Pages can host.
+- Reads hotel metadata from `public/data/hilton_resort_credit_v3.xlsx`
+- Writes hotel basics to `public/data/resorts.json`
+- Writes price-related Xotelo data to `public/data/resort-prices.json`
+- Builds a plain static frontend that loads both JSON files and merges them in the browser
 
 ## Local development
 
 ```bash
 npm install
-npm run sync:data
+npm run sync:hotels
+npm run sync:prices
 npm run dev
 ```
+
+## Sync data
+
+Use the sync command that matches the data you changed:
+
+- `npm run sync:hotels` reads hotel metadata from `public/data/hilton_resort_credit_v3.xlsx` and writes the hotel list to `public/data/resorts.json`
+- `npm run sync:prices` reads the same workbook, merges it with cached metadata, and writes Xotelo price data to `public/data/resort-prices.json`
+- `npm run sync:data` runs both commands in sequence for a full refresh
+
+The price sync is designed to be resumable:
+
+- It writes progress to disk after each processed hotel
+- It skips hotels that already have successful price snapshots for all requested date windows
+- It only refetches hotels that are missing price windows, unless you force a refresh
 
 If you want to test with a smaller batch while tuning the sync script:
 
 ```bash
-HOTEL_LIMIT=25 npm run sync:data
+HOTEL_LIMIT=2 npm run sync:prices
 ```
 
-## Optional Xotelo bootstrap
+That still writes the full hotel list, but only fetches fresh Xotelo prices for the first `N` hotels.
 
-Xotelo's `search` endpoint now requires RapidAPI. If you want complete hotel-key matching, much better map coverage, and richer cached pricing during the sync step, add this environment variable:
+By default the sync caches 4 upcoming weekend windows for each processed hotel. You can override that with `PRICE_WINDOW_COUNT`, `PRICE_STAY_NIGHTS`, or an explicit `PRICE_WINDOWS=YYYY-MM-DD:YYYY-MM-DD,...`.
+
+To force a full refresh even when cached prices already exist:
 
 ```bash
-export RAPIDAPI_KEY=your_key_here
+FORCE_REFRESH=1 npm run sync:prices
 ```
-
-The script uses the RapidAPI host `xotelo-hotel-prices.p.rapidapi.com`.
-
-Without `RAPIDAPI_KEY`, the site still builds and lists Hilton resorts, but map coverage and pricing enrichment will be partial because the static build has no reliable way to match every Hilton property to Xotelo.
 
 ## GitHub Pages deployment
 
 1. Push this repo to GitHub.
 2. In GitHub, go to `Settings -> Pages`.
 3. Set the source to `GitHub Actions`.
-4. Add the optional secret `RAPIDAPI_KEY` if you want Xotelo search bootstrap during deploys.
-5. Push to `main` or run the `Deploy GitHub Pages` workflow manually.
+4. Push to `main` or run the `Deploy GitHub Pages` workflow manually.
 
-The workflow also refreshes the dataset daily.
+The workflow can refresh the dataset on a schedule.

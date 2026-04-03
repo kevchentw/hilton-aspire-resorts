@@ -1,6 +1,7 @@
 import "./styles.css";
 
-const DATA_URL = "./data/resorts.json";
+const HOTELS_URL = "./data/resorts.json";
+const PRICES_URL = "./data/resort-prices.json";
 
 const state = {
   hotels: [],
@@ -8,17 +9,24 @@ const state = {
   selectedHotelId: null,
   search: "",
   brand: "all",
-  priceCap: "",
+  country: "all",
+  region: "all",
   onlyCreditFriendly: false,
-  view: "split",
-  loading: true,
-  error: null,
+  view: "map",
 };
 
 let map;
 let markersLayer;
-let activePopup;
 let dom = {};
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+}
 
 function formatCurrency(value, currency = "USD") {
   if (typeof value !== "number" || Number.isNaN(value)) {
@@ -32,12 +40,114 @@ function formatCurrency(value, currency = "USD") {
   }).format(value);
 }
 
+function formatDateLabel(value, options = {}) {
+  if (!value) {
+    return "Unknown date";
+  }
+
+  const parsed = new Date(`${value}T00:00:00`);
+  if (Number.isNaN(parsed.getTime())) {
+    return value;
+  }
+
+  return parsed.toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    ...options,
+  });
+}
+
 function normalizeText(value) {
   return (value || "").toLowerCase();
 }
 
+function uniqueValues(values) {
+  return [...new Set(values.filter(Boolean))];
+}
+
+function toFiniteNumber(value) {
+  const number = Number(value);
+  return Number.isFinite(number) ? number : null;
+}
+
+function getCoordinates(hotel) {
+  const lat =
+    toFiniteNumber(hotel.geo?.lat) ??
+    toFiniteNumber(hotel.lat) ??
+    toFiniteNumber(hotel.latitude) ??
+    null;
+  const lng =
+    toFiniteNumber(hotel.geo?.lng) ??
+    toFiniteNumber(hotel.lng) ??
+    toFiniteNumber(hotel.lon) ??
+    toFiniteNumber(hotel.longitude) ??
+    null;
+
+  return lat !== null && lng !== null ? { lat, lng } : null;
+}
+
+function getLocationData(hotel) {
+  return {
+    city:
+      hotel.city ||
+      hotel.xotelo?.shortPlaceName ||
+      hotel.xotelo?.placeName ||
+      null,
+    region: hotel.region || hotel.state || null,
+    country: hotel.country || null,
+    countryCode: hotel.countryCode || null,
+  };
+}
+
+function getPriceSnapshots(hotel) {
+  const snapshots = hotel.xotelo?.priceSnapshots;
+  if (Array.isArray(snapshots) && snapshots.length) {
+    return [...snapshots].sort((left, right) =>
+      `${left.checkIn}:${left.checkOut}`.localeCompare(`${right.checkIn}:${right.checkOut}`),
+    );
+  }
+
+  return hotel.xotelo?.sampleStay ? [hotel.xotelo.sampleStay] : [];
+}
+
+function normalizeSnapshotStay(snapshot) {
+  if (!snapshot?.checkIn || !snapshot?.checkOut) {
+    return snapshot;
+  }
+
+  return snapshot.checkIn <= snapshot.checkOut
+    ? snapshot
+    : {
+        ...snapshot,
+        checkIn: snapshot.checkOut,
+        checkOut: snapshot.checkIn,
+      };
+}
+
+function getBestSnapshot(hotel) {
+  return (
+    getPriceSnapshots(hotel)
+      .map((snapshot) => normalizeSnapshotStay(snapshot))
+      .filter((snapshot) => typeof snapshot.lowestNightlyRate === "number")
+      .sort((left, right) => left.lowestNightlyRate - right.lowestNightlyRate)[0] || null
+  );
+}
+
+function getLastUpdated(hotel) {
+  return (
+    hotel.xotelo?.lastUpdatedAt ||
+    hotel.xotelo?.lastSuccessfulRateAt ||
+    getPriceSnapshots(hotel)
+      .map((snapshot) => snapshot.checkedAt)
+      .filter(Boolean)
+      .sort()
+      .at(-1) ||
+    null
+  );
+}
+
 function buildPriceLabel(hotel) {
-  const sample = hotel.xotelo?.sampleStay;
+  const sample = getBestSnapshot(hotel);
   if (sample?.lowestNightlyRate) {
     return `${formatCurrency(sample.lowestNightlyRate, sample.currency)} / night`;
   }
@@ -54,35 +164,68 @@ function buildPriceLabel(hotel) {
 }
 
 function buildPriceSubLabel(hotel) {
-  const sample = hotel.xotelo?.sampleStay;
+  const sample = getBestSnapshot(hotel);
+  const pricedSnapshots = getPriceSnapshots(hotel).filter(
+    (snapshot) => typeof snapshot.lowestNightlyRate === "number",
+  );
   if (sample?.lowestNightlyRate) {
-    return `Xotelo sample stay ${sample.checkIn} to ${sample.checkOut}`;
+    return pricedSnapshots.length > 1
+      ? `Lowest across ${pricedSnapshots.length} cached stays`
+      : `Sample stay ${formatDateLabel(sample.checkIn)} to ${formatDateLabel(sample.checkOut)}`;
   }
 
   const range = hotel.xotelo?.indicativeRange;
   if (range?.minimum && range?.maximum) {
-    return "Xotelo indicative range";
+    return "Indicative range";
   }
 
-  return hotel.xotelo?.statusNote || "Add RapidAPI bootstrap to enrich pricing";
+  return "No cached rate yet";
 }
 
 function getEffectivePrice(hotel) {
   return (
-    hotel.xotelo?.sampleStay?.lowestNightlyRate ||
+    getBestSnapshot(hotel)?.lowestNightlyRate ||
     hotel.xotelo?.indicativeRange?.minimum ||
     null
   );
 }
 
+function getPricedSnapshots(hotel) {
+  return getPriceSnapshots(hotel)
+    .map((snapshot) => normalizeSnapshotStay(snapshot))
+    .filter((snapshot) => typeof snapshot.lowestNightlyRate === "number")
+    .sort((left, right) => left.lowestNightlyRate - right.lowestNightlyRate);
+}
+
+function getUnpricedSnapshots(hotel) {
+  return getPriceSnapshots(hotel)
+    .map((snapshot) => normalizeSnapshotStay(snapshot))
+    .filter((snapshot) => typeof snapshot.lowestNightlyRate !== "number");
+}
+
+function formatStayWindow(snapshot, options = {}) {
+  if (!snapshot?.checkIn && !snapshot?.checkOut) {
+    return "Dates unavailable";
+  }
+
+  const checkInLabel = formatDateLabel(snapshot.checkIn, options);
+  const checkOutLabel = formatDateLabel(snapshot.checkOut, options);
+  return `${checkInLabel} to ${checkOutLabel}`;
+}
+
 function getLocationLabel(hotel) {
+  const location = getLocationData(hotel);
   return (
-    hotel.locationLabel ||
-    hotel.geocode?.displayName ||
+    uniqueValues([location.city, location.region, location.country]).join(", ") ||
     hotel.xotelo?.shortPlaceName ||
     hotel.xotelo?.placeName ||
-    "Location loading"
+    "Location pending"
   );
+}
+
+function buildGoogleMapsUrl(hotel) {
+  const query = `${hotel.name} ${getLocationLabel(hotel)}`;
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
 }
 
 function sortHotels(hotels) {
@@ -108,12 +251,12 @@ function sortHotels(hotels) {
 
 function applyFilters() {
   const search = normalizeText(state.search);
-  const priceCap = Number(state.priceCap);
 
   state.filteredHotels = sortHotels(
     state.hotels.filter((hotel) => {
+      const location = getLocationData(hotel);
       const haystack = normalizeText(
-        `${hotel.name} ${hotel.brand} ${hotel.locationLabel || ""}`,
+        `${hotel.name} ${hotel.brand} ${location.city || ""} ${location.region || ""} ${location.country || ""}`,
       );
       const effectivePrice = getEffectivePrice(hotel);
       const isCreditFriendly = effectivePrice !== null && effectivePrice <= 200;
@@ -126,17 +269,15 @@ function applyFilters() {
         return false;
       }
 
-      if (state.onlyCreditFriendly && !isCreditFriendly) {
+      if (state.country !== "all" && location.country !== state.country) {
         return false;
       }
 
-      if (
-        state.priceCap &&
-        Number.isFinite(priceCap) &&
-        priceCap > 0 &&
-        effectivePrice !== null &&
-        effectivePrice > priceCap
-      ) {
+      if (state.region !== "all" && location.region !== state.region) {
+        return false;
+      }
+
+      if (state.onlyCreditFriendly && !isCreditFriendly) {
         return false;
       }
 
@@ -145,99 +286,117 @@ function applyFilters() {
   );
 }
 
-function updateStats(meta) {
-  const withMap = state.hotels.filter((hotel) => hotel.geo?.lat && hotel.geo?.lng).length;
-  const withPrice = state.hotels.filter((hotel) => getEffectivePrice(hotel) !== null).length;
-  const creditFriendly = state.hotels.filter((hotel) => {
-    const price = getEffectivePrice(hotel);
-    return price !== null && price <= 200;
-  }).length;
-
-  dom.generatedAt.textContent = meta.generatedAt
-    ? new Date(meta.generatedAt).toLocaleString("en-US", {
-        dateStyle: "medium",
-        timeStyle: "short",
-      })
-    : "Not synced yet";
-
-  dom.totalCount.textContent = `${state.hotels.length}`;
-  dom.mappedCount.textContent = `${withMap}`;
-  dom.priceCount.textContent = `${withPrice}`;
-  dom.creditCount.textContent = `${creditFriendly}`;
-
-  if (!meta.rapidApiBootstrapEnabled) {
-    dom.syncNote.innerHTML = `
-      <strong>Heads up:</strong>
-      Xotelo hotel matching now needs <code>RAPIDAPI_KEY</code>. Without it, this static build can still show the Hilton list and some fallback map matches, but full map coverage and richer price snapshots will be limited.
-    `;
-  } else {
-    dom.syncNote.innerHTML = `
-      <strong>Pricing mode:</strong>
-      This build used the Xotelo bootstrap path, so hotel matching, map placement, and sample rate data should be much more complete.
-    `;
-  }
-}
-
-function createHotelCard(hotel) {
-  const card = document.createElement("article");
-  card.className = "hotel-card";
-  card.dataset.hotelId = hotel.id;
-
-  const price = getEffectivePrice(hotel);
-  const creditFriendly = price !== null && price <= 200;
-
-  card.innerHTML = `
-    <div class="card-topline">
-      <span class="brand-pill">${hotel.brand}</span>
-      <span class="price-pill ${creditFriendly ? "price-pill--green" : ""}">
-        ${buildPriceLabel(hotel)}
-      </span>
-    </div>
-    <h3>${hotel.name}</h3>
-    <p class="hotel-location">${getLocationLabel(hotel)}</p>
-    <p class="hotel-price-note">${buildPriceSubLabel(hotel)}</p>
-    <div class="card-actions">
-      <button class="ghost-button" data-action="map">Show on map</button>
-      <a class="primary-button" href="${hotel.hiltonUrl}" target="_blank" rel="noreferrer">
-        Book with Hilton
-      </a>
-    </div>
-  `;
-
-  card.querySelector('[data-action="map"]').addEventListener("click", () => {
-    focusHotel(hotel.id);
-  });
-
-  return card;
-}
-
-function renderList() {
-  dom.resultsCount.textContent = `${state.filteredHotels.length} hotels`;
-  dom.list.innerHTML = "";
-
+function ensureSelectedHotel() {
   if (!state.filteredHotels.length) {
-    const emptyState = document.createElement("div");
-    emptyState.className = "empty-state";
-    emptyState.innerHTML = `
-      <h3>No resorts match those filters</h3>
-      <p>Try clearing the brand filter or widening the price cap.</p>
-    `;
-    dom.list.append(emptyState);
+    state.selectedHotelId = null;
     return;
   }
 
-  const fragment = document.createDocumentFragment();
-  state.filteredHotels.forEach((hotel) => {
-    fragment.append(createHotelCard(hotel));
+  const stillVisible = state.filteredHotels.some((hotel) => hotel.id === state.selectedHotelId);
+  if (!stillVisible) {
+    state.selectedHotelId = state.filteredHotels[0].id;
+  }
+}
+
+function getSelectedHotel() {
+  return state.filteredHotels.find((hotel) => hotel.id === state.selectedHotelId) || null;
+}
+
+function updateMeta(meta) {
+  const filtered = state.filteredHotels.length;
+  const total = state.hotels.length;
+
+  dom.resultsCount.textContent = `${filtered} of ${total} hotels`;
+  dom.generatedAt.textContent = meta.generatedAt
+    ? `Updated ${new Date(meta.generatedAt).toLocaleString("en-US", {
+        dateStyle: "medium",
+        timeStyle: "short",
+      })}`
+    : "Not synced yet";
+}
+
+function createHotelRow(hotel) {
+  const row = document.createElement("tr");
+  row.className = "hotel-row";
+  row.dataset.hotelId = hotel.id;
+  row.tabIndex = 0;
+
+  const location = getLocationData(hotel);
+  const price = getEffectivePrice(hotel);
+  const creditFriendly = price !== null && price <= 200;
+
+  row.innerHTML = `
+    <td class="hotel-cell hotel-cell--name">
+      <strong>${escapeHtml(hotel.name)}</strong>
+      <span>${escapeHtml(hotel.brand)}</span>
+    </td>
+    <td class="hotel-cell">${escapeHtml(location.city || "Unknown")}</td>
+    <td class="hotel-cell">${escapeHtml(location.country || "Unknown")}</td>
+    <td class="hotel-cell hotel-cell--price">
+      <strong>${escapeHtml(buildPriceLabel(hotel))}</strong>
+      <span>${escapeHtml(buildPriceSubLabel(hotel))}</span>
+    </td>
+    <td class="hotel-cell hotel-cell--credit">
+      <span class="table-pill ${creditFriendly ? "table-pill--green" : ""}">
+        ${creditFriendly ? "Use credit" : "Above $200"}
+      </span>
+    </td>
+  `;
+
+  const selectRow = () => selectHotel(hotel.id, { focusMap: state.view === "map" });
+
+  row.addEventListener("click", selectRow);
+  row.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      selectRow();
+    }
   });
-  dom.list.append(fragment);
+
+  return row;
+}
+
+function renderList() {
+  dom.list.innerHTML = "";
+
+  if (!state.filteredHotels.length) {
+    dom.list.innerHTML = `
+      <div class="empty-state">
+        <h3>No hotels match those filters</h3>
+        <p>Try clearing the brand filter or the under-$200 toggle.</p>
+      </div>
+    `;
+    return;
+  }
+
+  const table = document.createElement("table");
+  table.className = "hotel-table";
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th>Hotel</th>
+        <th>City</th>
+        <th>Country</th>
+        <th>Price</th>
+        <th>Credit fit</th>
+      </tr>
+    </thead>
+  `;
+
+  const body = document.createElement("tbody");
+  state.filteredHotels.forEach((hotel) => {
+    body.append(createHotelRow(hotel));
+  });
+  table.append(body);
+  dom.list.append(table);
+  highlightSelectedCard();
 }
 
 function markerHtml(hotel) {
   const price = getEffectivePrice(hotel);
   return `
     <div class="map-pin ${price !== null && price <= 200 ? "map-pin--green" : ""}">
-      <span>${price !== null ? formatCurrency(price) : "?"}</span>
+      <span>${price !== null ? escapeHtml(formatCurrency(price)) : "?"}</span>
     </div>
   `;
 }
@@ -251,11 +410,13 @@ function renderMap() {
   const bounds = [];
 
   state.filteredHotels.forEach((hotel) => {
-    if (!hotel.geo?.lat || !hotel.geo?.lng) {
+    const coordinates = getCoordinates(hotel);
+    if (!coordinates) {
+      hotel.__marker = null;
       return;
     }
 
-    const marker = window.L.marker([hotel.geo.lat, hotel.geo.lng], {
+    const marker = window.L.marker([coordinates.lat, coordinates.lng], {
       icon: window.L.divIcon({
         className: "map-pin-wrapper",
         html: markerHtml(hotel),
@@ -266,65 +427,198 @@ function renderMap() {
 
     marker.bindPopup(`
       <div class="popup-card">
-        <strong>${hotel.name}</strong>
-        <span>${hotel.brand}</span>
-        <span>${getLocationLabel(hotel)}</span>
-        <span>${buildPriceLabel(hotel)}</span>
-        <a href="${hotel.hiltonUrl}" target="_blank" rel="noreferrer">Book with Hilton</a>
+        <strong>${escapeHtml(hotel.name)}</strong>
+        <span>${escapeHtml(getLocationLabel(hotel))}</span>
+        <span>${escapeHtml(buildPriceLabel(hotel))}</span>
       </div>
     `);
 
     marker.on("click", () => {
-      state.selectedHotelId = hotel.id;
-      activePopup = marker;
-      highlightSelectedCard();
+      selectHotel(hotel.id);
     });
 
     markersLayer.addLayer(marker);
     hotel.__marker = marker;
-    bounds.push([hotel.geo.lat, hotel.geo.lng]);
+    bounds.push([coordinates.lat, coordinates.lng]);
   });
 
-  if (bounds.length) {
-    map.fitBounds(bounds, { padding: [30, 30] });
-  }
-}
-
-function highlightSelectedCard() {
-  document.querySelectorAll(".hotel-card").forEach((card) => {
-    card.classList.toggle("hotel-card--active", card.dataset.hotelId === state.selectedHotelId);
-  });
-}
-
-function focusHotel(hotelId) {
-  const hotel = state.hotels.find((item) => item.id === hotelId);
-  if (!hotel || !hotel.geo?.lat || !hotel.geo?.lng || !hotel.__marker) {
+  if (!bounds.length) {
+    map.setView([25, -10], 2);
     return;
   }
 
-  state.selectedHotelId = hotelId;
-  highlightSelectedCard();
-  map.flyTo([hotel.geo.lat, hotel.geo.lng], 9, { duration: 0.8 });
-  hotel.__marker.openPopup();
+  map.fitBounds(bounds, { padding: [30, 30] });
+}
+
+function highlightSelectedCard() {
+  document.querySelectorAll(".hotel-row").forEach((row) => {
+    row.classList.toggle("hotel-row--active", row.dataset.hotelId === state.selectedHotelId);
+  });
+}
+
+function focusHotelOnMap(hotelId, { animate = true, openPopup = true } = {}) {
+  const hotel = state.filteredHotels.find((item) => item.id === hotelId);
+  const coordinates = hotel ? getCoordinates(hotel) : null;
+  if (!coordinates || !hotel?.__marker) {
+    return;
+  }
+
+  const targetZoom = Math.max(map.getZoom(), 9);
+
+  if (animate) {
+    map.flyTo([coordinates.lat, coordinates.lng], targetZoom, { duration: 0.8 });
+  } else {
+    map.setView([coordinates.lat, coordinates.lng], targetZoom);
+  }
+
+  if (openPopup) {
+    hotel.__marker.openPopup();
+  }
+}
+
+function renderDetail() {
+  const hotel = getSelectedHotel();
+
+  if (!hotel) {
+    dom.detail.innerHTML = `
+      <div class="detail-empty">
+        <h3>No hotel selected</h3>
+        <p>Pick a hotel from the list or click a marker on the map.</p>
+      </div>
+    `;
+    return;
+  }
+
+  const location = getLocationData(hotel);
+  const pricedSnapshots = getPricedSnapshots(hotel);
+  const unpricedSnapshots = getUnpricedSnapshots(hotel);
+  const bestSnapshot = pricedSnapshots[0] || null;
+  const snapshotMarkup = pricedSnapshots.length
+    ? `
+      <section class="detail-price-breakdown">
+        <div class="detail-price-breakdown__header">
+          <h3>Cached stay prices</h3>
+          <span>${pricedSnapshots.length} priced ${pricedSnapshots.length === 1 ? "date" : "dates"}</span>
+        </div>
+        <div class="detail-rate-list">
+        ${pricedSnapshots
+          .map(
+            (snapshot) => `
+          <div class="detail-rate-card ${bestSnapshot === snapshot ? "detail-rate-card--best" : ""}">
+            <div>
+              <strong>${escapeHtml(formatStayWindow(snapshot))}</strong>
+              <span>${escapeHtml(
+                bestSnapshot === snapshot ? "Best cached nightly rate" : "Alternate cached stay",
+              )}</span>
+            </div>
+            <strong>${escapeHtml(formatCurrency(snapshot.lowestNightlyRate, snapshot.currency))}</strong>
+          </div>
+        `,
+          )
+          .join("")}
+        </div>
+      </section>
+    `
+    : "";
+  const unavailableMarkup = unpricedSnapshots.length
+    ? `
+      <div class="detail-price-note">
+        No cached rate for ${unpricedSnapshots
+          .map((snapshot) => formatStayWindow(snapshot))
+          .join(" • ")}
+      </div>
+    `
+    : "";
+  const priceSummaryMarkup = bestSnapshot
+    ? `
+      <div class="detail-price-summary">
+        <span class="detail-price-summary__eyebrow">Lowest cached nightly rate</span>
+        <strong>${escapeHtml(formatCurrency(bestSnapshot.lowestNightlyRate, bestSnapshot.currency))}</strong>
+        <p>${escapeHtml(formatStayWindow(bestSnapshot))}</p>
+      </div>
+    `
+    : `
+      <div class="detail-price-summary detail-price-summary--pending">
+        <span class="detail-price-summary__eyebrow">Price status</span>
+        <strong>${escapeHtml(buildPriceLabel(hotel))}</strong>
+        <p>${escapeHtml(buildPriceSubLabel(hotel))}</p>
+      </div>
+    `;
+
+  dom.detail.innerHTML = `
+    <div class="detail-card">
+      <div class="card-topline">
+        <span class="brand-pill">${escapeHtml(hotel.brand)}</span>
+        <span class="price-pill ${getEffectivePrice(hotel) !== null && getEffectivePrice(hotel) <= 200 ? "price-pill--green" : ""}">
+          ${escapeHtml(buildPriceLabel(hotel))}
+        </span>
+      </div>
+      <h2>${escapeHtml(hotel.name)}</h2>
+      <p class="detail-location">${escapeHtml(getLocationLabel(hotel))}</p>
+      ${priceSummaryMarkup}
+      <div class="detail-grid">
+        ${
+          location.city || location.region || location.country
+            ? `
+          <div class="detail-row">
+            <span>Location</span>
+            <strong>${escapeHtml(
+              uniqueValues([location.city, location.region, location.country]).join(", "),
+            )}</strong>
+          </div>
+        `
+            : ""
+        }
+      </div>
+      ${snapshotMarkup}
+      ${unavailableMarkup}
+      <div class="detail-actions">
+        <a class="primary-button" href="${hotel.hiltonUrl}" target="_blank" rel="noreferrer">
+          Book with Hilton
+        </a>
+        ${
+          hotel.tripAdvisorUrl
+            ? `
+        <a class="ghost-button" href="${hotel.tripAdvisorUrl}" target="_blank" rel="noreferrer">
+          TripAdvisor
+        </a>
+        `
+            : ""
+        }
+        <a class="ghost-button" href="${buildGoogleMapsUrl(hotel)}" target="_blank" rel="noreferrer">
+          Open map
+        </a>
+      </div>
+    </div>
+  `;
 }
 
 function updateViewMode() {
-  dom.results.classList.remove("view-split", "view-map", "view-list");
-  dom.results.classList.add(`view-${state.view}`);
+  dom.workspace.classList.remove("view-map", "view-list");
+  dom.workspace.classList.add(`view-${state.view}`);
   document
     .querySelectorAll("[data-view]")
     .forEach((button) => button.classList.toggle("is-active", button.dataset.view === state.view));
 
-  if (map) {
-    setTimeout(() => map.invalidateSize(), 100);
+  if (!map) {
+    return;
   }
+
+  setTimeout(() => {
+    map.invalidateSize();
+    if (state.view === "map" && state.selectedHotelId) {
+      focusHotelOnMap(state.selectedHotelId, { animate: false, openPopup: false });
+    }
+  }, 100);
 }
 
 function render(meta) {
   applyFilters();
-  updateStats(meta);
+  ensureSelectedHotel();
+  updateMeta(meta);
   renderList();
   renderMap();
+  renderDetail();
   updateViewMode();
 }
 
@@ -332,9 +626,24 @@ function readBrands(hotels) {
   return [...new Set(hotels.map((hotel) => hotel.brand))].sort();
 }
 
+function readCountries(hotels) {
+  return [...new Set(hotels.map((hotel) => getLocationData(hotel).country).filter(Boolean))].sort();
+}
+
+function readRegions(hotels, country = state.country) {
+  return [
+    ...new Set(
+      hotels
+        .filter((hotel) => country === "all" || getLocationData(hotel).country === country)
+        .map((hotel) => getLocationData(hotel).region)
+        .filter(Boolean),
+    ),
+  ].sort();
+}
+
 function populateBrandFilter(hotels) {
   const brands = readBrands(hotels);
-  dom.brand.innerHTML = '<option value="all">All Hilton brands</option>';
+  dom.brand.innerHTML = '<option value="all">All brands</option>';
 
   brands.forEach((brand) => {
     const option = document.createElement("option");
@@ -342,6 +651,36 @@ function populateBrandFilter(hotels) {
     option.textContent = brand;
     dom.brand.append(option);
   });
+}
+
+function populateCountryFilter(hotels) {
+  const countries = readCountries(hotels);
+  dom.country.innerHTML = '<option value="all">All countries</option>';
+
+  countries.forEach((country) => {
+    const option = document.createElement("option");
+    option.value = country;
+    option.textContent = country;
+    dom.country.append(option);
+  });
+}
+
+function populateRegionFilter(hotels) {
+  const regions = readRegions(hotels, state.country);
+  if (state.region !== "all" && !regions.includes(state.region)) {
+    state.region = "all";
+  }
+
+  dom.region.innerHTML = '<option value="all">All regions / 地區</option>';
+
+  regions.forEach((region) => {
+    const option = document.createElement("option");
+    option.value = region;
+    option.textContent = region;
+    dom.region.append(option);
+  });
+
+  dom.region.value = state.region;
 }
 
 function initMap() {
@@ -364,48 +703,22 @@ function buildShell() {
   const app = document.querySelector("#app");
   app.innerHTML = `
     <main class="page-shell">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Hilton Honors Aspire</p>
-          <h1>Map the Hilton resorts where that semiannual $200 credit can actually do work.</h1>
-          <p class="hero-text">
-            This static site tracks Hilton resort-credit eligible hotels, plots them on a map, and
-            overlays cached Xotelo price signals so people can spot credit-friendly stays faster.
-          </p>
-          <div class="hero-note">
-            <strong>Important:</strong>
-            Xotelo pricing here is a cached snapshot from the most recent data sync, not a live quote.
-          </div>
-          <div class="hero-note hero-note--secondary" id="sync-note">
-            <strong>Sync mode:</strong>
-            Checking dataset capabilities...
-          </div>
+      <header class="page-header">
+        <div>
+          <p class="eyebrow">Hilton Aspire Resort Finder</p>
+          <h1>Hilton resort credit hotels</h1>
         </div>
-        <div class="hero-stats">
-          <div class="stat-card">
-            <span class="stat-label">Eligible resorts</span>
-            <strong id="total-count">0</strong>
-          </div>
-          <div class="stat-card">
-            <span class="stat-label">Mapped</span>
-            <strong id="mapped-count">0</strong>
-          </div>
-          <div class="stat-card">
-            <span class="stat-label">With price data</span>
-            <strong id="price-count">0</strong>
-          </div>
-          <div class="stat-card stat-card--accent">
-            <span class="stat-label">At or under $200</span>
-            <strong id="credit-count">0</strong>
-          </div>
+        <div class="page-meta">
+          <strong id="results-count">0 of 0 hotels</strong>
+          <span id="generated-at">Loading...</span>
         </div>
-      </section>
+      </header>
 
       <section class="toolbar">
         <div class="toolbar-group toolbar-group--search">
           <label>
             Search
-            <input id="search-input" type="search" placeholder="Waikiki, Waldorf, Arizona Biltmore..." />
+            <input id="search-input" type="search" placeholder="Conrad, Waikiki, Fort Lauderdale..." />
           </label>
         </div>
         <div class="toolbar-group">
@@ -416,69 +729,73 @@ function buildShell() {
         </div>
         <div class="toolbar-group">
           <label>
-            Max nightly price
-            <input id="price-cap" type="number" min="0" step="1" placeholder="200" />
+            Country
+            <select id="country-filter"></select>
+          </label>
+        </div>
+        <div class="toolbar-group">
+          <label>
+            Region / 地區
+            <select id="region-filter"></select>
           </label>
         </div>
         <div class="toolbar-group toolbar-group--toggle">
           <label class="checkbox-row">
             <input id="credit-friendly-only" type="checkbox" />
-            Only show resorts at or under $200
+            Under $200 only
           </label>
         </div>
-        <div class="toolbar-group toolbar-group--views">
-          <button class="view-button is-active" data-view="split">Split</button>
-          <button class="view-button" data-view="list">List</button>
-          <button class="view-button" data-view="map">Map</button>
-        </div>
       </section>
 
-      <section class="meta-bar">
-        <p>Last synced: <strong id="generated-at">Loading...</strong></p>
-        <p>
-          Source: <a href="https://www.hilton.com/en/p/hilton-honors/resort-credit-eligible-hotels/" target="_blank" rel="noreferrer">
-            Hilton resort credit list
-          </a>
-        </p>
+      <section class="view-tabs">
+        <button class="tab-button is-active" data-view="map">Map</button>
+        <button class="tab-button" data-view="list">List</button>
       </section>
 
-      <section class="results view-split" id="results-shell">
-        <div class="list-panel">
-          <div class="panel-header">
-            <h2>Resort list</h2>
-            <span id="results-count">0 hotels</span>
+      <section class="workspace view-map" id="workspace">
+        <div class="content-panel">
+          <div id="map-panel" class="mode-panel">
+            <div id="map"></div>
           </div>
-          <div class="hotel-list" id="hotel-list"></div>
-        </div>
-        <div class="map-panel">
-          <div class="panel-header">
-            <h2>Map view</h2>
-            <span>Leaflet + OpenStreetMap</span>
+          <div id="list-panel" class="mode-panel">
+            <div class="hotel-list" id="hotel-list"></div>
           </div>
-          <div id="map"></div>
         </div>
+        <aside class="detail-panel">
+          <div class="detail-panel__header">
+            <h2>Hotel details</h2>
+          </div>
+          <div class="detail-panel__body" id="detail-panel-body"></div>
+        </aside>
       </section>
     </main>
   `;
 
   dom = {
-    totalCount: document.querySelector("#total-count"),
-    mappedCount: document.querySelector("#mapped-count"),
-    priceCount: document.querySelector("#price-count"),
-    creditCount: document.querySelector("#credit-count"),
+    resultsCount: document.querySelector("#results-count"),
     generatedAt: document.querySelector("#generated-at"),
     search: document.querySelector("#search-input"),
     brand: document.querySelector("#brand-filter"),
-    priceCap: document.querySelector("#price-cap"),
+    country: document.querySelector("#country-filter"),
+    region: document.querySelector("#region-filter"),
     creditOnly: document.querySelector("#credit-friendly-only"),
     list: document.querySelector("#hotel-list"),
-    resultsCount: document.querySelector("#results-count"),
     map: document.querySelector("#map"),
-    results: document.querySelector("#results-shell"),
-    syncNote: document.querySelector("#sync-note"),
+    detail: document.querySelector("#detail-panel-body"),
+    workspace: document.querySelector("#workspace"),
   };
 
   initMap();
+}
+
+function selectHotel(hotelId, { focusMap = false } = {}) {
+  state.selectedHotelId = hotelId;
+  highlightSelectedCard();
+  renderDetail();
+
+  if (focusMap) {
+    focusHotelOnMap(hotelId);
+  }
 }
 
 function attachEvents(meta) {
@@ -492,8 +809,14 @@ function attachEvents(meta) {
     render(meta);
   });
 
-  dom.priceCap.addEventListener("input", (event) => {
-    state.priceCap = event.target.value;
+  dom.country.addEventListener("change", (event) => {
+    state.country = event.target.value;
+    populateRegionFilter(state.hotels);
+    render(meta);
+  });
+
+  dom.region.addEventListener("change", (event) => {
+    state.region = event.target.value;
     render(meta);
   });
 
@@ -510,13 +833,46 @@ function attachEvents(meta) {
   });
 }
 
-async function loadData() {
-  const response = await fetch(DATA_URL, { cache: "no-store" });
+async function loadJson(url, { optional = false } = {}) {
+  const response = await fetch(url, { cache: "no-store" });
+
+  if (optional && response.status === 404) {
+    return null;
+  }
+
   if (!response.ok) {
-    throw new Error(`Could not load ${DATA_URL}`);
+    throw new Error(`Could not load ${url}`);
   }
 
   return response.json();
+}
+
+function mergePayloads(hotelsPayload, pricesPayload) {
+  const hotels = (hotelsPayload.hotels || []).map((hotel) => ({
+    ...hotel,
+    xotelo: {
+      ...(hotel.xotelo || {}),
+      ...((pricesPayload?.prices || {})[hotel.id] || {}),
+    },
+  }));
+
+  return {
+    meta: {
+      ...(hotelsPayload.meta || {}),
+      pricing: pricesPayload?.meta || null,
+      generatedAt: pricesPayload?.meta?.generatedAt || hotelsPayload.meta?.generatedAt || null,
+    },
+    hotels,
+  };
+}
+
+async function loadData() {
+  const [hotelsPayload, pricesPayload] = await Promise.all([
+    loadJson(HOTELS_URL),
+    loadJson(PRICES_URL, { optional: true }),
+  ]);
+
+  return mergePayloads(hotelsPayload, pricesPayload);
 }
 
 function showError(message) {
@@ -524,8 +880,8 @@ function showError(message) {
   app.innerHTML = `
     <main class="page-shell error-shell">
       <h1>Data sync needed</h1>
-      <p>${message}</p>
-      <p>Run <code>npm run sync:data</code> locally or let the GitHub Action build the latest dataset before deploying Pages.</p>
+      <p>${escapeHtml(message)}</p>
+      <p>Run <code>npm run sync:data</code> before opening the app.</p>
     </main>
   `;
 }
@@ -536,8 +892,9 @@ async function bootstrap() {
   try {
     const payload = await loadData();
     state.hotels = payload.hotels || [];
-
     populateBrandFilter(state.hotels);
+    populateCountryFilter(state.hotels);
+    populateRegionFilter(state.hotels);
     attachEvents(payload.meta || {});
     render(payload.meta || {});
   } catch (error) {
