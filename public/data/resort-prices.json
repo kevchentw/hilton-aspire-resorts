@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generatedAt": "2026-04-03T19:59:16.075Z",
+    "generatedAt": "2026-04-03T20:00:30.497Z",
     "sourceFile": "public/data/hilton_resort_credit_v3.csv",
     "hotelCount": 312,
     "processedHotelCount": 312,
-    "completedHotelCount": 260,
+    "completedHotelCount": 267,
     "sampleStay": {
       "checkIn": "2026-04-10",
       "checkOut": "2026-04-12"
@@ -20094,24 +20094,142 @@
     "hilton-sedona-resort-at-bell-rock": {
       "hotelKey": "g4813352-d75461",
       "locationKey": "g4813352",
-      "statusNote": "TripAdvisor URL parsed",
-      "priceSnapshots": [],
-      "sampleStay": null,
-      "lastUpdatedAt": null,
-      "indicativeRange": null,
-      "lastSyncedAt": null,
-      "lastSuccessfulRateAt": null
+      "statusNote": "Public Xotelo rates synced",
+      "priceSnapshots": [
+        {
+          "checkIn": "2026-04-10",
+          "checkOut": "2026-04-12",
+          "currency": "USD",
+          "lowestNightlyRate": 738,
+          "taxes": 85,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T19:59:16.776Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-17",
+          "checkOut": "2026-04-19",
+          "currency": "USD",
+          "lowestNightlyRate": 724,
+          "taxes": 84,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T19:59:19.723Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-24",
+          "checkOut": "2026-04-26",
+          "currency": "USD",
+          "lowestNightlyRate": 736,
+          "taxes": 82,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T19:59:22.870Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-05-01",
+          "checkOut": "2026-05-03",
+          "currency": "USD",
+          "lowestNightlyRate": 640,
+          "taxes": 78,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T19:59:25.789Z",
+          "status": "ok"
+        }
+      ],
+      "sampleStay": {
+        "checkIn": "2026-05-01",
+        "checkOut": "2026-05-03",
+        "currency": "USD",
+        "lowestNightlyRate": 640,
+        "taxes": 78,
+        "vendorCode": "CtripTA",
+        "vendorName": "Trip.com",
+        "checkedAt": "2026-04-03T19:59:25.789Z",
+        "status": "ok"
+      },
+      "lastUpdatedAt": "2026-04-03T19:59:25.789Z",
+      "indicativeRange": {
+        "minimum": 300,
+        "maximum": 1016,
+        "currency": "USD"
+      },
+      "lastSyncedAt": "2026-04-03T19:59:28.546Z",
+      "lastSuccessfulRateAt": "2026-04-03T19:59:25.789Z"
     },
     "hilton-seychelles-northolme-resort-and-spa": {
       "hotelKey": "g488117-d547001",
       "locationKey": "g488117",
-      "statusNote": "TripAdvisor URL parsed",
-      "priceSnapshots": [],
-      "sampleStay": null,
-      "lastUpdatedAt": null,
-      "indicativeRange": null,
-      "lastSyncedAt": null,
-      "lastSuccessfulRateAt": null
+      "statusNote": "Public Xotelo rates synced",
+      "priceSnapshots": [
+        {
+          "checkIn": "2026-04-10",
+          "checkOut": "2026-04-12",
+          "currency": "USD",
+          "lowestNightlyRate": 455,
+          "taxes": 120,
+          "vendorCode": "HiltonEMEAGlobal",
+          "vendorName": "Hilton",
+          "checkedAt": "2026-04-03T19:59:29.245Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-17",
+          "checkOut": "2026-04-19",
+          "currency": "USD",
+          "lowestNightlyRate": 482,
+          "taxes": 127,
+          "vendorCode": "HiltonEMEAGlobal",
+          "vendorName": "Hilton",
+          "checkedAt": "2026-04-03T19:59:32.129Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-24",
+          "checkOut": "2026-04-26",
+          "currency": "USD",
+          "lowestNightlyRate": 684,
+          "taxes": 181,
+          "vendorCode": "HiltonEMEAGlobal",
+          "vendorName": "Hilton",
+          "checkedAt": "2026-04-03T19:59:37.366Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-05-01",
+          "checkOut": "2026-05-03",
+          "currency": "USD",
+          "lowestNightlyRate": 509,
+          "taxes": 135,
+          "vendorCode": "HiltonEMEAGlobal",
+          "vendorName": "Hilton",
+          "checkedAt": "2026-04-03T19:59:40.242Z",
+          "status": "ok"
+        }
+      ],
+      "sampleStay": {
+        "checkIn": "2026-04-10",
+        "checkOut": "2026-04-12",
+        "currency": "USD",
+        "lowestNightlyRate": 455,
+        "taxes": 120,
+        "vendorCode": "HiltonEMEAGlobal",
+        "vendorName": "Hilton",
+        "checkedAt": "2026-04-03T19:59:29.245Z",
+        "status": "ok"
+      },
+      "lastUpdatedAt": "2026-04-03T19:59:29.245Z",
+      "indicativeRange": {
+        "minimum": 565,
+        "maximum": 935,
+        "currency": "USD"
+      },
+      "lastSyncedAt": "2026-04-03T19:59:42.984Z",
+      "lastSuccessfulRateAt": "2026-04-03T19:59:29.245Z"
     },
     "hilton-sorrento-palace": {
       "statusNote": "TripAdvisor URL parsed",
@@ -20186,24 +20304,142 @@
     "hilton-swinoujscie-resort-and-spa": {
       "hotelKey": "g652064-d17886352",
       "locationKey": "g652064",
-      "statusNote": "TripAdvisor URL parsed",
-      "priceSnapshots": [],
-      "sampleStay": null,
-      "lastUpdatedAt": null,
-      "indicativeRange": null,
-      "lastSyncedAt": null,
-      "lastSuccessfulRateAt": null
+      "statusNote": "Public Xotelo rates synced",
+      "priceSnapshots": [
+        {
+          "checkIn": "2026-04-10",
+          "checkOut": "2026-04-12",
+          "currency": "USD",
+          "lowestNightlyRate": 199,
+          "taxes": 17,
+          "vendorCode": "HiltonEMEAGlobal",
+          "vendorName": "Hilton",
+          "checkedAt": "2026-04-03T19:59:43.952Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-17",
+          "checkOut": "2026-04-19",
+          "currency": "USD",
+          "lowestNightlyRate": 225,
+          "taxes": 19,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T19:59:46.835Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-24",
+          "checkOut": "2026-04-26",
+          "currency": "USD",
+          "lowestNightlyRate": 219,
+          "taxes": 19,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T19:59:49.782Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-05-01",
+          "checkOut": "2026-05-03",
+          "currency": "USD",
+          "lowestNightlyRate": 229,
+          "taxes": 20,
+          "vendorCode": "HiltonEMEAGlobal",
+          "vendorName": "Hilton",
+          "checkedAt": "2026-04-03T19:59:52.692Z",
+          "status": "ok"
+        }
+      ],
+      "sampleStay": {
+        "checkIn": "2026-04-10",
+        "checkOut": "2026-04-12",
+        "currency": "USD",
+        "lowestNightlyRate": 199,
+        "taxes": 17,
+        "vendorCode": "HiltonEMEAGlobal",
+        "vendorName": "Hilton",
+        "checkedAt": "2026-04-03T19:59:43.952Z",
+        "status": "ok"
+      },
+      "lastUpdatedAt": "2026-04-03T19:59:43.952Z",
+      "indicativeRange": {
+        "minimum": 132,
+        "maximum": 329,
+        "currency": "USD"
+      },
+      "lastSyncedAt": "2026-04-03T19:59:55.579Z",
+      "lastSuccessfulRateAt": "2026-04-03T19:59:43.952Z"
     },
     "hilton-tangier-al-houara-resort-and-spa": {
       "hotelKey": "g293737-d15132641",
       "locationKey": "g293737",
-      "statusNote": "TripAdvisor URL parsed",
-      "priceSnapshots": [],
-      "sampleStay": null,
-      "lastUpdatedAt": null,
-      "indicativeRange": null,
-      "lastSyncedAt": null,
-      "lastSuccessfulRateAt": null
+      "statusNote": "Public Xotelo rates synced",
+      "priceSnapshots": [
+        {
+          "checkIn": "2026-04-10",
+          "checkOut": "2026-04-12",
+          "currency": "USD",
+          "lowestNightlyRate": 152,
+          "taxes": 19,
+          "vendorCode": "BookingCom",
+          "vendorName": "Booking.com",
+          "checkedAt": "2026-04-03T19:59:56.364Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-17",
+          "checkOut": "2026-04-19",
+          "currency": "USD",
+          "lowestNightlyRate": null,
+          "taxes": null,
+          "vendorCode": null,
+          "vendorName": null,
+          "checkedAt": "2026-04-03T19:59:59.326Z",
+          "status": "no_rates"
+        },
+        {
+          "checkIn": "2026-04-24",
+          "checkOut": "2026-04-26",
+          "currency": "USD",
+          "lowestNightlyRate": 152,
+          "taxes": 19,
+          "vendorCode": "BookingCom",
+          "vendorName": "Booking.com",
+          "checkedAt": "2026-04-03T20:00:06.968Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-05-01",
+          "checkOut": "2026-05-03",
+          "currency": "USD",
+          "lowestNightlyRate": null,
+          "taxes": null,
+          "vendorCode": null,
+          "vendorName": null,
+          "checkedAt": "2026-04-03T20:00:09.975Z",
+          "status": "no_rates"
+        }
+      ],
+      "sampleStay": {
+        "checkIn": "2026-04-10",
+        "checkOut": "2026-04-12",
+        "currency": "USD",
+        "lowestNightlyRate": 152,
+        "taxes": 19,
+        "vendorCode": "BookingCom",
+        "vendorName": "Booking.com",
+        "checkedAt": "2026-04-03T19:59:56.364Z",
+        "status": "ok"
+      },
+      "lastUpdatedAt": "2026-04-03T19:59:56.364Z",
+      "indicativeRange": {
+        "minimum": 181,
+        "maximum": 262,
+        "currency": "USD"
+      },
+      "lastSyncedAt": "2026-04-03T20:00:17.293Z",
+      "lastSuccessfulRateAt": "2026-04-03T19:59:56.364Z"
     },
     "hilton-tokyo-bay": {
       "hotelKey": "g14134868-d304292",
@@ -20311,13 +20547,72 @@
     "hilton-tulum-riviera-maya-all-inclusive-resort": {
       "hotelKey": "g150813-d23608360",
       "locationKey": "g150813",
-      "statusNote": "TripAdvisor URL parsed",
-      "priceSnapshots": [],
-      "sampleStay": null,
-      "lastUpdatedAt": null,
-      "indicativeRange": null,
-      "lastSyncedAt": null,
-      "lastSuccessfulRateAt": null
+      "statusNote": "Public Xotelo rates synced",
+      "priceSnapshots": [
+        {
+          "checkIn": "2026-04-10",
+          "checkOut": "2026-04-12",
+          "currency": "USD",
+          "lowestNightlyRate": 314,
+          "taxes": 59,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T20:00:18.865Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-17",
+          "checkOut": "2026-04-19",
+          "currency": "USD",
+          "lowestNightlyRate": 298,
+          "taxes": 56,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T20:00:21.797Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-04-24",
+          "checkOut": "2026-04-26",
+          "currency": "USD",
+          "lowestNightlyRate": 360,
+          "taxes": 68,
+          "vendorCode": "CtripTA",
+          "vendorName": "Trip.com",
+          "checkedAt": "2026-04-03T20:00:24.810Z",
+          "status": "ok"
+        },
+        {
+          "checkIn": "2026-05-01",
+          "checkOut": "2026-05-03",
+          "currency": "USD",
+          "lowestNightlyRate": 333,
+          "taxes": 69,
+          "vendorCode": "Agoda",
+          "vendorName": "Agoda.com",
+          "checkedAt": "2026-04-03T20:00:27.710Z",
+          "status": "ok"
+        }
+      ],
+      "sampleStay": {
+        "checkIn": "2026-04-17",
+        "checkOut": "2026-04-19",
+        "currency": "USD",
+        "lowestNightlyRate": 298,
+        "taxes": 56,
+        "vendorCode": "CtripTA",
+        "vendorName": "Trip.com",
+        "checkedAt": "2026-04-03T20:00:21.797Z",
+        "status": "ok"
+      },
+      "lastUpdatedAt": "2026-04-03T20:00:21.797Z",
+      "indicativeRange": {
+        "minimum": 291,
+        "maximum": 771,
+        "currency": "USD"
+      },
+      "lastSyncedAt": "2026-04-03T20:00:30.497Z",
+      "lastSuccessfulRateAt": "2026-04-03T20:00:21.797Z"
     },
     "hilton-vallarta-riviera-all-inclusive-resort": {
       "hotelKey": "g150793-d8154349",
