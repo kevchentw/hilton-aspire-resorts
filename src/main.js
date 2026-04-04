@@ -916,6 +916,26 @@ function buildShell() {
         </div>
       </header>
 
+      <section class="announcement-banner" aria-label="Product announcement">
+        <div class="announcement-banner__eyebrow">New tool introduced</div>
+        <div class="announcement-banner__content">
+          <div>
+            <h2>Open Hotel Data now supports FHR and THD.</h2>
+            <p>
+              This Hilton Aspire resort page is no longer being updated. Use the new tool for the latest hotel data and expanded program support.
+            </p>
+          </div>
+          <a
+            class="primary-button announcement-banner__link"
+            href="https://kevchentw.github.io/open-hotel-data/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open new tool
+          </a>
+        </div>
+      </section>
+
       <section class="toolbar">
         <div class="toolbar-group toolbar-group--search">
           <label>

@@ -72,6 +72,55 @@ code {
   margin-bottom: 14px;
 }
 
+.announcement-banner {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 14px;
+  padding: 20px 22px;
+  border-radius: 26px;
+  border: 1px solid rgba(29, 111, 103, 0.18);
+  background:
+    radial-gradient(circle at top right, rgba(212, 158, 63, 0.22), transparent 28%),
+    linear-gradient(135deg, rgba(29, 111, 103, 0.12), rgba(255, 255, 255, 0.95));
+  box-shadow: var(--shadow);
+}
+
+.announcement-banner__eyebrow {
+  margin-bottom: 10px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--teal-dark);
+}
+
+.announcement-banner__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+}
+
+.announcement-banner h2 {
+  margin: 0;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(1.45rem, 3.6vw, 2rem);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+}
+
+.announcement-banner p {
+  max-width: 780px;
+  margin: 10px 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.announcement-banner__link {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
 .eyebrow {
   margin: 0 0 8px;
   text-transform: uppercase;
@@ -694,6 +743,7 @@ code {
 
   .page-header,
   .toolbar,
+  .announcement-banner,
   .view-tabs,
   .content-panel,
   .detail-panel {
@@ -703,6 +753,10 @@ code {
   .page-header,
   .toolbar {
     padding: 16px;
+  }
+
+  .announcement-banner {
+    padding: 18px 16px;
   }
 
   .page-header,
@@ -716,6 +770,11 @@ code {
 
   .page-meta {
     justify-items: start;
+  }
+
+  .announcement-banner__content {
+    flex-direction: column;
+    align-items: start;
   }
 
   .toolbar {
